@@ -1,0 +1,699 @@
+Q1. The general heat conduction equation is derived from:
+A) Newton's law of cooling
+B) Fourier's law and energy balance
+C) Stefan–Boltzmann law
+D) Kirchhoff's law
+Answer: B
+
+Q2. The general 3-D unsteady heat conduction equation with heat generation in Cartesian coordinates is:
+A) d2T/dx2+d2T/dy2+d2T/dz2+qdot/k = (1/alpha)dT/dt
+B) dT/dx+dT/dy+dT/dz = qdot/k
+C) d2T/dx2 = qdot/k
+D) None of these
+Answer: A
+
+Q3. Thermal diffusivity alpha is defined as:
+A) k/(rho*c)
+B) rho*c/k
+C) k.rho.c
+D) k/rho
+Answer: A
+
+Q4. Units of thermal diffusivity are:
+A) W/mK
+B) m2/s
+C) W/m2K
+D) J/kgK
+Answer: B
+
+Q5. For steady state conduction with no heat generation, the governing equation is:
+A) Laplacian T = 0
+B) Laplacian T = qdot/k
+C) Laplacian T = (1/alpha)dT/dt
+D) Laplacian T = -qdot/k
+Answer: A
+
+Q6. The Poisson equation in heat conduction applies to:
+A) Steady state, no heat generation
+B) Steady state, with heat generation
+C) Unsteady, no heat generation
+D) Unsteady, with heat generation
+Answer: B
+
+Q7. Fourier's law of heat conduction states that heat flux is proportional to:
+A) Temperature
+B) Temperature gradient
+C) Time
+D) Area only
+Answer: B
+
+Q8. The negative sign in Fourier's law indicates that:
+A) Heat flows from low to high temperature
+B) Heat flows in the direction of decreasing temperature
+C) Heat flux is always negative
+D) None of these
+Answer: B
+
+Q9. The heat conduction equation in cylindrical coordinates includes derivatives with respect to:
+A) r, theta, z
+B) x, y, z only
+C) r only
+D) theta only
+Answer: A
+
+Q10. In cylindrical coordinates, the term (1/r)d/dr(r dT/dr) accounts for conduction in the:
+A) Axial direction
+B) Radial direction
+C) Tangential direction
+D) None of these
+Answer: B
+
+Q11. For a long cylinder with no heat generation, steady, one-dimensional (radial) conduction, the temperature profile is:
+A) Linear
+B) Logarithmic
+C) Parabolic
+D) Exponential
+Answer: B
+
+Q12. Spherical coordinates for heat conduction are generally used for problems involving:
+A) Plane walls
+B) Cylinders
+C) Spheres
+D) Fins
+Answer: C
+
+Q13. Thermal conductivity k of most materials:
+A) Is always constant
+B) Varies with temperature
+C) Is independent of material
+D) Has units of W/m2K
+Answer: B
+
+Q14. For an isotropic material, thermal conductivity:
+A) Varies with direction
+B) Is the same in all directions
+C) Is zero
+D) Is infinite
+Answer: B
+
+Q15. The convective (third-kind) boundary condition is expressed as:
+A) T = constant
+B) -k dT/dx = h(Ts - Tinf)
+C) dT/dx = 0
+D) q = constant only
+Answer: B
+
+Q16. Thermal resistance of a plane wall of thickness L, area A and conductivity k is:
+A) kA/L
+B) L/(kA)
+C) k/(LA)
+D) LA/k
+Answer: B
+
+Q17. For a plane wall, the heat conduction rate Q is given by:
+A) Q = kA(T1-T2)/L
+B) Q = kAL(T1-T2)
+C) Q = k(T1-T2)/(AL)
+D) Q = hA(T1-T2)
+Answer: A
+
+Q18. In a composite wall with resistances in series, the total resistance is:
+A) The sum of individual resistances
+B) The reciprocal of the sum
+C) The product of resistances
+D) The average of resistances
+Answer: A
+
+Q19. For resistances in parallel, the equivalent resistance is given by:
+A) R = R1+R2
+B) 1/R = 1/R1 + 1/R2
+C) R = R1xR2
+D) R = R1-R2
+Answer: B
+
+Q20. The overall heat transfer coefficient U is related to total thermal resistance R_total by:
+A) U = 1/(A.R_total)
+B) U = A.R_total
+C) U = R_total/A
+D) U = A/R_total
+Answer: A
+
+Q21. The critical radius of insulation for a cylinder is given by:
+A) r_c = k/h
+B) r_c = h/k
+C) r_c = k.h
+D) r_c = 2k/h
+Answer: A
+
+Q22. Adding insulation to a cylindrical wire increases heat loss until the radius reaches:
+A) Zero
+B) The critical radius
+C) Infinity
+D) The wire radius
+Answer: B
+
+Q23. For a plane wall, adding insulation always:
+A) Increases heat loss
+B) Decreases heat loss
+C) Has no effect
+D) Depends on the critical radius concept
+Answer: B
+
+Q24. Thermal contact resistance arises due to:
+A) Perfect contact between two surfaces
+B) Imperfect contact / air gaps between two surfaces
+C) High thermal conductivity
+D) None of these
+Answer: B
+
+Q25. For a cylindrical wall of inner radius r1, outer radius r2, length L and conductivity k, the thermal resistance is:
+A) ln(r2/r1)/(2*pi*k*L)
+B) (r2-r1)/(2*pi*k*L)
+C) 2*pi*k*L/ln(r2/r1)
+D) ln(r1/r2)/(2*pi*k*L)
+Answer: A
+
+Q26. For a spherical shell of inner radius r1 and outer radius r2, conductivity k, the thermal resistance is:
+A) (1/r1 - 1/r2)/(4*pi*k)
+B) (1/r1 + 1/r2)/(4*pi*k)
+C) 4*pi*k(r1-r2)
+D) ln(r2/r1)/(4*pi*k)
+Answer: A
+
+Q27. In the electrical analogy of heat conduction, temperature difference corresponds to:
+A) Current
+B) Voltage difference
+C) Resistance
+D) Power
+Answer: B
+
+Q28. In the electrical analogy, heat flow rate Q corresponds to:
+A) Voltage
+B) Current
+C) Resistance
+D) Capacitance
+Answer: B
+
+Q29. For three layers in series with conductivities k1, k2, k3 and thicknesses L1, L2, L3, the heat transfer rate is:
+A) Q = A(T1-T4)/(L1/k1+L2/k2+L3/k3)
+B) Q = A(T1-T4)(L1k1+L2k2+L3k3)
+C) Q = (T1-T4)/A
+D) Q = k1k2k3(T1-T4)
+Answer: A
+
+Q30. The concept of overall heat transfer coefficient is mainly used in:
+A) Fin analysis
+B) Composite wall / heat exchanger problems
+C) Transient conduction
+D) Radiation problems
+Answer: B
+
+Q31. For conduction through a plane wall with convection h1 and h2 on both faces, total resistance is:
+A) 1/(h1A) + L/(kA) + 1/(h2A)
+B) h1A + kA/L + h2A
+C) 1/(h1+h2)
+D) L/k only
+Answer: A
+
+Q32. If the thermal conductivity of insulation is high, the critical radius of insulation is:
+A) Small
+B) Large
+C) Zero
+D) Independent of k
+Answer: B
+
+Q33. Contact resistance is generally reduced by:
+A) Increasing surface roughness
+B) Applying a thermal contact compound and increasing contact pressure
+C) Removing surface contact
+D) Increasing the air gap
+Answer: B
+
+Q34. For a plane wall with variable conductivity k = k0(1+beta*T), the heat flow expression uses:
+A) Constant k
+B) Mean value of k over the temperature range
+C) Only k0
+D) k at T = 0
+Answer: B
+
+Q35. The critical radius of insulation concept does NOT apply to:
+A) Cylinder
+B) Sphere
+C) Plane wall
+D) Both cylinder and sphere
+Answer: C
+
+Q36. For a plane wall with uniform internal heat generation and symmetric surface conditions, the maximum temperature occurs at:
+A) The surface
+B) The mid-plane (center)
+C) Quarter thickness
+D) Cannot be determined
+Answer: B
+
+Q37. A solid cylinder with uniform heat generation and an insulated outer surface is physically sustainable in steady state only if:
+A) Heat generated equals heat lost at the boundary
+B) k is infinite
+C) qdot is zero
+D) Radius is infinite
+Answer: A
+
+Q38. The temperature distribution in a plane wall with uniform heat generation and equal surface temperatures Ts is:
+A) Linear
+B) Parabolic
+C) Logarithmic
+D) Exponential
+Answer: B
+
+Q39. The maximum temperature rise in a solid cylinder of radius R with uniform heat generation qdot and surface temperature Ts is:
+A) qdot*R2/(4k)
+B) qdot*R2/(2k)
+C) qdot*R/(4k)
+D) qdot*R2/k
+Answer: A
+
+Q40. For a plane wall of thickness 2L with uniform heat generation qdot and surface temperature Ts, the center temperature is:
+A) Ts + qdot*L2/(2k)
+B) Ts + qdot*L2/k
+C) Ts - qdot*L2/(2k)
+D) Ts
+Answer: A
+
+Q41. A nuclear fuel rod is a classic example of:
+A) Conduction without heat generation
+B) Conduction with internal heat generation
+C) Pure convection
+D) Radiation only
+Answer: B
+
+Q42. In a hollow cylinder with heat generation and an insulated outer surface, the generated heat flows:
+A) Outward only
+B) Inward toward the inner surface
+C) Nowhere
+D) Both directions equally
+Answer: B
+
+Q43. The governing equation for conduction with internal heat generation is:
+A) Laplace equation
+B) Poisson equation
+C) Wave equation
+D) Bessel equation only
+Answer: B
+
+Q44. In a current-carrying electrical conductor, the volumetric heat generation rate is proportional to:
+A) Voltage only
+B) Current density squared and electrical resistivity
+C) Thermal conductivity
+D) Length only
+Answer: B
+
+Q45. The temperature gradient at the centerline of a symmetric plane wall with uniform heat generation is:
+A) Maximum
+B) Zero
+C) Negative
+D) Undefined
+Answer: B
+
+Q46. For a hollow cylinder with heat generation and different fixed temperatures on both surfaces, the temperature distribution is generally:
+A) A combination of logarithmic and parabolic terms
+B) Purely linear
+C) Purely exponential
+D) Constant
+Answer: A
+
+Q47. The rate of heat generation per unit volume is generally denoted:
+A) q
+B) qdot (q-dot)
+C) Q
+D) h
+Answer: B
+
+Q48. For a solid sphere of radius R with uniform heat generation and surface temperature Ts, the center temperature exceeds Ts by:
+A) qdot*R2/(6k)
+B) qdot*R2/(3k)
+C) qdot*R2/(2k)
+D) qdot*R2/k
+Answer: A
+
+Q49. Heat generation due to a chemical or nuclear reaction is treated in the conduction equation as:
+A) A negative source term always
+B) A volumetric heat source term
+C) A surface boundary condition only
+D) It is ignored
+Answer: B
+
+Q50. If one face of a wall with heat generation is insulated and the other maintained at Ts, the maximum temperature occurs at:
+A) The insulated face
+B) The face at Ts
+C) The mid-plane always
+D) It cannot be determined
+Answer: A
+
+Q51. Fins are used to:
+A) Decrease heat transfer surface area
+B) Increase heat transfer rate by increasing surface area
+C) Insulate the surface
+D) Reduce thermal conductivity
+Answer: B
+
+Q52. The fin parameter m is defined as:
+A) sqrt(hP/kA)
+B) hP/kA
+C) sqrt(kA/hP)
+D) kA/hP
+Answer: A
+
+Q53. For an infinitely long fin, the tip temperature approaches:
+A) Base temperature
+B) Ambient temperature
+C) Zero
+D) Infinity
+Answer: B
+
+Q54. Fin efficiency is defined as the ratio of:
+A) Actual heat transfer to heat transfer if the entire fin were at base temperature
+B) Actual heat transfer to zero
+C) Base temperature to tip temperature
+D) Fin length to fin thickness
+Answer: A
+
+Q55. Fin effectiveness is defined as the ratio of heat transfer with the fin to:
+A) Heat transfer without the fin (bare surface of same base area)
+B) Heat transfer with an infinite fin
+C) Heat transfer at the tip
+D) Base heat transfer only
+Answer: A
+
+Q56. For a fin with an insulated tip, the boundary condition is:
+A) dT/dx = 0 at the tip
+B) T = Tinf at the tip
+C) T = Tb at the tip
+D) d2T/dx2 = 0 at the base
+Answer: A
+
+Q57. A fin is most effective when its thermal conductivity is:
+A) Low
+B) High
+C) Zero
+D) Not related to effectiveness
+Answer: B
+
+Q58. Fin effectiveness is enhanced by:
+A) Increasing the convective coefficient h
+B) Using a material of high k and increasing the perimeter-to-area ratio
+C) Decreasing fin length
+D) Decreasing the perimeter
+Answer: B
+
+Q59. For fins made from a given volume of material, the highest efficiency is generally given by a:
+A) Rectangular profile
+B) Triangular profile
+C) Parabolic profile
+D) Uniform circular profile
+Answer: C
+
+Q60. The corrected fin length Lc is used to:
+A) Account for tip heat loss using the insulated-tip approximation
+B) Decrease the fin length
+C) Account for radiation only
+D) Ignore tip losses
+Answer: A
+
+Q61. For a straight rectangular fin of length L and thickness t, the corrected length Lc is:
+A) L + t/2
+B) L - t/2
+C) L + t
+D) L
+Answer: A
+
+Q62. The efficiency of a fin array (heat sink) depends on:
+A) Fin spacing only
+B) Individual fin efficiency and total surface area
+C) Fin color
+D) Ambient pressure only
+Answer: B
+
+Q63. A finite-length fin with a convective tip dissipates less heat than an infinite fin under the same base condition because:
+A) It has less surface area and a non-zero tip temperature above ambient
+B) It has more surface area
+C) There is no difference
+D) k is different
+Answer: A
+
+Q64. For pin fins versus rectangular fins of the same material volume, generally:
+A) Pin fins have lower efficiency
+B) Pin fins have higher efficiency for equal volume
+C) There is no difference
+D) They cannot be compared
+Answer: B
+
+Q65. A fin should generally not be used when:
+A) The convective coefficient h is very high, as in boiling or condensation
+B) h is very low, as in natural convection with gases
+C) The fin material has low k
+D) Ambient temperature is very low
+Answer: A
+
+Q66. The temperature distribution along an infinitely long uniform fin follows:
+A) theta/thetab = e^(-mx)
+B) theta/thetab = cosh(mx)
+C) theta/thetab = 1
+D) theta/thetab = mx
+Answer: A
+
+Q67. The heat transfer rate from an infinitely long fin is given by:
+A) Q = sqrt(hPkA).thetab
+B) Q = hP*thetab
+C) Q = kA*thetab/L
+D) Q = hA*thetab
+Answer: A
+
+Q68. For a fin with an adiabatic tip, the temperature distribution is expressed using:
+A) cosh and sinh functions
+B) Only exponential decay
+C) A linear function
+D) A logarithmic function
+Answer: A
+
+Q69. For the thin-fin (1-D fin) assumption to hold, the Biot number across the fin thickness should be:
+A) Much greater than 1
+B) Much less than 1
+C) Equal to 1
+D) Negative
+Answer: B
+
+Q70. Fins are commonly used in:
+A) Air-cooled engine cylinders and electronic heat sinks
+B) Liquids only
+C) Nuclear reactors only
+D) Never in HVAC systems
+Answer: A
+
+Q71. The lumped capacitance method assumes:
+A) Temperature varies significantly within the body
+B) Temperature is uniform throughout the body at any instant
+C) There is no time dependence
+D) Infinite thermal conductivity is required
+Answer: B
+
+Q72. Lumped system analysis is valid when the Biot number is:
+A) Bi > 1
+B) Bi < 0.1
+C) Bi = 1
+D) Bi > 10
+Answer: B
+
+Q73. The Biot number is defined as:
+A) hLc/k
+B) k/(hLc)
+C) hLc/alpha
+D) alpha*t/Lc2
+Answer: A
+
+Q74. The Fourier number is defined as:
+A) alpha*t/Lc2
+B) hLc/k
+C) Lc/alpha
+D) k/(rho*c)
+Answer: A
+
+Q75. The Fourier number physically represents:
+A) The ratio of convective to conductive resistance
+B) A dimensionless time, i.e. ratio of heat conducted to heat stored
+C) The ratio of density to conductivity
+D) The ratio of surface area to volume
+Answer: B
+
+Q76. For a lumped system, the temperature response with time is given by:
+A) (T-Tinf)/(Ti-Tinf) = e^(-hAt/rhoVc)
+B) (T-Tinf)/(Ti-Tinf) = e^(hAt/rhoVc)
+C) (T-Tinf) = constant
+D) (T-Tinf)/(Ti-Tinf) = t
+Answer: A
+
+Q77. The time constant of a lumped system is given by:
+A) rhoVc/(hA)
+B) hA/(rhoVc)
+C) rhoVc.hA
+D) 1/(hA)
+Answer: A
+
+Q78. In lumped analysis, the characteristic length Lc for a sphere is:
+A) V/A = R/3
+B) R
+C) 2R
+D) R/2
+Answer: A
+
+Q79. Which factor increases the time required to reach thermal equilibrium in a lumped system?
+A) Increasing h
+B) Increasing the thermal capacitance rhoVc
+C) Decreasing volume
+D) Decreasing specific heat
+Answer: B
+
+Q80. The semi-infinite solid assumption is valid for:
+A) Short times / regions near the surface, before the disturbance reaches the far boundary
+B) Very long times only
+C) Steady state only
+D) Spheres only
+Answer: A
+
+Q81. The solution for a semi-infinite solid subjected to a sudden surface temperature change involves the:
+A) Error function (erf)
+B) Bessel function
+C) Sine function
+D) Linear function
+Answer: A
+
+Q82. The thermal penetration depth in a semi-infinite solid is proportional to:
+A) sqrt(alpha*t)
+B) alpha*t
+C) alpha/t
+D) t2
+Answer: A
+
+Q83. Heisler charts are used for:
+A) Steady state conduction only
+B) Transient conduction in plane walls, cylinders and spheres when Bi > 0.1
+C) Radiation calculations
+D) Lumped systems only
+Answer: B
+
+Q84. Heisler charts express the center temperature as a function of:
+A) Fourier number and Biot number
+B) Time alone
+C) Reynolds number
+D) Prandtl number
+Answer: A
+
+Q85. For quenching problems where the Biot number is small, the preferred method of analysis is:
+A) Semi-infinite solid solution
+B) Lumped capacitance method
+C) Heisler charts always
+D) Steady state conduction
+Answer: B
+
+Q86. As the Biot number increases beyond 0.1, internal temperature gradients:
+A) Become negligible
+B) Become significant, requiring transient conduction charts
+C) Disappear completely
+D) Are irrelevant
+Answer: B
+
+Q87. The instantaneous surface heat flux for a suddenly heated semi-infinite solid decreases with:
+A) Increasing time
+B) Decreasing time
+C) It remains constant
+D) It increases with time
+Answer: A
+
+Q88. When two semi-infinite solids are suddenly brought into contact, the interface temperature depends on:
+A) The thermal conductivities and diffusivities (effusivities) of both solids
+B) Only the hotter solid's temperature
+C) Only the colder solid's temperature
+D) Neither property
+Answer: A
+
+Q89. A small thermocouple bead can often be analyzed using:
+A) The semi-infinite solid model
+B) The lumped capacitance model (small Biot number)
+C) The fin equation
+D) Steady state conduction only
+Answer: B
+
+Q90. Quenching of a small metal ball in oil (with Bi < 0.1) is best analyzed by:
+A) Lumped capacitance analysis
+B) The steady state plane wall equation
+C) The fin equation
+D) The composite wall equation
+Answer: A
+
+Q91. An 'infinite solid' in heat conduction refers to a body:
+A) Whose boundaries are far enough away that they do not affect the region of interest within the time considered
+B) That has literally infinite mass
+C) That is always at steady state
+D) With zero thermal conductivity
+Answer: A
+
+Q92. For a sudden change in surface temperature of a semi-infinite solid, the temperature at depth x and time t is given by:
+A) theta/thetai = erf(x/(2*sqrt(alpha*t)))
+B) theta/thetai = e^(-x/L)
+C) theta/thetai = x/L
+D) theta/thetai = 1
+Answer: A
+
+Q93. The complementary error function is used in semi-infinite solid solutions because it:
+A) Correctly matches the boundary conditions at the surface and at infinity
+B) Is always zero
+C) Is only used in steady state
+D) Has no physical meaning
+Answer: A
+
+Q94. For a constant surface heat flux suddenly applied to a semi-infinite solid, the surface temperature increases with time approximately as:
+A) sqrt(t)
+B) t
+C) 1/t
+D) It remains constant
+Answer: A
+
+Q95. A thick concrete wall suddenly exposed to fire may initially be analyzed as a:
+A) Semi-infinite solid
+B) Lumped system
+C) Steady-state plane wall
+D) Fin
+Answer: A
+
+Q96. When two semi-infinite solids are brought into perfect contact, the interface temperature lies closer to the initial temperature of the solid with:
+A) Higher thermal effusivity (sqrt(k.rho.c))
+B) Lower thermal conductivity
+C) Higher specific heat only
+D) Lower density only
+Answer: A
+
+Q97. Thermal effusivity is defined as:
+A) sqrt(k.rho.c)
+B) k/(rho.c)
+C) rho.c/k
+D) k.rho.c2
+Answer: A
+
+Q98. The interface temperature formula for two semi-infinite bodies in contact uses the ratio of:
+A) sqrt(k1.rho1.c1) and sqrt(k2.rho2.c2)
+B) k1/k2 only
+C) rho1/rho2 only
+D) c1/c2 only
+Answer: A
+
+Q99. The semi-infinite solid assumption breaks down when:
+A) The thermal penetration depth becomes comparable to the actual body thickness
+B) Time is very short
+C) Surface temperature is constant
+D) It never breaks down
+Answer: A
+
+Q100. Applications of semi-infinite solid theory include:
+A) Quenching of thick slabs, earth's temperature variation, and sudden contact of two bodies at different temperatures
+B) Fin analysis only
+C) Lumped systems only
+D) Steady state composite walls only
+Answer: A

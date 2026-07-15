@@ -1,0 +1,833 @@
+Q1. What is an alphabet in the context of formal language theory?
+A) A finite set of symbols
+B) An infinite set of symbols
+C) A set of strings
+D) A grammar production rule
+Answer: A
+
+Q2. A string is defined as:
+A) A finite sequence of symbols drawn from an alphabet
+B) An infinite set of symbols
+C) A production rule
+D) A set of states
+Answer: A
+
+Q3. The empty string is usually denoted by:
+A) epsilon
+B) The empty set symbol
+C) lambda only, never epsilon
+D) Sigma
+Answer: A
+
+Q4. The empty set is denoted by:
+A) epsilon
+B) The empty set symbol
+C) Sigma
+D) delta
+Answer: B
+
+Q5. A language over an alphabet Sigma is defined as:
+A) Any subset of Sigma*
+B) Any single string over Sigma
+C) The set of all symbols in Sigma
+D) A production rule
+Answer: A
+
+Q6. Sigma* denotes:
+A) The set of all strings of length exactly 1 over Sigma
+B) The set of all possible strings (including epsilon) over Sigma
+C) The set of all strings excluding epsilon
+D) The power set of Sigma
+Answer: B
+
+Q7. Sigma+ denotes:
+A) Sigma* including epsilon
+B) Sigma* excluding epsilon
+C) The complement of Sigma
+D) The Kleene star of epsilon
+Answer: B
+
+Q8. If |Sigma| = 2, the number of distinct strings of length 3 over Sigma is:
+A) 6
+B) 8
+C) 9
+D) 4
+Answer: B
+
+Q9. Concatenation of strings x = "ab" and y = "ba" gives:
+A) "abba"
+B) "baab"
+C) "abab"
+D) "baba"
+Answer: A
+
+Q10. A finite automaton is formally described as a:
+A) 5-tuple
+B) 4-tuple
+C) 3-tuple
+D) 6-tuple
+Answer: A
+
+Q11. Which of the following is NOT a component of a DFA's 5-tuple (Q, Sigma, delta, q0, F)?
+A) A finite set of states Q
+B) A stack alphabet
+C) A transition function delta
+D) A set of final states F
+Answer: B
+
+Q12. In a DFA, the transition function delta maps:
+A) Q x Sigma -> Q
+B) Q x Sigma* -> 2^Q
+C) Q x Sigma -> 2^Q
+D) Q -> Q
+Answer: A
+
+Q13. In an NFA, the transition function delta maps:
+A) Q x Sigma -> Q
+B) Q x Sigma -> 2^Q
+C) Q x Sigma* -> Q
+D) 2^Q x Sigma -> Q
+Answer: B
+
+Q14. NFA stands for:
+A) Non-Finite Automaton
+B) Nondeterministic Finite Automaton
+C) Numbered Finite Automaton
+D) Null Finite Automaton
+Answer: B
+
+Q15. Which statement about a DFA is TRUE?
+A) For every state and every input symbol there is exactly one transition
+B) A DFA may have zero or multiple transitions for a symbol
+C) A DFA always has epsilon transitions
+D) A DFA's final state can never equal its start state
+Answer: A
+
+Q16. In a state transition diagram, states are conventionally represented as:
+A) Rectangles
+B) Circles (nodes)
+C) Triangles
+D) Diamonds
+Answer: B
+
+Q17. In a transition table, the rows typically represent:
+A) Input symbols
+B) States
+C) Final states only
+D) The size of the alphabet
+Answer: B
+
+Q18. The language accepted by a DFA M is the set of all strings that:
+A) Start at q0 and end in any state
+B) Take M from q0 to some state in F
+C) Are of even length
+D) Contain no epsilon transitions
+Answer: B
+
+Q19. Two automata are said to be equivalent if:
+A) They have the same number of states
+B) They accept the same language
+C) They have the same alphabet size
+D) They use the same transition function symbol
+Answer: B
+
+Q20. Every NFA can be converted to an equivalent DFA using:
+A) Pumping Lemma
+B) Subset (powerset) construction
+C) Arden's theorem
+D) Myhill-Nerode theorem directly
+Answer: B
+
+Q21. An NFA with epsilon transitions allows moves:
+A) Only on input symbols
+B) On input symbols and also without consuming any input
+C) Only on epsilon
+D) Only between final states
+Answer: B
+
+Q22. The epsilon-closure of a state q is:
+A) The set of states reachable from q using only epsilon-transitions
+B) The set of all states in the automaton
+C) The set of final states reachable from q
+D) Just q itself, always
+Answer: A
+
+Q23. If a DFA has n states, the equivalent-power NFA obtained conceptually via subset construction in reverse can relate to a DFA with at most:
+A) n states
+B) 2n states
+C) 2^n states
+D) n^2 states
+Answer: C
+
+Q24. Which of these is TRUE regarding the expressive power of DFA and NFA?
+A) NFA is strictly more powerful than DFA
+B) DFA is strictly more powerful than NFA
+C) DFA and NFA are equivalent in expressive power
+D) Neither can represent regular languages
+Answer: C
+
+Q25. Two states p and q in a DFA are indistinguishable if:
+A) For every string w, delta*(p,w) and delta*(q,w) are both final or both non-final
+B) They have the same name
+C) They both have self-loops
+D) They are both start states
+Answer: A
+
+Q26. The process of merging equivalent (indistinguishable) states in a DFA is called:
+A) NFA construction
+B) DFA minimization
+C) Epsilon elimination
+D) Subset construction
+Answer: B
+
+Q27. Two states are distinguishable if there exists some string w such that:
+A) w leads both to final states
+B) w leads one state to a final state and the other to a non-final state
+C) w is the empty string
+D) w has even length
+Answer: B
+
+Q28. In the table-filling minimization algorithm, which pairs are marked distinguishable initially?
+A) Pairs where one state is final and the other is non-final
+B) All pairs
+C) No pairs
+D) Only pairs of start states
+Answer: A
+
+Q29. Which step should be done before minimizing a DFA that has unreachable states?
+A) Add more final states
+B) Remove the unreachable states first
+C) Convert it to an NFA
+D) Add epsilon transitions
+Answer: B
+
+Q30. The minimum-state DFA for a regular language is unique up to:
+A) Renaming (isomorphism) of states
+B) Choice of alphabet
+C) Number of final states
+D) It is never unique
+Answer: A
+
+Q31. Which statement about the language of an epsilon-NFA is TRUE?
+A) It cannot be described by any DFA
+B) It equals the language obtained by treating epsilon-moves as free extensions of the reachable states
+C) Only epsilon-NFAs can accept infinite languages
+D) It can never include the empty string
+Answer: B
+
+Q32. When an automaton conceptually needs multiple start states, this is commonly modeled by:
+A) Rejecting all input
+B) Adding an epsilon-transition from one new start state to each of the original start states
+C) Making all states final
+D) Removing the automaton's alphabet
+Answer: B
+
+Q33. Automata theory primarily studies computing models in relation to:
+A) Hardware circuits only
+B) Formal languages and their generative grammars
+C) Only high-level programming languages
+D) Physical machines
+Answer: B
+
+Q34. In the Chomsky hierarchy, which grammar type corresponds exactly to the languages accepted by finite automata?
+A) Type 0
+B) Type 1
+C) Type 2
+D) Type 3 (regular grammars)
+Answer: D
+
+Q35. A DFA is said to be "complete" if:
+A) It has a transition defined for every state on every input symbol
+B) It has no unreachable states
+C) It has only one final state
+D) All of its states are final
+Answer: A
+
+Q36. A "dead state" (trap state) in a DFA is:
+A) A final state
+B) A non-final state from which no final state can ever be reached
+C) The start state
+D) A state with no incoming edges
+Answer: B
+
+Q37. Two strings x and y are distinguishable with respect to a language L if:
+A) There exists some z such that exactly one of xz, yz belongs to L
+B) x equals y
+C) Both xz and yz are always in L
+D) x and y have the same length
+Answer: A
+
+Q38. The Myhill-Nerode theorem is primarily used to:
+A) Convert an NFA to a DFA
+B) Prove a language is regular and determine the minimum number of DFA states
+C) Eliminate epsilon transitions
+D) Construct grammars from automata
+Answer: B
+
+Q39. If L is regular, the equivalence relation ~L used in the Myhill-Nerode theorem partitions Sigma* into:
+A) Infinitely many classes always
+B) A finite number of classes equal to the number of states in the minimum DFA
+C) Exactly two classes
+D) Classes based only on string length
+Answer: B
+
+Q40. Which of the following best relates automata to grammars?
+A) Automata generate strings while grammars accept strings
+B) Automata accept/recognize strings while grammars generate strings
+C) They are entirely unrelated concepts
+D) Automata is always a subset of a grammar
+Answer: B
+
+Q41. Consider Sigma = {0,1}. How many distinct strings of length 2 exist over Sigma?
+A) 2
+B) 3
+C) 4
+D) 8
+Answer: C
+
+Q42. The length of the empty string epsilon is:
+A) Undefined
+B) 1
+C) 0
+D) -1
+Answer: C
+
+Q43. If x has length m and y has length n, the length of the concatenation xy is:
+A) m - n
+B) m + n
+C) m * n
+D) max(m,n)
+Answer: B
+
+Q44. A DFA has states Q = {q0, q1, q2}, start state q0, and F = {q2}. If delta*(q0, "ab") = q2, the string "ab" is:
+A) Rejected
+B) Accepted
+C) Undefined
+D) Ignored
+Answer: B
+
+Q45. In DFA notation, delta*(q, epsilon) is always defined to equal:
+A) The final state
+B) q itself
+C) The start state
+D) It is undefined
+Answer: B
+
+Q46. The recursive rule delta*(q, wa) = delta(delta*(q,w), a) extends delta from:
+A) Single symbols to strings
+B) Strings to sets of states
+C) States to alphabet symbols
+D) Final states to start states
+Answer: A
+
+Q47. A regular language is one that:
+A) Cannot be described by any automaton
+B) Can be accepted by some DFA (equivalently, some NFA)
+C) Requires a Turing machine to be accepted
+D) Is always infinite in size
+Answer: B
+
+Q48. Which of the following is TRUE about the number of final states a DFA can have?
+A) Exactly one
+B) Zero or more, possibly including all states
+C) Exactly two
+D) It must equal |Q|/2
+Answer: B
+
+Q49. Can a DFA's start state also be one of its final states?
+A) No, never
+B) Yes; then the DFA accepts epsilon among other strings
+C) Only if Q has exactly one state
+D) Only in NFAs, not in DFAs
+Answer: B
+
+Q50. In an NFA, a string w is accepted if:
+A) Every computation path on w ends in a final state
+B) At least one computation path on w ends in a final state
+C) No computation path is defined for w
+D) w is necessarily the empty string
+Answer: B
+
+Q51. In subset construction, the resulting DFA's states are:
+A) Always fewer than the NFA's states
+B) Subsets of the NFA's state set
+C) Always equal in number to the NFA's states
+D) Chosen at random
+Answer: B
+
+Q52. In the subset construction, the start state of the resulting DFA is:
+A) An arbitrary chosen state
+B) The epsilon-closure of the NFA's start state
+C) The empty set
+D) The set of all NFA final states
+Answer: B
+
+Q53. In the subset construction, a resulting DFA state is marked final if:
+A) It is the empty set
+B) It contains at least one NFA final state
+C) It equals the start state
+D) It has no outgoing transitions
+Answer: B
+
+Q54. Which best describes the language of an NFA N, L(N)?
+A) The set of strings rejected on every path
+B) The set of all strings w such that some path from the start state on w ends in an accepting state
+C) Only strings of even length
+D) Always the empty set
+Answer: B
+
+Q55. Two DFAs M1 and M2 both accept the language {strings ending in "1"}. Which statement is TRUE?
+A) M1 and M2 must have identical state names
+B) M1 and M2 are equivalent even if they differ in the number of states
+C) M1 and M2 must have the same number of transitions
+D) M1 and M2 cannot both be minimal
+Answer: B
+
+Q56. Which of these is an example of a language that CANNOT be accepted by any DFA or NFA?
+A) Strings over {0,1} of even length
+B) {a^n b^n : n >= 0}
+C) Strings starting with '0'
+D) Strings containing at least one '1'
+Answer: B
+
+Q57. A "trap" or "dead" state is typically added to a DFA to:
+A) Make the transition function total (defined for every input in every state)
+B) Reduce the number of final states
+C) Convert the DFA into an NFA
+D) Represent epsilon transitions
+Answer: A
+
+Q58. A distinguishing extension of two states p and q is a string z such that:
+A) delta*(p,z) and delta*(q,z) are not both final or both non-final
+B) z is always epsilon
+C) z always leads both states to the start state
+D) z has the maximum possible length
+Answer: A
+
+Q59. If two DFA states are found indistinguishable at every stage of the table-filling algorithm, they can be:
+A) Kept separate always
+B) Merged into a single state in the minimized DFA
+C) Deleted from the automaton entirely
+D) Converted into final states
+Answer: B
+
+Q60. The minimum number of states needed to accept the language Sigma* (all strings over {0,1}) is:
+A) 0
+B) 1
+C) 2
+D) 3
+Answer: B
+
+Q61. In a state transition diagram, an arrow pointing into a state from nowhere (with no source state) typically indicates:
+A) A final state
+B) The start state
+C) A dead state
+D) An unreachable state
+Answer: B
+
+Q62. In diagrams, final (accepting) states are conventionally drawn as:
+A) Double circles
+B) Single circles
+C) Squares
+D) Dashed circles
+Answer: A
+
+Q63. Which of the following correctly lists the 5 components of a DFA?
+A) (Q, Sigma, delta, q0, F)
+B) (Q, Sigma, Gamma, q0, F)
+C) (Q, Sigma, delta, F, Z0)
+D) (V, T, P, S, F)
+Answer: A
+
+Q64. Which symbol conventionally denotes the transition function in automata theory?
+A) delta
+B) lambda
+C) Gamma
+D) psi
+Answer: A
+
+Q65. Which symbol conventionally denotes the input alphabet?
+A) Q
+B) Sigma
+C) F
+D) delta
+Answer: B
+
+Q66. In grammar/automata terms, an automaton is best described as a language:
+A) Generator
+B) Acceptor/recognizer
+C) Translator only
+D) Compiler
+Answer: B
+
+Q67. In contrast to an automaton, a grammar is best described as a language:
+A) Acceptor
+B) Generator
+C) Recognizer
+D) Filter
+Answer: B
+
+Q68. True or False: "Every language accepted by an NFA can also be accepted by some DFA."
+A) True
+B) False
+Answer: A
+
+Q69. True or False: "An NFA with epsilon transitions can accept languages that no DFA can accept."
+A) True
+B) False
+Answer: B
+
+Q70. True or False: "The number of states in a minimal DFA for a language is always unique up to state renaming."
+A) True
+B) False
+Answer: A
+
+Q71. Which of the following is FALSE about finite automata?
+A) They have finite memory (finite states)
+B) They can accept regular languages
+C) They can accept the language {a^n b^n | n >= 0}
+D) They can be represented as directed graphs
+Answer: C
+
+Q72. If two NFAs accept exactly the same language, they are said to be:
+A) Isomorphic
+B) Equivalent
+C) Identical
+D) Disjoint
+Answer: B
+
+Q73. A string not accepted by a DFA is said to be:
+A) Rejected by that DFA
+B) Undefined
+C) Always equal to epsilon
+D) Always accepted by some complement DFA only
+Answer: A
+
+Q74. For a complete DFA M, the set of all strings NOT accepted by M corresponds to:
+A) L(M) itself
+B) The complement of L(M), obtained by swapping final and non-final states
+C) The empty set, always
+D) Sigma*, always
+Answer: B
+
+Q75. In an NFA, if delta(q, a) = empty set for some state q and symbol a, this means:
+A) The automaton crashes
+B) That particular computation path simply dies (no valid next state)
+C) q automatically becomes a final state
+D) a is removed from Sigma
+Answer: B
+
+Q76. Which notation correctly extends delta (single symbol transitions) to work over entire strings?
+A) delta*
+B) Sigma*
+C) 2^Q
+D) F*
+Answer: A
+
+Q77. A finite automaton (DFA/NFA) is called "finite" primarily because:
+A) It can only process finite-length inputs
+B) It has a finite number of states
+C) It always halts within a fixed number of steps
+D) It has a finite alphabet only
+Answer: B
+
+Q78. Regarding NFA-to-DFA conversion (subset construction), which statement is TRUE?
+A) It always increases the number of states
+B) In the worst case, the number of DFA states can be exponential in the number of NFA states
+C) It never changes the number of states
+D) It only applies to DFAs, not NFAs
+Answer: B
+
+Q79. If L(p) denotes the language accepted when treating state p as the start state, and L(p) = L(q) for states p and q, then p and q are:
+A) Distinguishable
+B) Indistinguishable (equivalent)
+C) Different automata entirely
+D) Not comparable
+Answer: B
+
+Q80. A grammar G and an automaton M are said to be "equivalent" if:
+A) They have the same number of production rules and states
+B) L(G) = L(M)
+C) G has no automaton representation
+D) M has no grammar representation
+Answer: B
+
+Q81. If Sigma = {a, b}, the string "aab" has length:
+A) 2
+B) 3
+C) 4
+D) 1
+Answer: B
+
+Q82. The reverse of the string "abc" is:
+A) "abc"
+B) "cba"
+C) "bca"
+D) "cab"
+Answer: B
+
+Q83. Concatenating a string x with epsilon gives:
+A) epsilon
+B) x
+C) x reversed
+D) It is undefined
+Answer: B
+
+Q84. If |Sigma| = 3, the number of distinct strings of length 2 over Sigma is:
+A) 6
+B) 9
+C) 3
+D) 12
+Answer: B
+
+Q85. A substring of a string w is:
+A) Any string obtained by deleting a prefix and/or a suffix of w
+B) Always equal to w
+C) Always the empty string
+D) A string strictly longer than w
+Answer: A
+
+Q86. A prefix of a string w is:
+A) Any string obtained by removing zero or more symbols from the end of w
+B) Any permutation of the symbols of w
+C) The reverse of w
+D) A string strictly longer than w
+Answer: A
+
+Q87. Which of the following defines a DFA's acceptance condition for a string w?
+A) delta*(q0, w) is in F
+B) delta*(q0, w) = q0
+C) w contains no final states
+D) w has length 0
+Answer: A
+
+Q88. For a DFA with states {q0,q1} and F = {q1}, if delta*(q0, "101") = q0, then "101" is:
+A) Accepted
+B) Rejected
+C) Undefined
+D) Ambiguous
+Answer: B
+
+Q89. For an NFA where delta(q0,'a') = {q0,q1}, delta(q1,'b') = {q2}, and F = {q2}, does the NFA accept the string "ab"?
+A) Yes
+B) No
+C) Cannot be determined
+D) Only if q0 is final
+Answer: A
+
+Q90. For the same NFA (delta(q0,'a')={q0,q1}, delta(q1,'b')={q2}, F={q2}), does it accept the string "a" alone?
+A) Yes
+B) No
+C) Only if epsilon is in L
+D) It is undefined
+Answer: B
+
+Q91. Which of the following correctly describes the extended transition function delta*?
+A) It maps a state and a string to a state (DFA) or a set of states (NFA)
+B) It only ever works for single symbols
+C) It fully replaces delta, which is no longer needed
+D) It is defined only on final states
+Answer: A
+
+Q92. DFAs are often preferred over NFAs in practical implementations (e.g., lexical analyzers) mainly because:
+A) DFAs can express strictly more languages than NFAs
+B) DFA simulation requires tracking only one active state at a time, making it simpler and faster
+C) DFAs can have infinitely many states
+D) DFAs cannot be minimized
+Answer: B
+
+Q93. Regarding the subset construction's potential state explosion, which is accurate?
+A) DFA states always grow linearly with NFA states
+B) DFA states can grow exponentially (up to 2^n), though often far fewer are reachable in practice
+C) DFA states are always exactly equal in number to NFA states
+D) State explosion never actually occurs
+Answer: B
+
+Q94. Once a DFA enters a "sink"/"trap" state, this means:
+A) The automaton can still reach a final state later
+B) The automaton can never reach a final state for the rest of the input
+C) The input is immediately accepted
+D) The automaton restarts from q0
+Answer: B
+
+Q95. If a DFA has a state that is unreachable from q0 on any input, removing that state:
+A) Changes the language accepted by the DFA
+B) Does not change the language accepted by the DFA
+C) Makes the automaton nondeterministic
+D) Is not permitted under any circumstances
+Answer: B
+
+Q96. Which statement about equivalent and minimal DFAs is TRUE?
+A) Only one DFA can ever exist for a given regular language
+B) Many DFAs with differing numbers of states can accept the same language, but only one (up to isomorphism) is minimal
+C) Minimal DFAs are always NFAs
+D) A minimal DFA and its equivalent NFA always have the same number of states
+Answer: B
+
+Q97. The relation "p == q" (state p equivalent to state q), used in DFA minimization, must satisfy which property to be a valid equivalence relation?
+A) Reflexive, symmetric, and transitive
+B) Only symmetric
+C) Only transitive
+D) Only reflexive
+Answer: A
+
+Q98. In the table-filling algorithm for DFA minimization, the algorithm terminates when:
+A) All pairs of states are marked distinguishable
+B) No new pair of states gets marked distinguishable during an iteration
+C) Exactly one pair of states remains unmarked
+D) The DFA becomes an NFA
+Answer: B
+
+Q99. Which of the following is generally the first step before minimizing a DFA?
+A) Add new final states
+B) Eliminate unreachable states
+C) Convert the DFA into a grammar
+D) Add epsilon transitions
+Answer: B
+
+Q100. Which of the following languages CAN be accepted by some finite automaton?
+A) {a^n b^n | n >= 0}
+B) {ww | w is in {a,b}*}
+C) Strings over {0,1} containing an even number of 0's
+D) The set of all palindromes over {a,b}
+Answer: C
+
+Q101. Which of the following is the correct meaning of Sigma in automata theory?
+A) A finite non-empty set of symbols called the alphabet
+B) The set of all strings over an alphabet
+C) The set of states of an automaton
+D) The transition function
+Answer: A
+
+Q102. Which statement about Sigma* is TRUE when Sigma = empty set (an empty alphabet)?
+A) Sigma* = empty set
+B) Sigma* = {epsilon}
+C) Sigma* is undefined in this case
+D) Sigma* is always infinite regardless of Sigma
+Answer: B
+
+Q103. A "formal language" is best defined as:
+A) A subset of Sigma* for some alphabet Sigma
+B) Any arbitrary collection of symbols
+C) A single very long string
+D) A set of automaton states
+Answer: A
+
+Q104. Which of these accurately describes deterministic computation in a DFA?
+A) At each step, there may be multiple possible next states
+B) At each step, there is exactly one next state for a given input symbol
+C) At each step, the DFA halts immediately
+D) At each step, epsilon moves are used
+Answer: B
+
+Q105. Which statement is TRUE regarding an NFA's computation on an input string?
+A) It can be viewed as the automaton "guessing" the correct path among several available choices
+B) It must always fail if more than one path exists
+C) It automatically converts into a grammar
+D) It cannot have more than one final state
+Answer: A
+
+Q106. Formally, delta: Q x Sigma -> 2^Q for an NFA means the result of a transition is:
+A) Always a single state
+B) A subset of Q, possibly empty
+C) Always a string
+D) Always a symbol from Sigma
+Answer: B
+
+Q107. Why does 2^Q appear in the range of an NFA's transition function?
+A) Because an NFA transition can lead to zero, one, or many next states simultaneously
+B) Because Q must always be squared in size
+C) Because epsilon must always be included
+D) Because Q is always infinite
+Answer: A
+
+Q108. Suppose DFA states p and q are merged during minimization because they are equivalent. After merging, the resulting automaton:
+A) Accepts a different (larger) language
+B) Accepts exactly the same language as before
+C) Becomes nondeterministic
+D) Loses all of its final states
+Answer: B
+
+Q109. A DFA accepting a finite (non-empty, proper) language must generally have:
+A) Infinitely many states
+B) At least one non-final trap state, plus additional states for distinguishable prefixes
+C) Exactly two states, always
+D) No final states at all
+Answer: B
+
+Q110. Which of the following is TRUE about the relationship between regular grammars and finite automata?
+A) They are entirely unrelated formalisms
+B) Every regular grammar has an equivalent finite automaton, and vice versa
+C) Regular grammars generate strictly more languages than finite automata can accept
+D) Finite automata accept strictly more languages than regular grammars can generate
+Answer: B
+
+Q111. Which of the following correctly completes: "A DFA can be viewed as a special case of an NFA where..."
+A) Every transition leads to exactly one state and there are no epsilon-moves
+B) Every state is a final state
+C) There is no start state defined
+D) It uses an auxiliary stack
+Answer: A
+
+Q112. In automata theory, "acceptance by final state" means a string w is accepted if:
+A) After processing w from q0, the automaton ends in some state belonging to F
+B) w always has even length
+C) w is always epsilon
+D) The automaton has no remaining transitions
+Answer: A
+
+Q113. Which statement is TRUE regarding the number of states in an NFA versus its equivalent minimal DFA?
+A) The minimal DFA always has fewer states than the NFA
+B) The minimal DFA can have exponentially more states than the NFA in the worst case
+C) They always have exactly the same number of states
+D) The NFA always has more states than any equivalent DFA
+Answer: B
+
+Q114. Which of these correctly describes the "language of a state" q (used in distinguishability/minimization arguments)?
+A) The set of strings that take q to some final state
+B) Only the empty string epsilon
+C) The set of all states reachable from q
+D) The alphabet Sigma itself
+Answer: A
+
+Q115. If for all strings w, delta*(p, w) is in F if and only if delta*(q, w) is in F, then states p and q are:
+A) Distinguishable
+B) Equivalent (indistinguishable)
+C) Not comparable
+D) Necessarily both final states
+Answer: B
+
+Q116. The primary purpose of DFA minimization is to:
+A) Increase the number of states for clarity
+B) Find an equivalent DFA with the fewest possible states
+C) Convert a DFA into an NFA
+D) Add epsilon transitions to the automaton
+Answer: B
+
+Q117. Which of the following about epsilon-transitions in automata is TRUE?
+A) They consume exactly one input symbol
+B) They allow a state change without consuming any input symbol
+C) They are mandatory in every automaton
+D) They make the accepted language non-regular
+Answer: B
+
+Q118. If the epsilon-closure of an epsilon-NFA's start state already includes a final state, then:
+A) The automaton accepts the empty string epsilon
+B) The automaton rejects every possible input
+C) It is not a valid automaton
+D) It must first be converted to a DFA before it can accept anything
+Answer: A
+
+Q119. Which of the following best summarizes Unit 1 (Finite Automata) as a whole?
+A) It covers only Turing machines and decidability
+B) It introduces alphabets, strings, languages, DFA, NFA, their equivalence, and minimization
+C) It focuses solely on context-free grammars
+D) It covers only pushdown automata and stacks
+Answer: B
+
+Q120. Which of the following statements correctly distinguishes a DFA from an NFA?
+A) A DFA has exactly one transition per (state, symbol) pair and no epsilon-moves; an NFA may have zero, one, or many, and may allow epsilon-moves
+B) An NFA always has fewer states than a DFA
+C) A DFA always accepts more languages than an NFA
+D) There is no real distinction; the terms are interchangeable in every respect
+Answer: A

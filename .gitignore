@@ -1,0 +1,16 @@
+# Secrets
+.streamlit/secrets.toml
+
+# Plaintext student credentials — never commit these
+data/credentials.json
+credentials_output/
+
+# Local fallback results (contains student answers/scores)
+local_results/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Server logs (may contain reg_no/subject debug lines)
+*.log

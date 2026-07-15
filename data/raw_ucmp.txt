@@ -1,0 +1,699 @@
+Q1. Non-traditional machining processes are used when:
+A) Conventional machining is easy
+B) Material is too hard/brittle or geometry too complex for conventional methods
+C) Cost needs to be minimized always
+D) MRR needs to be very high always
+Answer: B
+
+Q2. Non-traditional machining processes are also known as:
+A) Conventional machining
+B) Modern / advanced machining processes
+C) Casting processes
+D) Forming processes
+Answer: B
+
+Q3. In conventional machining, material removal occurs mainly by:
+A) Chemical dissolution
+B) Shear deformation (chip formation) using a harder tool
+C) Electron bombardment
+D) Thermal ablation only
+Answer: B
+
+Q4. Non-traditional machining processes are broadly classified based on:
+A) Cost of machine only
+B) Type of energy used for material removal
+C) Color of material
+D) Weight of workpiece
+Answer: B
+
+Q5. Based on the type of energy employed, NTM processes are classified into:
+A) Mechanical, thermal, electrical, chemical energy based processes
+B) Only mechanical and thermal
+C) Only electrical
+D) Only chemical
+Answer: A
+
+Q6. Which of the following is a mechanical energy based NTM process?
+A) EDM
+B) USM
+C) LBM
+D) ECM
+Answer: B
+
+Q7. Which of the following is a thermal energy based NTM process?
+A) AJM
+B) AWJM
+C) EDM
+D) USM
+Answer: C
+
+Q8. Which of the following is a chemical energy based NTM process?
+A) Chemical Machining (CHM)
+B) USM
+C) EDM
+D) EBM
+Answer: A
+
+Q9. Which of the following is an electrochemical energy based NTM process?
+A) ECM (Electrochemical Machining)
+B) AJM
+C) USM
+D) PAM
+Answer: A
+
+Q10. NTM processes are generally preferred for machining:
+A) Soft and ductile materials only
+B) Hard, brittle, exotic materials and complex shapes
+C) Only wood
+D) Only plastics
+Answer: B
+
+Q11. A major advantage of non-traditional machining is:
+A) Higher tool wear always
+B) Ability to machine any hardness of material and produce complex/intricate shapes
+C) Requires simpler equipment always
+D) Lower cost always
+Answer: B
+
+Q12. A general limitation of non-traditional machining processes is:
+A) Higher MRR than conventional machining always
+B) Generally lower MRR and higher equipment/operating cost
+C) No skilled operator required
+D) None of these
+Answer: B
+
+Q13. In NTM processes, tool wear is generally:
+A) Always higher than conventional machining
+B) Absent or of a different nature compared to conventional cutting tool wear
+C) Not a consideration at all
+D) Only present in AWJM
+Answer: B
+
+Q14. Non-traditional machining processes came into prominence mainly due to development of:
+A) The wood industry
+B) Aerospace, nuclear and electronics industries needing difficult-to-machine materials/complex shapes
+C) The textile industry
+D) The construction industry
+Answer: B
+
+Q15. Which material typically requires NTM due to difficulty in conventional machining?
+A) Mild steel
+B) Titanium alloys, superalloys, and ceramics
+C) Aluminum
+D) Wood
+Answer: B
+
+Q16. In NTM processes, 'process parameters' refers to:
+A) Only the cost of the machine
+B) Variables (pressure, voltage, feed rate, etc.) controlling MRR, accuracy and finish
+C) The operator's name
+D) The color of the workpiece
+Answer: B
+
+Q17. Material Removal Rate (MRR) indicates:
+A) Volume/mass of material removed per unit time
+B) Surface roughness
+C) Tool life only
+D) Machine cost
+Answer: A
+
+Q18. Selection of a suitable NTM process depends on:
+A) Only the cost of the machine
+B) Workpiece material, shape complexity, required accuracy/finish and MRR
+C) Only the color of workpiece
+D) Random selection
+Answer: B
+
+Q19. Compared to conventional machining, non-traditional machining generally involves:
+A) Direct mechanical contact and chip formation only
+B) No conventional chip formation (erosion, dissolution, vaporization, etc.)
+C) Only casting
+D) Only forging
+Answer: B
+
+Q20. Hybrid machining processes combine:
+A) Two or more traditional processes only
+B) Two or more machining processes (conventional and/or non-conventional) to enhance performance
+C) Only chemical processes
+D) None of these
+Answer: B
+
+Q21. A primary reason for the need for NTM processes is:
+A) Increasing demand for complex 3D shapes and micro-features difficult with conventional tools
+B) Decreasing industrial demand
+C) Increasing tool wear intentionally
+D) Decreasing accuracy requirements
+Answer: A
+
+Q22. Classifying NTM processes by source of energy helps in:
+A) Understanding the material removal mechanism of each process
+B) Selling the machines
+C) Reducing cost
+D) None of these
+Answer: A
+
+Q23. Non-traditional processes are more suitable than conventional processes for:
+A) Mass production of simple shapes in soft materials
+B) Precision machining of hard/brittle materials and intricate geometries
+C) Wood carving
+D) Sand casting
+Answer: B
+
+Q24. A key limitation shared by most NTM processes is:
+A) Very low capital and operating cost
+B) Relatively low MRR and high initial investment
+C) Applicability only to soft metals
+D) Inability to machine any hard material
+Answer: B
+
+Q25. Applications of non-traditional machining processes include:
+A) Aerospace components, medical implants, micro-electronics and die/mold making
+B) Only kitchen utensils
+C) Only wooden furniture
+D) Only bricks
+Answer: A
+
+Q26. In Abrasive Jet Machining, material removal occurs due to:
+A) Melting of the workpiece
+B) Erosion caused by high-velocity abrasive particles impacting the workpiece
+C) Chemical dissolution
+D) Electric spark erosion
+Answer: B
+
+Q27. The carrier gas used in AJM is typically:
+A) Oxygen only
+B) Air, nitrogen, or carbon dioxide
+C) Hydrogen
+D) Chlorine
+Answer: B
+
+Q28. Commonly used abrasive materials in AJM include:
+A) Aluminum oxide and silicon carbide
+B) Sand only
+C) Diamond dust only
+D) Salt
+Answer: A
+
+Q29. Typical abrasive grain size used in AJM ranges around:
+A) 10-50 microns
+B) 1-2 mm
+C) 5-10 cm
+D) 1 meter
+Answer: A
+
+Q30. The nozzle in AJM is usually made of:
+A) Rubber
+B) Tungsten carbide or sapphire (wear-resistant material)
+C) Plastic
+D) Wood
+Answer: B
+
+Q31. Typical standoff distance (nozzle tip to workpiece) in AJM is around:
+A) 0.25 to 15 mm
+B) 1 to 2 meters
+C) 10 to 20 meters
+D) No standoff needed
+Answer: A
+
+Q32. AJM is best suited for machining:
+A) Soft ductile metals like aluminum in bulk
+B) Hard and brittle materials like glass, ceramics, and semiconductors
+C) Rubber only
+D) Wood only
+Answer: B
+
+Q33. In AJM, material removal rate mainly depends on:
+A) Gas pressure, abrasive flow rate, nozzle diameter, standoff distance, grain size
+B) Only the color of the abrasive
+C) Only the operator's skill
+D) The cost of the machine
+Answer: A
+
+Q34. Increasing the standoff distance beyond the optimum value in AJM generally:
+A) Increases MRR indefinitely
+B) Decreases MRR and increases the machining spot size, reducing accuracy
+C) Has no effect
+D) Improves accuracy
+Answer: B
+
+Q35. AJM is commonly used for:
+A) Cutting thick steel plates
+B) Cleaning, deburring, cutting thin sections, drilling fine holes in brittle materials, frosting glass
+C) Turning shafts
+D) Milling gears
+Answer: B
+
+Q36. One major limitation of AJM is:
+A) High material removal rate
+B) Low MRR and possible stray cutting (poor accuracy for sharp corners)
+C) It can only cut metals
+D) No abrasive wear on nozzle
+Answer: B
+
+Q37. In AJM, the abrasive particles are propelled by:
+A) Electromagnetic force
+B) A carrier gas at high pressure/velocity
+C) Gravity alone
+D) Hydraulic pressure of oil
+Answer: B
+
+Q38. Typical gas pressure used in AJM ranges about:
+A) 2 to 10 bar (kg/cm2)
+B) 100 to 200 bar
+C) 0.001 bar
+D) 1000 bar
+Answer: A
+
+Q39. AJM is generally NOT suitable for machining:
+A) Glass
+B) Soft, ductile metals (abrasive embedding and low MRR)
+C) Ceramics
+D) Semiconductor wafers
+Answer: B
+
+Q40. The mixing ratio in AJM refers to:
+A) Ratio of abrasive to carrier gas flow rate
+B) Ratio of nozzle diameter to standoff distance
+C) Ratio of workpiece hardness to tool hardness
+D) None of these
+Answer: A
+
+Q41. Nozzle wear in AJM is caused by:
+A) Chemical corrosion
+B) Continuous impact/abrasion by abrasive particles passing through it
+C) Electrical erosion
+D) Thermal softening only
+Answer: B
+
+Q42. Advantages of AJM include:
+A) Ability to machine brittle, heat-sensitive materials without much heat, producing intricate shapes
+B) Highest MRR among all NTM processes
+C) No nozzle wear
+D) No need for abrasive
+Answer: A
+
+Q43. In AJM, an increase in abrasive flow rate up to an optimum value:
+A) Always decreases MRR
+B) Increases MRR up to an optimum point, beyond which it may decrease
+C) Has no effect on MRR
+D) Only affects surface finish, not MRR
+Answer: B
+
+Q44. AJM is often used in the electronics industry for:
+A) Cutting thick metal plates
+B) Trimming/cutting thin silicon wafers and semiconductor materials
+C) Casting components
+D) Forging parts
+Answer: B
+
+Q45. The velocity of abrasive particles in AJM is typically in the range of:
+A) 150-300 m/s
+B) 1-2 m/s
+C) 5000 m/s
+D) 0.01 m/s
+Answer: A
+
+Q46. In AJM, a smaller nozzle diameter generally results in:
+A) A wider machining area with lower accuracy
+B) A finer, more concentrated jet giving better accuracy for fine work
+C) No abrasive flow
+D) Increased nozzle life
+Answer: B
+
+Q47. Surface finish obtained by AJM is generally:
+A) Very poor and unusable
+B) Reasonably good, suitable for fine finishing/frosting
+C) Same as rough sand casting
+D) Not measurable
+Answer: B
+
+Q48. AJM cannot be effectively used for very deep cuts because:
+A) The abrasive jet diverges and MRR drops with depth, introducing taper
+B) The gas becomes very expensive
+C) The nozzle cannot handle gas
+D) None of these
+Answer: A
+
+Q49. In AJM, the nozzle tip typically has an orifice of:
+A) 0.1 to 1 mm diameter
+B) 10 to 20 cm diameter
+C) 1 to 2 m diameter
+D) No fixed size
+Answer: A
+
+Q50. Abrasive Jet Machining removes material predominantly through:
+A) A micro-chipping/erosion mechanism due to particle impact
+B) Melting and vaporization
+C) Ionic dissolution
+D) Spark discharge
+Answer: A
+
+Q51. In Abrasive Water Jet Machining, the carrier medium for abrasive particles is:
+A) Compressed air
+B) High-pressure water jet
+C) Oil
+D) Steam
+Answer: B
+
+Q52. Typical water pressure used in AWJM ranges around:
+A) 10-50 bar
+B) 200 to 400 MPa (2000-4000 bar)
+C) 1 bar
+D) 1 MPa
+Answer: B
+
+Q53. The abrasive commonly used in AWJM is:
+A) Garnet or aluminum oxide
+B) Table salt
+C) Sugar
+D) Flour
+Answer: A
+
+Q54. In AWJM, abrasive particles are usually introduced into the water jet:
+A) Before the water reaches the pump
+B) Downstream of the nozzle in a mixing chamber, entrained by the high-velocity jet
+C) Never mixed with water
+D) Only after machining is completed
+Answer: B
+
+Q55. AWJM can be used to cut:
+A) Only paper
+B) A wide range of materials including metals, composites, ceramics, glass, and stone
+C) Only wood
+D) Only rubber
+Answer: B
+
+Q56. Compared to AJM, AWJM generally provides:
+A) Lower MRR and thinner cuts
+B) Higher MRR and can cut thicker sections with less thermal damage
+C) No cutting capability
+D) Only surface finishing, no cutting
+Answer: B
+
+Q57. A major advantage of AWJM is:
+A) It produces a significant heat-affected zone (HAZ)
+B) It produces little to no HAZ (cold cutting process)
+C) It can only cut soft plastics
+D) It cannot cut metals
+Answer: B
+
+Q58. The high-pressure pump used in AWJM is typically:
+A) A centrifugal pump
+B) An intensifier or direct-drive high-pressure pump
+C) A gear pump
+D) A vane pump
+Answer: B
+
+Q59. In AWJM, standoff distance and traverse speed affect:
+A) Only machine cost
+B) Cutting quality, kerf width, and taper of the cut
+C) Nothing significant
+D) Only the color of the finish
+Answer: B
+
+Q60. The mixing/focusing tube in AWJM is generally made of:
+A) Rubber
+B) Tungsten carbide or composite carbide (wear resistant)
+C) Wood
+D) Plain steel
+Answer: B
+
+Q61. AWJM is widely used in industries such as:
+A) Aerospace, automotive, and stone/tile cutting
+B) Only bakery industry
+C) Only textile weaving
+D) Only paper industry
+Answer: A
+
+Q62. One limitation of AWJM is:
+A) Very high noise and no water usage
+B) High capital cost, water disposal issues, and possible tapering of cut edges
+C) Inability to ever cut thick materials
+D) No abrasive wear on components
+Answer: B
+
+Q63. In AWJM, the abrasive flow rate affects:
+A) Machine color
+B) Material removal rate and surface finish
+C) Water pump life only
+D) Nothing
+Answer: B
+
+Q64. Increasing traverse speed in AWJM beyond the optimum generally leads to:
+A) Improved cut quality
+B) Incomplete cutting, increased taper, and rougher surface finish
+C) No effect
+D) Reduced water pressure
+Answer: B
+
+Q65. AWJM is particularly favored for cutting materials that are:
+A) Heat sensitive and prone to thermal distortion/cracking with conventional or thermal methods
+B) Extremely soft rubber only
+C) Only liquids
+D) Gaseous substances
+Answer: A
+
+Q66. The nozzle (water) orifice in AWJM is typically made of:
+A) Sapphire, ruby, or diamond
+B) Rubber
+C) Plastic
+D) Wood
+Answer: A
+
+Q67. Garnet abrasive is preferred in AWJM because it is:
+A) Very expensive and rare
+B) Cost-effective, hard, and gives good cutting performance
+C) Extremely soft
+D) Water-soluble
+Answer: B
+
+Q68. The kerf produced in AWJM cutting is typically:
+A) Very wide, several centimeters
+B) Narrow, typically around 0.8-1.5 mm depending on parameters
+C) Zero width
+D) Always more than 10 cm
+Answer: B
+
+Q69. AWJM is considered environmentally favorable mainly because:
+A) It uses toxic chemicals
+B) It uses water and natural abrasives with minimal hazardous fumes/heat generation
+C) It produces large amounts of smoke
+D) It requires no water at all
+Answer: B
+
+Q70. A main process parameter affecting AWJM performance is:
+A) Water jet pressure
+B) Color of workpiece
+C) Shape of the operator's hand
+D) Time of day
+Answer: A
+
+Q71. AWJM can cut thick stainless-steel plates primarily due to:
+A) Chemical dissolution
+B) High kinetic energy of abrasive particles carried by the high-pressure water jet causing erosion
+C) Electrical discharge
+D) Melting by heat
+Answer: B
+
+Q72. Compared to laser cutting, AWJM has the advantage of:
+A) Producing a heat-affected zone
+B) Being a cold cutting process with no thermal distortion
+C) Cutting only thin sheets
+D) Requiring a vacuum environment
+Answer: B
+
+Q73. AWJM is generally NOT recommended for:
+A) Cutting thick metal plates
+B) Machining materials that dissolve or degrade rapidly in water
+C) Cutting stone
+D) Cutting composites
+Answer: B
+
+Q74. In AWJM, orifice wear over time leads to:
+A) Improved jet coherence
+B) Reduced jet quality/coherence, requiring orifice replacement
+C) No effect on the process
+D) Automatically increased water pressure
+Answer: B
+
+Q75. AWJM finds application in machining delicate materials like:
+A) Titanium foam and composite laminates without delamination
+B) Only cast iron
+C) Only mild steel plates
+D) Only bricks
+Answer: A
+
+Q76. Ultrasonic Machining uses which form of energy for material removal?
+A) Electrical discharge
+B) Mechanical vibration energy at ultrasonic frequency driving abrasive particles
+C) Chemical dissolution
+D) Laser energy
+Answer: B
+
+Q77. The typical frequency of vibration used in USM is:
+A) 15-30 Hz
+B) 19-25 kHz
+C) 1-2 MHz
+D) 100 Hz
+Answer: B
+
+Q78. In USM, material is removed mainly by:
+A) Melting due to friction
+B) Micro-chipping/erosion by abrasive slurry particles hammered by a vibrating tool
+C) Electrochemical dissolution
+D) Ionization
+Answer: B
+
+Q79. The tool in USM is connected to which component that converts electrical signal to mechanical vibration?
+A) Transducer (piezoelectric or magnetostrictive)
+B) Motor only
+C) Battery
+D) Capacitor bank
+Answer: A
+
+Q80. The horn (concentrator) in USM is used to:
+A) Reduce power consumption only
+B) Amplify the vibration amplitude from the transducer to the tool tip
+C) Cool the tool
+D) Generate abrasive slurry
+Answer: B
+
+Q81. USM is best suited for machining:
+A) Soft ductile metals like aluminum and copper
+B) Hard, brittle, non-conductive materials like glass, ceramics, quartz, and carbides
+C) Rubber
+D) Wood
+Answer: B
+
+Q82. The abrasive slurry used in USM typically consists of abrasive particles suspended in:
+A) Oil only
+B) Water (or another liquid) as a carrier
+C) Air
+D) Mercury
+Answer: B
+
+Q83. Common abrasives used in USM slurry include:
+A) Boron carbide, silicon carbide, aluminum oxide
+B) Sodium chloride
+C) Sugar crystals
+D) Wood dust
+Answer: A
+
+Q84. Typical amplitude of tool vibration in USM ranges around:
+A) 10-50 microns (0.01-0.05 mm)
+B) 10-50 mm
+C) 1-2 meters
+D) No fixed amplitude
+Answer: A
+
+Q85. In USM, the static feed force (tool pressure on workpiece) affects:
+A) Only the color of the tool
+B) Material removal rate and tool wear
+C) Only the power supply frequency
+D) Nothing significant
+Answer: B
+
+Q86. Magnetostrictive transducers used in USM are generally:
+A) Highly efficient with no heat generation
+B) Less efficient than piezoelectric transducers and generate more heat, requiring cooling
+C) Not usable for USM
+D) Used only in AWJM
+Answer: B
+
+Q87. USM is particularly effective for machining:
+A) Through-holes and complex cavity shapes in brittle materials
+B) Only external turning operations
+C) Only large flat surfaces
+D) Only threading operations
+Answer: A
+
+Q88. Tool materials in USM are generally chosen to be:
+A) Softer and tougher than the workpiece to reduce relative tool wear
+B) As brittle as the workpiece
+C) Made of glass
+D) Made of rubber
+Answer: A
+
+Q89. Tool wear in USM occurs due to:
+A) Chemical corrosion only
+B) Continuous abrasive particle impact against the tool tip
+C) Electrical discharge
+D) Thermal melting only
+Answer: B
+
+Q90. In USM, increasing the abrasive grain size generally:
+A) Increases MRR but worsens surface finish
+B) Decreases MRR and always improves surface finish
+C) Has no effect on MRR or finish
+D) Stops the machining process
+Answer: A
+
+Q91. USM is generally not suitable for machining:
+A) Brittle non-metallic materials
+B) Soft and ductile metals (low MRR and poor results)
+C) Glass
+D) Ceramics
+Answer: B
+
+Q92. The main function of the abrasive slurry circulation system in USM is to:
+A) Supply and circulate fresh abrasive slurry to the cutting zone continuously
+B) Cool the transducer only
+C) Generate ultrasonic vibrations
+D) Increase tool hardness
+Answer: A
+
+Q93. Advantages of USM include:
+A) Ability to machine hard, brittle, non-conductive materials with good accuracy and no thermal damage
+B) Extremely high MRR compared to all NTM processes
+C) No tool wear at all
+D) Works only on conductive materials
+Answer: A
+
+Q94. A limitation of USM is:
+A) Excellent for high MRR in metals
+B) Relatively low MRR, especially in ductile/tough materials, and tool wear
+C) Inability to machine brittle materials
+D) Requiring no slurry
+Answer: B
+
+Q95. In USM, the shape of the machined cavity generally corresponds to:
+A) A random shape unrelated to tool geometry
+B) The shape of the tool tip (reverse replica of the tool profile)
+C) Always a circular hole regardless of tool shape
+D) None of these
+Answer: B
+
+Q96. The frequency generator/oscillator in a USM setup is used to:
+A) Cool the workpiece
+B) Generate a high-frequency electrical signal that drives the transducer
+C) Supply abrasive slurry
+D) Clamp the workpiece
+Answer: B
+
+Q97. In USM, the term 'static load' refers to:
+A) The constant downward force applied on the tool during machining
+B) The vibration amplitude
+C) The slurry concentration
+D) The frequency of oscillation
+Answer: A
+
+Q98. USM is often used for machining:
+A) Tungsten carbide dies, ceramic components, and semiconductor wafers
+B) Rubber gaskets
+C) Wood furniture
+D) Paper products
+Answer: A
+
+Q99. Increasing the abrasive concentration in the slurry up to an optimum level in USM:
+A) Always decreases MRR
+B) Generally increases MRR up to an optimum point, then may decrease due to slurry congestion
+C) Has no effect
+D) Increases tool life only
+Answer: B
+
+Q100. Compared to AJM and AWJM, USM is unique because it uses:
+A) A vibrating tool that hammers abrasive particles onto the workpiece rather than propelling them via a gas/water jet
+B) Only chemical dissolution
+C) Only laser beams
+D) Only electric sparks
+Answer: A

@@ -1,0 +1,1208 @@
+{
+  "code": "20MEP11",
+  "title": "Unconventional Machining Process",
+  "quiz_title": "Quiz 1: Introduction & Mechanical Energy Based Processes",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Non-traditional machining processes are used when:",
+      "options": {
+        "A": "Conventional machining is easy",
+        "B": "Material is too hard/brittle or geometry too complex for conventional methods",
+        "C": "Cost needs to be minimized always",
+        "D": "MRR needs to be very high always"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "Non-traditional machining processes are also known as:",
+      "options": {
+        "A": "Conventional machining",
+        "B": "Modern / advanced machining processes",
+        "C": "Casting processes",
+        "D": "Forming processes"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "In conventional machining, material removal occurs mainly by:",
+      "options": {
+        "A": "Chemical dissolution",
+        "B": "Shear deformation (chip formation) using a harder tool",
+        "C": "Electron bombardment",
+        "D": "Thermal ablation only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "Non-traditional machining processes are broadly classified based on:",
+      "options": {
+        "A": "Cost of machine only",
+        "B": "Type of energy used for material removal",
+        "C": "Color of material",
+        "D": "Weight of workpiece"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "Based on the type of energy employed, NTM processes are classified into:",
+      "options": {
+        "A": "Mechanical, thermal, electrical, chemical energy based processes",
+        "B": "Only mechanical and thermal",
+        "C": "Only electrical",
+        "D": "Only chemical"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a mechanical energy based NTM process?",
+      "options": {
+        "A": "EDM",
+        "B": "USM",
+        "C": "LBM",
+        "D": "ECM"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is a thermal energy based NTM process?",
+      "options": {
+        "A": "AJM",
+        "B": "AWJM",
+        "C": "EDM",
+        "D": "USM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a chemical energy based NTM process?",
+      "options": {
+        "A": "Chemical Machining (CHM)",
+        "B": "USM",
+        "C": "EDM",
+        "D": "EBM"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is an electrochemical energy based NTM process?",
+      "options": {
+        "A": "ECM (Electrochemical Machining)",
+        "B": "AJM",
+        "C": "USM",
+        "D": "PAM"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "NTM processes are generally preferred for machining:",
+      "options": {
+        "A": "Soft and ductile materials only",
+        "B": "Hard, brittle, exotic materials and complex shapes",
+        "C": "Only wood",
+        "D": "Only plastics"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "A major advantage of non-traditional machining is:",
+      "options": {
+        "A": "Higher tool wear always",
+        "B": "Ability to machine any hardness of material and produce complex/intricate shapes",
+        "C": "Requires simpler equipment always",
+        "D": "Lower cost always"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "A general limitation of non-traditional machining processes is:",
+      "options": {
+        "A": "Higher MRR than conventional machining always",
+        "B": "Generally lower MRR and higher equipment/operating cost",
+        "C": "No skilled operator required",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "In NTM processes, tool wear is generally:",
+      "options": {
+        "A": "Always higher than conventional machining",
+        "B": "Absent or of a different nature compared to conventional cutting tool wear",
+        "C": "Not a consideration at all",
+        "D": "Only present in AWJM"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "Non-traditional machining processes came into prominence mainly due to development of:",
+      "options": {
+        "A": "The wood industry",
+        "B": "Aerospace, nuclear and electronics industries needing difficult-to-machine materials/complex shapes",
+        "C": "The textile industry",
+        "D": "The construction industry"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "Which material typically requires NTM due to difficulty in conventional machining?",
+      "options": {
+        "A": "Mild steel",
+        "B": "Titanium alloys, superalloys, and ceramics",
+        "C": "Aluminum",
+        "D": "Wood"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "In NTM processes, 'process parameters' refers to:",
+      "options": {
+        "A": "Only the cost of the machine",
+        "B": "Variables (pressure, voltage, feed rate, etc.) controlling MRR, accuracy and finish",
+        "C": "The operator's name",
+        "D": "The color of the workpiece"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "Material Removal Rate (MRR) indicates:",
+      "options": {
+        "A": "Volume/mass of material removed per unit time",
+        "B": "Surface roughness",
+        "C": "Tool life only",
+        "D": "Machine cost"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "Selection of a suitable NTM process depends on:",
+      "options": {
+        "A": "Only the cost of the machine",
+        "B": "Workpiece material, shape complexity, required accuracy/finish and MRR",
+        "C": "Only the color of workpiece",
+        "D": "Random selection"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "Compared to conventional machining, non-traditional machining generally involves:",
+      "options": {
+        "A": "Direct mechanical contact and chip formation only",
+        "B": "No conventional chip formation (erosion, dissolution, vaporization, etc.)",
+        "C": "Only casting",
+        "D": "Only forging"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "Hybrid machining processes combine:",
+      "options": {
+        "A": "Two or more traditional processes only",
+        "B": "Two or more machining processes (conventional and/or non-conventional) to enhance performance",
+        "C": "Only chemical processes",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "A primary reason for the need for NTM processes is:",
+      "options": {
+        "A": "Increasing demand for complex 3D shapes and micro-features difficult with conventional tools",
+        "B": "Decreasing industrial demand",
+        "C": "Increasing tool wear intentionally",
+        "D": "Decreasing accuracy requirements"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "Classifying NTM processes by source of energy helps in:",
+      "options": {
+        "A": "Understanding the material removal mechanism of each process",
+        "B": "Selling the machines",
+        "C": "Reducing cost",
+        "D": "None of these"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "Non-traditional processes are more suitable than conventional processes for:",
+      "options": {
+        "A": "Mass production of simple shapes in soft materials",
+        "B": "Precision machining of hard/brittle materials and intricate geometries",
+        "C": "Wood carving",
+        "D": "Sand casting"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "A key limitation shared by most NTM processes is:",
+      "options": {
+        "A": "Very low capital and operating cost",
+        "B": "Relatively low MRR and high initial investment",
+        "C": "Applicability only to soft metals",
+        "D": "Inability to machine any hard material"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "Applications of non-traditional machining processes include:",
+      "options": {
+        "A": "Aerospace components, medical implants, micro-electronics and die/mold making",
+        "B": "Only kitchen utensils",
+        "C": "Only wooden furniture",
+        "D": "Only bricks"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "In Abrasive Jet Machining, material removal occurs due to:",
+      "options": {
+        "A": "Melting of the workpiece",
+        "B": "Erosion caused by high-velocity abrasive particles impacting the workpiece",
+        "C": "Chemical dissolution",
+        "D": "Electric spark erosion"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "The carrier gas used in AJM is typically:",
+      "options": {
+        "A": "Oxygen only",
+        "B": "Air, nitrogen, or carbon dioxide",
+        "C": "Hydrogen",
+        "D": "Chlorine"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "Commonly used abrasive materials in AJM include:",
+      "options": {
+        "A": "Aluminum oxide and silicon carbide",
+        "B": "Sand only",
+        "C": "Diamond dust only",
+        "D": "Salt"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "Typical abrasive grain size used in AJM ranges around:",
+      "options": {
+        "A": "10-50 microns",
+        "B": "1-2 mm",
+        "C": "5-10 cm",
+        "D": "1 meter"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "The nozzle in AJM is usually made of:",
+      "options": {
+        "A": "Rubber",
+        "B": "Tungsten carbide or sapphire (wear-resistant material)",
+        "C": "Plastic",
+        "D": "Wood"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "Typical standoff distance (nozzle tip to workpiece) in AJM is around:",
+      "options": {
+        "A": "0.25 to 15 mm",
+        "B": "1 to 2 meters",
+        "C": "10 to 20 meters",
+        "D": "No standoff needed"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "AJM is best suited for machining:",
+      "options": {
+        "A": "Soft ductile metals like aluminum in bulk",
+        "B": "Hard and brittle materials like glass, ceramics, and semiconductors",
+        "C": "Rubber only",
+        "D": "Wood only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "In AJM, material removal rate mainly depends on:",
+      "options": {
+        "A": "Gas pressure, abrasive flow rate, nozzle diameter, standoff distance, grain size",
+        "B": "Only the color of the abrasive",
+        "C": "Only the operator's skill",
+        "D": "The cost of the machine"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "Increasing the standoff distance beyond the optimum value in AJM generally:",
+      "options": {
+        "A": "Increases MRR indefinitely",
+        "B": "Decreases MRR and increases the machining spot size, reducing accuracy",
+        "C": "Has no effect",
+        "D": "Improves accuracy"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "AJM is commonly used for:",
+      "options": {
+        "A": "Cutting thick steel plates",
+        "B": "Cleaning, deburring, cutting thin sections, drilling fine holes in brittle materials, frosting glass",
+        "C": "Turning shafts",
+        "D": "Milling gears"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "One major limitation of AJM is:",
+      "options": {
+        "A": "High material removal rate",
+        "B": "Low MRR and possible stray cutting (poor accuracy for sharp corners)",
+        "C": "It can only cut metals",
+        "D": "No abrasive wear on nozzle"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "In AJM, the abrasive particles are propelled by:",
+      "options": {
+        "A": "Electromagnetic force",
+        "B": "A carrier gas at high pressure/velocity",
+        "C": "Gravity alone",
+        "D": "Hydraulic pressure of oil"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "Typical gas pressure used in AJM ranges about:",
+      "options": {
+        "A": "2 to 10 bar (kg/cm2)",
+        "B": "100 to 200 bar",
+        "C": "0.001 bar",
+        "D": "1000 bar"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "AJM is generally NOT suitable for machining:",
+      "options": {
+        "A": "Glass",
+        "B": "Soft, ductile metals (abrasive embedding and low MRR)",
+        "C": "Ceramics",
+        "D": "Semiconductor wafers"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "The mixing ratio in AJM refers to:",
+      "options": {
+        "A": "Ratio of abrasive to carrier gas flow rate",
+        "B": "Ratio of nozzle diameter to standoff distance",
+        "C": "Ratio of workpiece hardness to tool hardness",
+        "D": "None of these"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "Nozzle wear in AJM is caused by:",
+      "options": {
+        "A": "Chemical corrosion",
+        "B": "Continuous impact/abrasion by abrasive particles passing through it",
+        "C": "Electrical erosion",
+        "D": "Thermal softening only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "Advantages of AJM include:",
+      "options": {
+        "A": "Ability to machine brittle, heat-sensitive materials without much heat, producing intricate shapes",
+        "B": "Highest MRR among all NTM processes",
+        "C": "No nozzle wear",
+        "D": "No need for abrasive"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "In AJM, an increase in abrasive flow rate up to an optimum value:",
+      "options": {
+        "A": "Always decreases MRR",
+        "B": "Increases MRR up to an optimum point, beyond which it may decrease",
+        "C": "Has no effect on MRR",
+        "D": "Only affects surface finish, not MRR"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "AJM is often used in the electronics industry for:",
+      "options": {
+        "A": "Cutting thick metal plates",
+        "B": "Trimming/cutting thin silicon wafers and semiconductor materials",
+        "C": "Casting components",
+        "D": "Forging parts"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "The velocity of abrasive particles in AJM is typically in the range of:",
+      "options": {
+        "A": "150-300 m/s",
+        "B": "1-2 m/s",
+        "C": "5000 m/s",
+        "D": "0.01 m/s"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "In AJM, a smaller nozzle diameter generally results in:",
+      "options": {
+        "A": "A wider machining area with lower accuracy",
+        "B": "A finer, more concentrated jet giving better accuracy for fine work",
+        "C": "No abrasive flow",
+        "D": "Increased nozzle life"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "Surface finish obtained by AJM is generally:",
+      "options": {
+        "A": "Very poor and unusable",
+        "B": "Reasonably good, suitable for fine finishing/frosting",
+        "C": "Same as rough sand casting",
+        "D": "Not measurable"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "AJM cannot be effectively used for very deep cuts because:",
+      "options": {
+        "A": "The abrasive jet diverges and MRR drops with depth, introducing taper",
+        "B": "The gas becomes very expensive",
+        "C": "The nozzle cannot handle gas",
+        "D": "None of these"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "In AJM, the nozzle tip typically has an orifice of:",
+      "options": {
+        "A": "0.1 to 1 mm diameter",
+        "B": "10 to 20 cm diameter",
+        "C": "1 to 2 m diameter",
+        "D": "No fixed size"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "Abrasive Jet Machining removes material predominantly through:",
+      "options": {
+        "A": "A micro-chipping/erosion mechanism due to particle impact",
+        "B": "Melting and vaporization",
+        "C": "Ionic dissolution",
+        "D": "Spark discharge"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "In Abrasive Water Jet Machining, the carrier medium for abrasive particles is:",
+      "options": {
+        "A": "Compressed air",
+        "B": "High-pressure water jet",
+        "C": "Oil",
+        "D": "Steam"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "Typical water pressure used in AWJM ranges around:",
+      "options": {
+        "A": "10-50 bar",
+        "B": "200 to 400 MPa (2000-4000 bar)",
+        "C": "1 bar",
+        "D": "1 MPa"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "The abrasive commonly used in AWJM is:",
+      "options": {
+        "A": "Garnet or aluminum oxide",
+        "B": "Table salt",
+        "C": "Sugar",
+        "D": "Flour"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "In AWJM, abrasive particles are usually introduced into the water jet:",
+      "options": {
+        "A": "Before the water reaches the pump",
+        "B": "Downstream of the nozzle in a mixing chamber, entrained by the high-velocity jet",
+        "C": "Never mixed with water",
+        "D": "Only after machining is completed"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "AWJM can be used to cut:",
+      "options": {
+        "A": "Only paper",
+        "B": "A wide range of materials including metals, composites, ceramics, glass, and stone",
+        "C": "Only wood",
+        "D": "Only rubber"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "Compared to AJM, AWJM generally provides:",
+      "options": {
+        "A": "Lower MRR and thinner cuts",
+        "B": "Higher MRR and can cut thicker sections with less thermal damage",
+        "C": "No cutting capability",
+        "D": "Only surface finishing, no cutting"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "A major advantage of AWJM is:",
+      "options": {
+        "A": "It produces a significant heat-affected zone (HAZ)",
+        "B": "It produces little to no HAZ (cold cutting process)",
+        "C": "It can only cut soft plastics",
+        "D": "It cannot cut metals"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "The high-pressure pump used in AWJM is typically:",
+      "options": {
+        "A": "A centrifugal pump",
+        "B": "An intensifier or direct-drive high-pressure pump",
+        "C": "A gear pump",
+        "D": "A vane pump"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "In AWJM, standoff distance and traverse speed affect:",
+      "options": {
+        "A": "Only machine cost",
+        "B": "Cutting quality, kerf width, and taper of the cut",
+        "C": "Nothing significant",
+        "D": "Only the color of the finish"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "The mixing/focusing tube in AWJM is generally made of:",
+      "options": {
+        "A": "Rubber",
+        "B": "Tungsten carbide or composite carbide (wear resistant)",
+        "C": "Wood",
+        "D": "Plain steel"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 61,
+      "question": "AWJM is widely used in industries such as:",
+      "options": {
+        "A": "Aerospace, automotive, and stone/tile cutting",
+        "B": "Only bakery industry",
+        "C": "Only textile weaving",
+        "D": "Only paper industry"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 62,
+      "question": "One limitation of AWJM is:",
+      "options": {
+        "A": "Very high noise and no water usage",
+        "B": "High capital cost, water disposal issues, and possible tapering of cut edges",
+        "C": "Inability to ever cut thick materials",
+        "D": "No abrasive wear on components"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 63,
+      "question": "In AWJM, the abrasive flow rate affects:",
+      "options": {
+        "A": "Machine color",
+        "B": "Material removal rate and surface finish",
+        "C": "Water pump life only",
+        "D": "Nothing"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 64,
+      "question": "Increasing traverse speed in AWJM beyond the optimum generally leads to:",
+      "options": {
+        "A": "Improved cut quality",
+        "B": "Incomplete cutting, increased taper, and rougher surface finish",
+        "C": "No effect",
+        "D": "Reduced water pressure"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 65,
+      "question": "AWJM is particularly favored for cutting materials that are:",
+      "options": {
+        "A": "Heat sensitive and prone to thermal distortion/cracking with conventional or thermal methods",
+        "B": "Extremely soft rubber only",
+        "C": "Only liquids",
+        "D": "Gaseous substances"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 66,
+      "question": "The nozzle (water) orifice in AWJM is typically made of:",
+      "options": {
+        "A": "Sapphire, ruby, or diamond",
+        "B": "Rubber",
+        "C": "Plastic",
+        "D": "Wood"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 67,
+      "question": "Garnet abrasive is preferred in AWJM because it is:",
+      "options": {
+        "A": "Very expensive and rare",
+        "B": "Cost-effective, hard, and gives good cutting performance",
+        "C": "Extremely soft",
+        "D": "Water-soluble"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 68,
+      "question": "The kerf produced in AWJM cutting is typically:",
+      "options": {
+        "A": "Very wide, several centimeters",
+        "B": "Narrow, typically around 0.8-1.5 mm depending on parameters",
+        "C": "Zero width",
+        "D": "Always more than 10 cm"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 69,
+      "question": "AWJM is considered environmentally favorable mainly because:",
+      "options": {
+        "A": "It uses toxic chemicals",
+        "B": "It uses water and natural abrasives with minimal hazardous fumes/heat generation",
+        "C": "It produces large amounts of smoke",
+        "D": "It requires no water at all"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 70,
+      "question": "A main process parameter affecting AWJM performance is:",
+      "options": {
+        "A": "Water jet pressure",
+        "B": "Color of workpiece",
+        "C": "Shape of the operator's hand",
+        "D": "Time of day"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 71,
+      "question": "AWJM can cut thick stainless-steel plates primarily due to:",
+      "options": {
+        "A": "Chemical dissolution",
+        "B": "High kinetic energy of abrasive particles carried by the high-pressure water jet causing erosion",
+        "C": "Electrical discharge",
+        "D": "Melting by heat"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 72,
+      "question": "Compared to laser cutting, AWJM has the advantage of:",
+      "options": {
+        "A": "Producing a heat-affected zone",
+        "B": "Being a cold cutting process with no thermal distortion",
+        "C": "Cutting only thin sheets",
+        "D": "Requiring a vacuum environment"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 73,
+      "question": "AWJM is generally NOT recommended for:",
+      "options": {
+        "A": "Cutting thick metal plates",
+        "B": "Machining materials that dissolve or degrade rapidly in water",
+        "C": "Cutting stone",
+        "D": "Cutting composites"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 74,
+      "question": "In AWJM, orifice wear over time leads to:",
+      "options": {
+        "A": "Improved jet coherence",
+        "B": "Reduced jet quality/coherence, requiring orifice replacement",
+        "C": "No effect on the process",
+        "D": "Automatically increased water pressure"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 75,
+      "question": "AWJM finds application in machining delicate materials like:",
+      "options": {
+        "A": "Titanium foam and composite laminates without delamination",
+        "B": "Only cast iron",
+        "C": "Only mild steel plates",
+        "D": "Only bricks"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 76,
+      "question": "Ultrasonic Machining uses which form of energy for material removal?",
+      "options": {
+        "A": "Electrical discharge",
+        "B": "Mechanical vibration energy at ultrasonic frequency driving abrasive particles",
+        "C": "Chemical dissolution",
+        "D": "Laser energy"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 77,
+      "question": "The typical frequency of vibration used in USM is:",
+      "options": {
+        "A": "15-30 Hz",
+        "B": "19-25 kHz",
+        "C": "1-2 MHz",
+        "D": "100 Hz"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 78,
+      "question": "In USM, material is removed mainly by:",
+      "options": {
+        "A": "Melting due to friction",
+        "B": "Micro-chipping/erosion by abrasive slurry particles hammered by a vibrating tool",
+        "C": "Electrochemical dissolution",
+        "D": "Ionization"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 79,
+      "question": "The tool in USM is connected to which component that converts electrical signal to mechanical vibration?",
+      "options": {
+        "A": "Transducer (piezoelectric or magnetostrictive)",
+        "B": "Motor only",
+        "C": "Battery",
+        "D": "Capacitor bank"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 80,
+      "question": "The horn (concentrator) in USM is used to:",
+      "options": {
+        "A": "Reduce power consumption only",
+        "B": "Amplify the vibration amplitude from the transducer to the tool tip",
+        "C": "Cool the tool",
+        "D": "Generate abrasive slurry"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 81,
+      "question": "USM is best suited for machining:",
+      "options": {
+        "A": "Soft ductile metals like aluminum and copper",
+        "B": "Hard, brittle, non-conductive materials like glass, ceramics, quartz, and carbides",
+        "C": "Rubber",
+        "D": "Wood"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 82,
+      "question": "The abrasive slurry used in USM typically consists of abrasive particles suspended in:",
+      "options": {
+        "A": "Oil only",
+        "B": "Water (or another liquid) as a carrier",
+        "C": "Air",
+        "D": "Mercury"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 83,
+      "question": "Common abrasives used in USM slurry include:",
+      "options": {
+        "A": "Boron carbide, silicon carbide, aluminum oxide",
+        "B": "Sodium chloride",
+        "C": "Sugar crystals",
+        "D": "Wood dust"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 84,
+      "question": "Typical amplitude of tool vibration in USM ranges around:",
+      "options": {
+        "A": "10-50 microns (0.01-0.05 mm)",
+        "B": "10-50 mm",
+        "C": "1-2 meters",
+        "D": "No fixed amplitude"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 85,
+      "question": "In USM, the static feed force (tool pressure on workpiece) affects:",
+      "options": {
+        "A": "Only the color of the tool",
+        "B": "Material removal rate and tool wear",
+        "C": "Only the power supply frequency",
+        "D": "Nothing significant"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 86,
+      "question": "Magnetostrictive transducers used in USM are generally:",
+      "options": {
+        "A": "Highly efficient with no heat generation",
+        "B": "Less efficient than piezoelectric transducers and generate more heat, requiring cooling",
+        "C": "Not usable for USM",
+        "D": "Used only in AWJM"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 87,
+      "question": "USM is particularly effective for machining:",
+      "options": {
+        "A": "Through-holes and complex cavity shapes in brittle materials",
+        "B": "Only external turning operations",
+        "C": "Only large flat surfaces",
+        "D": "Only threading operations"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 88,
+      "question": "Tool materials in USM are generally chosen to be:",
+      "options": {
+        "A": "Softer and tougher than the workpiece to reduce relative tool wear",
+        "B": "As brittle as the workpiece",
+        "C": "Made of glass",
+        "D": "Made of rubber"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 89,
+      "question": "Tool wear in USM occurs due to:",
+      "options": {
+        "A": "Chemical corrosion only",
+        "B": "Continuous abrasive particle impact against the tool tip",
+        "C": "Electrical discharge",
+        "D": "Thermal melting only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 90,
+      "question": "In USM, increasing the abrasive grain size generally:",
+      "options": {
+        "A": "Increases MRR but worsens surface finish",
+        "B": "Decreases MRR and always improves surface finish",
+        "C": "Has no effect on MRR or finish",
+        "D": "Stops the machining process"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 91,
+      "question": "USM is generally not suitable for machining:",
+      "options": {
+        "A": "Brittle non-metallic materials",
+        "B": "Soft and ductile metals (low MRR and poor results)",
+        "C": "Glass",
+        "D": "Ceramics"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 92,
+      "question": "The main function of the abrasive slurry circulation system in USM is to:",
+      "options": {
+        "A": "Supply and circulate fresh abrasive slurry to the cutting zone continuously",
+        "B": "Cool the transducer only",
+        "C": "Generate ultrasonic vibrations",
+        "D": "Increase tool hardness"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 93,
+      "question": "Advantages of USM include:",
+      "options": {
+        "A": "Ability to machine hard, brittle, non-conductive materials with good accuracy and no thermal damage",
+        "B": "Extremely high MRR compared to all NTM processes",
+        "C": "No tool wear at all",
+        "D": "Works only on conductive materials"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 94,
+      "question": "A limitation of USM is:",
+      "options": {
+        "A": "Excellent for high MRR in metals",
+        "B": "Relatively low MRR, especially in ductile/tough materials, and tool wear",
+        "C": "Inability to machine brittle materials",
+        "D": "Requiring no slurry"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 95,
+      "question": "In USM, the shape of the machined cavity generally corresponds to:",
+      "options": {
+        "A": "A random shape unrelated to tool geometry",
+        "B": "The shape of the tool tip (reverse replica of the tool profile)",
+        "C": "Always a circular hole regardless of tool shape",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 96,
+      "question": "The frequency generator/oscillator in a USM setup is used to:",
+      "options": {
+        "A": "Cool the workpiece",
+        "B": "Generate a high-frequency electrical signal that drives the transducer",
+        "C": "Supply abrasive slurry",
+        "D": "Clamp the workpiece"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 97,
+      "question": "In USM, the term 'static load' refers to:",
+      "options": {
+        "A": "The constant downward force applied on the tool during machining",
+        "B": "The vibration amplitude",
+        "C": "The slurry concentration",
+        "D": "The frequency of oscillation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 98,
+      "question": "USM is often used for machining:",
+      "options": {
+        "A": "Tungsten carbide dies, ceramic components, and semiconductor wafers",
+        "B": "Rubber gaskets",
+        "C": "Wood furniture",
+        "D": "Paper products"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 99,
+      "question": "Increasing the abrasive concentration in the slurry up to an optimum level in USM:",
+      "options": {
+        "A": "Always decreases MRR",
+        "B": "Generally increases MRR up to an optimum point, then may decrease due to slurry congestion",
+        "C": "Has no effect",
+        "D": "Increases tool life only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 100,
+      "question": "Compared to AJM and AWJM, USM is unique because it uses:",
+      "options": {
+        "A": "A vibrating tool that hammers abrasive particles onto the workpiece rather than propelling them via a gas/water jet",
+        "B": "Only chemical dissolution",
+        "C": "Only laser beams",
+        "D": "Only electric sparks"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}
