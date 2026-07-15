@@ -434,6 +434,17 @@ def screen_admin_login():
 def screen_admin_dashboard():
     st.title("\U0001f4ca Faculty Dashboard")
 
+    if storage.is_sheets_configured():
+        st.success("✅ Connected to Google Sheets — logins and results are being read/written there.")
+    else:
+        err = storage.get_last_sheets_error()
+        st.error(
+            "⚠️ Not connected to Google Sheets — running on local fallback storage instead "
+            "(logins/results won't be shared across devices or survive a redeploy)."
+        )
+        if err:
+            st.code(err)
+
     dept_filter = st.selectbox("Department", ["All", "mechanical", "cse"])
     dept_arg = None if dept_filter == "All" else dept_filter
 

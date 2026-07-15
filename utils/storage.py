@@ -32,17 +32,32 @@ RESULT_FIELDS = [
 ]
 
 
+_LAST_SHEETS_ERROR = None
+
+
+def get_last_sheets_error():
+    """Returns the most recent exception message from trying to connect to Google
+    Sheets, or None if the last attempt succeeded / hasn't run yet. Useful for
+    diagnosing why the app fell back to local storage on a deployed server."""
+    return _LAST_SHEETS_ERROR
+
+
 def _load_local_credentials():
     path = os.path.join(DATA_DIR, "credentials.json")
+    if not os.path.exists(path):
+        return {}
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
 def _get_gspread_client():
-    """Returns a gspread client + spreadsheet, or (None, None) if secrets aren't set up."""
+    """Returns a gspread client + spreadsheet, or (None, None) if secrets aren't set up
+    or the connection fails. Records the failure reason in _LAST_SHEETS_ERROR."""
+    global _LAST_SHEETS_ERROR
     try:
         import streamlit as st
         if "gcp_service_account" not in st.secrets:
+            _LAST_SHEETS_ERROR = "No [gcp_service_account] section found in st.secrets"
             return None, None
         import gspread
         from google.oauth2.service_account import Credentials
@@ -57,8 +72,11 @@ def _get_gspread_client():
         client = gspread.authorize(creds)
         sheet_url = st.secrets["google_sheets"]["spreadsheet_url"]
         spreadsheet = client.open_by_url(sheet_url)
+        _LAST_SHEETS_ERROR = None
         return client, spreadsheet
-    except Exception:
+    except Exception as e:
+        _LAST_SHEETS_ERROR = f"{type(e).__name__}: {e}"
+        print(f"[storage] Google Sheets connection failed: {_LAST_SHEETS_ERROR}", flush=True)
         return None, None
 
 
