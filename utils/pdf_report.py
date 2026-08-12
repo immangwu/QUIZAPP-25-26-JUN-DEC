@@ -73,7 +73,7 @@ def generate_faculty_report(records, title="Quiz Results Report"):
                              leftMargin=12 * mm, rightMargin=12 * mm)
     elements = [Paragraph(title, TITLE_STYLE), Spacer(1, 8)]
 
-    header = ["Name", "Reg No", "Dept", "Subject", "Attempt", "Score", "%", "Flagged", "Timestamp"]
+    header = ["Name", "Reg No", "Dept", "Subject", "Quiz", "Attempt", "Score", "%", "Flagged", "Timestamp"]
     data = [header]
     for r in records:
         data.append([
@@ -81,6 +81,7 @@ def generate_faculty_report(records, title="Quiz Results Report"):
             r.get("reg_no", ""),
             r.get("department", ""),
             r.get("subject_code", ""),
+            f"Q{r.get('quiz_no') or 1}",
             str(r.get("attempt_no", "")),
             f"{r.get('score','')}/{r.get('total','')}",
             str(r.get("percentage", "")),
@@ -88,7 +89,7 @@ def generate_faculty_report(records, title="Quiz Results Report"):
             r.get("timestamp", ""),
         ])
 
-    table = Table(data, repeatRows=1, colWidths=[26 * mm, 24 * mm, 14 * mm, 18 * mm, 14 * mm, 16 * mm, 12 * mm, 14 * mm, 28 * mm])
+    table = Table(data, repeatRows=1, colWidths=[24 * mm, 22 * mm, 13 * mm, 17 * mm, 11 * mm, 13 * mm, 15 * mm, 11 * mm, 13 * mm, 26 * mm])
     table.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#1f2937")),
         ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),

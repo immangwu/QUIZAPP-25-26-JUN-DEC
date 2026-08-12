@@ -39,6 +39,7 @@ DEFAULTS = {
     "reg_no": None,
     "name": None,
     "subject_key": None,
+    "quiz_no": None,
     "quiz": None,
     "answers": {},
     "quiz_deadline": None,
@@ -128,25 +129,32 @@ def screen_subject():
     choice = st.radio("Choose your subject:", labels, key="subject_choice")
     chosen = subjects[labels.index(choice)]
 
-    prior = storage.get_attempts(st.session_state.reg_no, chosen["code"])
+    quizzes = quiz_data.get_quizzes(dept, chosen["key"])
+    quiz_labels = [f"Quiz {q['quiz_no']:02d}" for q in quizzes]
+    quiz_choice = st.radio("Choose the quiz:", quiz_labels, key="quiz_choice", horizontal=True)
+    chosen_quiz = quizzes[quiz_labels.index(quiz_choice)]
+    quiz_no = chosen_quiz["quiz_no"]
+
+    prior = storage.get_attempts(st.session_state.reg_no, chosen["code"], quiz_no)
     if prior:
-        st.info(f"You have {len(prior)} previous attempt(s) for this subject. You may attempt again.")
+        st.info(f"You have {len(prior)} previous attempt(s) for this quiz. You may attempt again.")
         with st.expander("View previous attempts"):
             for i, p in enumerate(prior, 1):
                 flag_note = " — ⚠️ flagged (tab-switch)" if str(p.get("flagged")).lower() == "true" else ""
                 st.write(f"Attempt {p.get('attempt_no', i)}: {p.get('score')}/{p.get('total')} "
                          f"({p.get('percentage')}%){flag_note} — {p.get('timestamp')}")
 
-    total_available = len(quiz_data.load_quiz(chosen["key"])["questions"])
+    total_available = len(quiz_data.load_quiz(dept, chosen["key"], quiz_no)["questions"])
     n_questions = min(QUESTIONS_PER_ATTEMPT, total_available)
     st.caption(f"This attempt will present {n_questions} randomly selected questions out of {total_available}.")
 
-    if st.button("Start Quiz 1", type="primary"):
-        quiz = quiz_data.load_quiz(chosen["key"])
+    if st.button(f"Start Quiz {quiz_no:02d}", type="primary"):
+        quiz = quiz_data.load_quiz(dept, chosen["key"], quiz_no)
         pool = quiz["questions"]
         quiz = dict(quiz)
         quiz["questions"] = random.sample(pool, min(QUESTIONS_PER_ATTEMPT, len(pool)))
         st.session_state.subject_key = chosen["key"]
+        st.session_state.quiz_no = quiz_no
         st.session_state.quiz = quiz
         st.session_state.answers = {}
         st.session_state.flagged = False
@@ -184,13 +192,15 @@ def _grade_and_store(auto_flagged, tab_switch_count):
         })
 
     percentage = round((score / total) * 100, 2) if total > 0 else 0.0
+    quiz_no = quiz.get("quiz_no", 1)
 
-    prior = storage.get_attempts(st.session_state.reg_no, quiz["code"])
+    prior = storage.get_attempts(st.session_state.reg_no, quiz["code"], quiz_no)
     attempt_no = len(prior) + 1
 
     record = {
         "department": st.session_state.department,
         "subject_code": quiz["code"],
+        "quiz_no": quiz_no,
         "reg_no": st.session_state.reg_no,
         "name": st.session_state.name,
         "attempt_no": attempt_no,
@@ -212,6 +222,7 @@ def _grade_and_store(auto_flagged, tab_switch_count):
         "tab_switch_count": tab_switch_count,
         "attempt_no": attempt_no,
         "per_question": per_question,
+        "quiz_no": quiz_no,
         "quiz_title": quiz.get("quiz_title", "Quiz 1"),
         "subject_title": quiz.get("title"),
         "subject_code": quiz.get("code"),
@@ -225,9 +236,13 @@ def _reconstruct_result_from_record(record):
     version of the app or later)."""
     subject_code = record.get("subject_code")
     subject_key = quiz_data.get_subject_key_by_code(subject_code)
-    if not subject_key:
+    department = record.get("department") or quiz_data.get_department_by_code(subject_code)
+    quiz_no = int(record.get("quiz_no") or 1)
+    if not subject_key or not department:
         return None
-    quiz = quiz_data.load_quiz(subject_key)
+    quiz = quiz_data.load_quiz(department, subject_key, quiz_no)
+    if not quiz:
+        return None
     by_id = {q["id"]: q for q in quiz["questions"]}
 
     try:
@@ -264,6 +279,7 @@ def _reconstruct_result_from_record(record):
         "tab_switch_count": record.get("tab_switch_count"),
         "attempt_no": record.get("attempt_no"),
         "per_question": per_question,
+        "quiz_no": quiz_no,
         "quiz_title": quiz.get("quiz_title", "Quiz 1"),
         "subject_title": quiz.get("title"),
         "subject_code": quiz.get("code"),
@@ -373,7 +389,7 @@ def screen_result():
     st.download_button(
         "\U0001f4e5 Download my answer script (PDF)",
         data=pdf_bytes,
-        file_name=f"{st.session_state.reg_no}_{res['subject_code']}_attempt{res['attempt_no']}.pdf",
+        file_name=f"{st.session_state.reg_no}_{res['subject_code']}_q{res['quiz_no']}_attempt{res['attempt_no']}.pdf",
         mime="application/pdf",
         use_container_width=True,
     )
@@ -454,7 +470,11 @@ def screen_admin_dashboard():
     subject_filter = st.selectbox("Subject", subj_options)
     subject_arg = None if subject_filter == "All" else subject_filter
 
-    records = storage.get_all_results(department=dept_arg, subject_code=subject_arg)
+    quiz_options = ["All"] + [f"Quiz {n:02d}" for n in range(1, quiz_data.max_quiz_no() + 1)]
+    quiz_filter = st.selectbox("Quiz", quiz_options)
+    quiz_arg = None if quiz_filter == "All" else int(quiz_filter.split()[1])
+
+    records = storage.get_all_results(department=dept_arg, subject_code=subject_arg, quiz_no=quiz_arg)
     st.write(f"**{len(records)}** result record(s) found.")
 
     if records:
@@ -465,7 +485,7 @@ def screen_admin_dashboard():
             csv_lines.append(",".join(f'"{str(r.get(f, "")).replace(chr(34), chr(39))}"' for f in storage.RESULT_FIELDS))
         csv_bytes = "\n".join(csv_lines).encode("utf-8")
 
-        pdf_bytes = generate_faculty_report(records, title=f"Quiz Results — {dept_filter} / {subject_filter}")
+        pdf_bytes = generate_faculty_report(records, title=f"Quiz Results — {dept_filter} / {subject_filter} / {quiz_filter}")
 
         c1, c2 = st.columns(2)
         with c1:
@@ -489,7 +509,8 @@ def screen_admin_dashboard():
 
         def _row_label(r):
             flag = " ⚠️" if str(r.get("flagged")).lower() == "true" else ""
-            return (f"{r.get('reg_no')} — {r.get('name')} — {r.get('subject_code')} "
+            quiz_tag = f"Q{r.get('quiz_no') or 1}"
+            return (f"{r.get('reg_no')} — {r.get('name')} — {r.get('subject_code')} ({quiz_tag}) "
                     f"— Attempt {r.get('attempt_no')} — {r.get('score')}/{r.get('total')}{flag} "
                     f"— {r.get('timestamp')}")
 
@@ -508,7 +529,7 @@ def screen_admin_dashboard():
                 st.download_button(
                     "\U0001f4e5 Download this student's answer script (PDF)",
                     data=pdf_bytes,
-                    file_name=f"{chosen_record.get('reg_no')}_{chosen_record.get('subject_code')}_attempt{chosen_record.get('attempt_no')}.pdf",
+                    file_name=f"{chosen_record.get('reg_no')}_{chosen_record.get('subject_code')}_q{chosen_record.get('quiz_no') or 1}_attempt{chosen_record.get('attempt_no')}.pdf",
                     mime="application/pdf",
                     use_container_width=True,
                     key=f"dl_{chosen_idx}",
@@ -521,7 +542,8 @@ def screen_admin_dashboard():
             if st.button("\U0001f5d1️ Delete this record", use_container_width=True, disabled=not confirm):
                 deleted = storage.delete_result(
                     chosen_record.get("timestamp"), chosen_record.get("reg_no"),
-                    chosen_record.get("subject_code"), chosen_record.get("attempt_no"),
+                    chosen_record.get("subject_code"), chosen_record.get("quiz_no"),
+                    chosen_record.get("attempt_no"),
                 )
                 if deleted:
                     st.success("Record deleted.")

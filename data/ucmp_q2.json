@@ -1,0 +1,728 @@
+{
+  "code": "20MEP11",
+  "title": "Unconventional Machining Process",
+  "quiz_title": "Quiz 2: Thermo-Electric Energy Based Processes",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is the primary reason for the development of unconventional machining (UCM) processes?",
+      "options": {
+        "A": "Machining of soft materials only",
+        "B": "Machining of high-strength, high-hardness and heat-resistant materials, and complex shapes",
+        "C": "Reducing machine cost",
+        "D": "Increasing tool wear"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "Thermo-electric energy based UCM processes include:",
+      "options": {
+        "A": "AJM, WJM",
+        "B": "ECM, ECG",
+        "C": "EDM, WEDM, LBM, PAM, EBM, IBM",
+        "D": "USM, AFM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "Which mechanism of material removal is common to EDM, LBM and EBM?",
+      "options": {
+        "A": "Mechanical erosion",
+        "B": "Melting and vaporization",
+        "C": "Chemical dissolution",
+        "D": "Electrochemical dissolution"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "A component made of tungsten carbide (hard, brittle, electrically conductive) needs a complex 3-D cavity. Which UCM process is most suitable?",
+      "options": {
+        "A": "USM",
+        "B": "ECM",
+        "C": "EDM",
+        "D": "AJM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "Unconventional machining processes are generally preferred over conventional machining when:",
+      "options": {
+        "A": "The material is soft and ductile",
+        "B": "Material hardness/strength is very high or the shape is intricate",
+        "C": "Tolerance requirement is very loose",
+        "D": "Production rate must be maximised at lowest cost"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "In the classification of UCM processes by mechanism of material removal, EDM belongs to which category?",
+      "options": {
+        "A": "Mechanical",
+        "B": "Chemical",
+        "C": "Electrochemical",
+        "D": "Thermal"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "In EDM, material removal takes place due to:",
+      "options": {
+        "A": "Electrochemical dissolution",
+        "B": "Erosion caused by repetitive spark discharges",
+        "C": "Abrasive impact",
+        "D": "Chemical etching"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "The dielectric fluid used in EDM performs all of the following functions EXCEPT:",
+      "options": {
+        "A": "Insulation between electrode and workpiece",
+        "B": "Flushing away debris",
+        "C": "Cooling the electrode and workpiece",
+        "D": "Increasing electrical conductivity between electrode and workpiece"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "In an EDM process, the spark frequency is 4000 sparks/s and the MRR is 800 mm³/min. The average volume of metal removed per spark is approximately:",
+      "options": {
+        "A": "3.33 × 10⁻³ mm³",
+        "B": "1.2 × 10⁻² mm³",
+        "C": "5 × 10⁻⁴ mm³",
+        "D": "8 × 10⁻³ mm³"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "Which of the following materials CANNOT be machined by conventional EDM?",
+      "options": {
+        "A": "Hardened steel",
+        "B": "Titanium alloy",
+        "C": "Non-conductive glass",
+        "D": "Tungsten carbide"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "For achieving a higher metal removal rate (roughing cuts) in EDM, which polarity setting is typically used?",
+      "options": {
+        "A": "Workpiece positive, tool negative (straight polarity)",
+        "B": "Workpiece negative, tool positive (reverse polarity)",
+        "C": "Both polarities give identical MRR",
+        "D": "Polarity has no effect on MRR"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "Tool electrode materials commonly used in EDM include all of the following EXCEPT:",
+      "options": {
+        "A": "Copper",
+        "B": "Graphite",
+        "C": "Brass",
+        "D": "Aluminium oxide (non-conductive ceramic)"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "\"Overcut\" in EDM refers to:",
+      "options": {
+        "A": "The difference between electrode size and machined cavity size due to spark gap",
+        "B": "Excess dielectric fluid used",
+        "C": "Tool wear ratio",
+        "D": "Extra time taken to machine the component"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "If the discharge energy per spark in EDM is 2 × 10⁻³ J and the spark frequency is 10,000 Hz, the average power input is:",
+      "options": {
+        "A": "20 W",
+        "B": "200 W",
+        "C": "2 W",
+        "D": "0.2 W"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "Which of the following is a genuine advantage of EDM?",
+      "options": {
+        "A": "Can machine any hard, electrically conductive material irrespective of hardness",
+        "B": "Gives the highest MRR of all machining processes",
+        "C": "Involves absolutely no tool wear",
+        "D": "Can machine non-conductive materials directly"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "A major limitation of the EDM process is that:",
+      "options": {
+        "A": "It can machine only electrically conductive materials",
+        "B": "It cannot produce complex/intricate shapes",
+        "C": "It requires very high cutting forces",
+        "D": "It cannot machine hardened steel"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "The dielectric commonly used in die-sinking EDM is:",
+      "options": {
+        "A": "Kerosene or EDM oil",
+        "B": "Compressed air",
+        "C": "Plain water only",
+        "D": "Molten salt"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "The gap maintained between the tool and workpiece during EDM is generally of the order of:",
+      "options": {
+        "A": "0.01 – 0.05 mm",
+        "B": "1 – 5 mm",
+        "C": "10 – 20 mm",
+        "D": "50 – 100 mm"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "Tool Wear Ratio (TWR) in EDM is defined as:",
+      "options": {
+        "A": "Volume of tool wear / Volume of work material removed",
+        "B": "Volume of work material removed / Volume of tool wear",
+        "C": "Machining time / tool wear",
+        "D": "Discharge energy / tool wear"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "The servo control system in an EDM machine is primarily used to:",
+      "options": {
+        "A": "Maintain a constant spark gap between tool and workpiece",
+        "B": "Control dielectric temperature",
+        "C": "Control spindle speed",
+        "D": "Control coolant flow rate"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "In Wire EDM, the tool electrode is:",
+      "options": {
+        "A": "A stationary shaped block",
+        "B": "A continuously travelling thin wire",
+        "C": "A rotating disc",
+        "D": "A laser beam"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "Commonly used wire electrode materials in WEDM include:",
+      "options": {
+        "A": "Brass and molybdenum",
+        "B": "Lead and tin",
+        "C": "Tungsten carbide only",
+        "D": "Aluminium oxide"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "The dielectric medium generally used in WEDM is:",
+      "options": {
+        "A": "Deionised water",
+        "B": "Kerosene",
+        "C": "Compressed air",
+        "D": "Molten wax"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "WEDM is particularly suitable for machining:",
+      "options": {
+        "A": "Complex 2-D profiles/contours in conductive, hard materials",
+        "B": "Non-conductive ceramics",
+        "C": "Very large 3-D cavities only",
+        "D": "Only plain round holes"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "In WEDM, wire tension during cutting is typically maintained:",
+      "options": {
+        "A": "High, but below the breaking strength of the wire",
+        "B": "At zero tension",
+        "C": "Above the breaking strength of the wire",
+        "D": "Tension is irrelevant to the process"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "A key advantage of WEDM over conventional (ram/die-sinking) EDM is:",
+      "options": {
+        "A": "No pre-shaped tool electrode is required — the wire itself acts as the tool",
+        "B": "It can machine non-conductive materials",
+        "C": "It gives a much higher MRR than milling",
+        "D": "It does not need a dielectric fluid"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "A recognised limitation of WEDM is:",
+      "options": {
+        "A": "It is a relatively slow process compared to conventional cutting",
+        "B": "It can cut only soft materials",
+        "C": "It cannot achieve close tolerances",
+        "D": "It cannot cut hardened steel"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "WEDM finds application in the manufacture of:",
+      "options": {
+        "A": "Press-tool dies, punches and extrusion dies with intricate profiles",
+        "B": "Cast-iron engine blocks",
+        "C": "Plastic moulds by chemical etching",
+        "D": "Wood carving"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "Laser Beam Machining removes material primarily by:",
+      "options": {
+        "A": "Melting and vaporisation caused by a focused, high-intensity coherent light beam",
+        "B": "Mechanical abrasion",
+        "C": "Electrochemical dissolution",
+        "D": "Ion bombardment"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "Laser types commonly used in LBM are:",
+      "options": {
+        "A": "CO₂ and Nd:YAG lasers",
+        "B": "X-ray lasers only",
+        "C": "Sound-wave lasers",
+        "D": "Radio-frequency lasers"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "A laser beam of power 500 W is focused to a spot of diameter 0.1 mm. The approximate power density at the focal spot is:",
+      "options": {
+        "A": "6.37 × 10¹⁰ W/m²",
+        "B": "6.37 × 10⁷ W/m²",
+        "C": "6.37 × 10¹³ W/m²",
+        "D": "6.37 × 10⁴ W/m²"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "LBM is best suited for:",
+      "options": {
+        "A": "Small holes and fine cuts in hard, brittle and heat-resistant materials",
+        "B": "Large-volume roughing of soft metals",
+        "C": "Only opaque materials",
+        "D": "Underwater cutting of thick steel plates"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is NOT a process parameter affecting LBM performance?",
+      "options": {
+        "A": "Laser power",
+        "B": "Pulse duration / frequency",
+        "C": "Focal spot size",
+        "D": "Magnetic field strength"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "A major advantage of LBM is that it is:",
+      "options": {
+        "A": "A non-contact process with no tool wear, capable of very small/precise features",
+        "B": "Suited to very high bulk MRR",
+        "C": "Free of any heat-affected zone",
+        "D": "Equally effective regardless of material reflectivity"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "A recognised limitation of LBM is:",
+      "options": {
+        "A": "Formation of a heat-affected zone (HAZ) and recast layer",
+        "B": "Inability to cut thin sheets",
+        "C": "Inability to be CNC/automated",
+        "D": "Need for physical tool-workpiece contact"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "In LBM, an assist gas (e.g. oxygen, nitrogen, compressed air) is mainly used to:",
+      "options": {
+        "A": "Blow away molten/vaporised material and assist the cutting action",
+        "B": "Provide dielectric insulation",
+        "C": "Generate the laser beam itself",
+        "D": "Cool the laser source only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "Typical applications of LBM include:",
+      "options": {
+        "A": "Micro-hole drilling in turbine blades, PCB cutting and semiconductor scribing",
+        "B": "Rough turning of shafts",
+        "C": "Deep-hole drilling of gun barrels only",
+        "D": "Production of forging dies"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "The Nd:YAG laser is preferred for many LBM applications because it:",
+      "options": {
+        "A": "Emits near-infrared radiation (~1.06 µm) that is well absorbed by metals and can be pulsed for precision drilling",
+        "B": "Emits only visible red light for cosmetic marking",
+        "C": "Operates in the microwave range for deep penetration",
+        "D": "Operates in the X-ray range for imaging only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "Plasma Arc Machining uses a high-temperature ionised gas jet that typically attains temperatures of:",
+      "options": {
+        "A": "5,000°C to 30,000°C",
+        "B": "100°C to 500°C",
+        "C": "1,000°C to 2,000°C only",
+        "D": "Room temperature"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "Plasma in PAM is generated by:",
+      "options": {
+        "A": "Ionising a gas passed through a DC electric arc between electrode and nozzle",
+        "B": "Chemical combustion of a gas",
+        "C": "Laser excitation of a gas",
+        "D": "Magnetic induction alone"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "Gases commonly used to generate plasma in PAM include:",
+      "options": {
+        "A": "Argon, nitrogen and hydrogen (or their mixtures)",
+        "B": "Carbon dioxide only",
+        "C": "Pure oxygen only",
+        "D": "Ammonia"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "PAM is primarily used for:",
+      "options": {
+        "A": "Cutting electrically conductive metals, especially stainless steel and aluminium plates",
+        "B": "Machining non-conductive plastics",
+        "C": "Fine micro-machining of semiconductor wafers",
+        "D": "Polishing optical lenses"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "Compared to oxy-fuel flame cutting, plasma arc cutting has the advantage that it can:",
+      "options": {
+        "A": "Cut non-ferrous metals and stainless steels which oxy-fuel cannot cut effectively",
+        "B": "Cut only mild steel",
+        "C": "Cut only non-metals",
+        "D": "Offer no advantage over oxy-fuel cutting"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "A disadvantage of PAM compared to EDM/LBM is:",
+      "options": {
+        "A": "A wider heat-affected zone and lower dimensional accuracy",
+        "B": "Inability to cut metal thicker than 1 mm",
+        "C": "Inability to be used for underwater cutting",
+        "D": "Requirement of a vacuum chamber"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "The two main types of plasma arc processes are:",
+      "options": {
+        "A": "Transferred-arc and non-transferred-arc plasma",
+        "B": "Continuous and pulsed plasma only",
+        "C": "Wet and dry plasma",
+        "D": "AC and DC plasma only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "In transferred-arc PAM, the workpiece acts as:",
+      "options": {
+        "A": "One of the electrodes, becoming part of the electrical circuit for higher energy concentration",
+        "B": "An insulator not connected to the circuit",
+        "C": "The plasma nozzle",
+        "D": "The plasma gas source"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "In Electron Beam Machining, material removal occurs because:",
+      "options": {
+        "A": "The kinetic energy of high-velocity electrons converts to heat on impact, causing melting/vaporisation",
+        "B": "Electrons react chemically with the workpiece",
+        "C": "Electrons abrade the surface mechanically",
+        "D": "Magnetic fields erode the surface"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "EBM is generally carried out inside:",
+      "options": {
+        "A": "A high-vacuum chamber, to prevent scattering of electrons by air molecules",
+        "B": "The open atmosphere, to reduce cost",
+        "C": "An underwater environment",
+        "D": "Inert gas at atmospheric pressure"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "In EBM, electrons are accelerated through a potential difference of 150 kV. The kinetic energy gained by each electron is:",
+      "options": {
+        "A": "1.5 × 10⁵ eV",
+        "B": "1.5 × 10³ eV",
+        "C": "1.5 × 10⁷ eV",
+        "D": "150 eV"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "Typical accelerating voltage used in EBM lies in the range of:",
+      "options": {
+        "A": "50 kV to 200 kV",
+        "B": "1 V to 10 V",
+        "C": "1 kV to 5 kV",
+        "D": "1 MV to 10 MV"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "EBM is best suited for:",
+      "options": {
+        "A": "Drilling very fine, high-aspect-ratio micro-holes in thin sheets/foils",
+        "B": "Bulk removal of large volumes of metal",
+        "C": "Machining non-metallic insulators without any conductive coating",
+        "D": "Cutting thick plates (>50 mm) economically"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "A major limitation of EBM is:",
+      "options": {
+        "A": "High equipment cost and the need for a vacuum chamber, which limits workpiece size",
+        "B": "Its inability to achieve fine tolerances",
+        "C": "Its inability to machine refractory metals",
+        "D": "It always produces a very large heat-affected zone"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "The electron beam in EBM is focused using:",
+      "options": {
+        "A": "Electromagnetic lenses",
+        "B": "Optical glass lenses",
+        "C": "Mechanical apertures only",
+        "D": "Water jets"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "Typical applications of EBM include:",
+      "options": {
+        "A": "Micro-drilling of turbine-blade cooling holes, electron-beam welding and fine slitting",
+        "B": "Rough milling of large castings",
+        "C": "Forging die sinking",
+        "D": "Grinding of ceramic tiles"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "In Ion Beam Machining, material removal occurs mainly through:",
+      "options": {
+        "A": "Sputtering — momentum transfer from bombarding ions knocking off surface atoms",
+        "B": "Melting caused by high temperature",
+        "C": "Chemical dissolution by the ions",
+        "D": "Electrochemical reaction"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "Ion Beam Machining is typically characterised by:",
+      "options": {
+        "A": "Atomic/nanometre-scale removal rates, used for ultra-precision surface finishing",
+        "B": "Very high MRR suitable for bulk shaping",
+        "C": "Operation at atmospheric pressure without vacuum",
+        "D": "Use only on non-conductive polymers"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "The gas commonly ionised to produce the ion beam in IBM is:",
+      "options": {
+        "A": "Argon (an inert gas)",
+        "B": "Chlorine",
+        "C": "Hydrogen sulphide",
+        "D": "Ammonia"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "IBM is widely applied for:",
+      "options": {
+        "A": "Thinning of semiconductor wafers, photomask repair, and figuring of optical mirror surfaces",
+        "B": "Cutting thick steel plates",
+        "C": "Deep-hole drilling of gun barrels",
+        "D": "Rough turning of shafts"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "A key advantage of IBM is:",
+      "options": {
+        "A": "Extremely high precision (atomic-level) material removal with minimal thermal/mechanical damage",
+        "B": "Very high material removal rate",
+        "C": "Low equipment cost",
+        "D": "No vacuum requirement"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "A major limitation of IBM is:",
+      "options": {
+        "A": "Extremely low material removal rate and high (vacuum) equipment cost, limiting it to small precision work",
+        "B": "Inability to be automated",
+        "C": "Applicability to ferrous metals only",
+        "D": "Inability to achieve fine surface finish"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}

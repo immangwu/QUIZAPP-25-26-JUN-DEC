@@ -1,0 +1,728 @@
+{
+  "code": "25ME252",
+  "title": "Production Processes and Fabrication",
+  "quiz_title": "Quiz 1: Metal Casting Processes",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In casting terminology, the 'pattern' is:",
+      "options": {
+        "A": "A replica of the object to be cast, used to form the mould cavity",
+        "B": "The final cast product",
+        "C": "The metal used for pouring",
+        "D": "A device to test hardness"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "The 'core' in casting is used to:",
+      "options": {
+        "A": "Produce internal cavities/hollow features in the casting",
+        "B": "Support the pattern during removal",
+        "C": "Increase mould strength only",
+        "D": "Provide external surface finish"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "'Chaplets' are used in casting to:",
+      "options": {
+        "A": "Support cores inside the mould cavity and prevent core shift",
+        "B": "Feed molten metal into the mould",
+        "C": "Vent gases from the mould",
+        "D": "Remove the pattern from the sand"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "The 'draft' or taper given to a pattern refers to:",
+      "options": {
+        "A": "A slight taper provided on vertical faces for easy pattern withdrawal",
+        "B": "The riser height",
+        "C": "The pouring temperature",
+        "D": "The parting-line location"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "'Parting line' in mould making refers to:",
+      "options": {
+        "A": "The line/plane separating the cope and drag halves of the mould",
+        "B": "The line where the metal solidifies last",
+        "C": "The line of maximum shrinkage",
+        "D": "The gate location line"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "'Cope' and 'drag' refer to:",
+      "options": {
+        "A": "The upper and lower halves of a sand mould, respectively",
+        "B": "Two types of pattern materials",
+        "C": "Two types of core sand",
+        "D": "The riser and gate, respectively"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "Pattern allowances typically include all of the following EXCEPT:",
+      "options": {
+        "A": "Shrinkage allowance",
+        "B": "Machining allowance",
+        "C": "Draft allowance",
+        "D": "Riser allowance"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "A cast-iron casting requires a linear dimension of 200 mm after machining. If the machining allowance is 3 mm and the shrinkage allowance is 1%, the pattern dimension is approximately:",
+      "options": {
+        "A": "205.03 mm",
+        "B": "200 mm",
+        "C": "203 mm",
+        "D": "198 mm"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "A green sand mould is composed primarily of:",
+      "options": {
+        "A": "Silica sand, clay (bentonite) and moisture",
+        "B": "Only silica sand",
+        "C": "Plaster of Paris and wax",
+        "D": "Molten wax and resin"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "The term 'green' in green sand moulding refers to:",
+      "options": {
+        "A": "The sand being moist/undried (not baked), not its colour",
+        "B": "The sand being dyed green",
+        "C": "Use of eco-friendly binders only",
+        "D": "Casting of green materials"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "The clay commonly used as a binder in green sand moulding is:",
+      "options": {
+        "A": "Bentonite",
+        "B": "Silica",
+        "C": "Zircon",
+        "D": "Chromite"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "A typical limitation of green sand moulding is:",
+      "options": {
+        "A": "Lower dimensional accuracy and surface finish compared to shell/investment casting",
+        "B": "Inability to cast ferrous materials",
+        "C": "Very high mould cost for every casting",
+        "D": "Inability to accommodate cores"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "Permeability of a green sand mould refers to its ability to:",
+      "options": {
+        "A": "Allow gases/steam generated during pouring to escape through the mould",
+        "B": "Resist compressive load",
+        "C": "Retain moisture indefinitely",
+        "D": "Conduct heat away rapidly"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "Excessive moisture content in green sand is most likely to cause:",
+      "options": {
+        "A": "Blowholes/gas porosity due to steam generation",
+        "B": "Improved surface finish",
+        "C": "No effect on casting quality",
+        "D": "Increased mould hardness"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "Green sand mould strength (green compressive strength) is primarily influenced by:",
+      "options": {
+        "A": "Clay content, moisture content and degree of ramming",
+        "B": "Pouring temperature only",
+        "C": "Riser size only",
+        "D": "Gating ratio only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "Advantages of green sand moulding include:",
+      "options": {
+        "A": "Low cost, reusability of sand, and suitability for a wide range of casting sizes",
+        "B": "Dimensional accuracy comparable to investment casting",
+        "C": "No need for a pattern",
+        "D": "Applicability to non-ferrous metals only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "Investment casting is also known as:",
+      "options": {
+        "A": "Lost-wax casting",
+        "B": "Sand casting",
+        "C": "Shell moulding",
+        "D": "Centrifugal casting"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "In investment casting, the pattern is typically made of:",
+      "options": {
+        "A": "Wax (or a similar expendable material)",
+        "B": "Wood",
+        "C": "Permanent metal",
+        "D": "Plaster only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "Investment casting is well suited for producing:",
+      "options": {
+        "A": "Intricate, high-precision, thin-walled components with excellent surface finish",
+        "B": "Very large, simple-shaped components economically",
+        "C": "Only components requiring a permanent metallic mould",
+        "D": "Only sheet-metal components"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "In die casting, the mould (die) is:",
+      "options": {
+        "A": "A reusable, permanent metal mould",
+        "B": "An expendable sand mould",
+        "C": "A wax-pattern-based ceramic mould",
+        "D": "A plaster mould used once"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "Die casting is generally used for casting:",
+      "options": {
+        "A": "Low-melting-point non-ferrous metals such as aluminium, zinc and magnesium alloys",
+        "B": "High-melting-point refractory metals like tungsten",
+        "C": "Only ferrous metals like steel",
+        "D": "Ceramics"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "The two main types of die casting processes are:",
+      "options": {
+        "A": "Hot chamber and cold chamber die casting",
+        "B": "Vertical and horizontal sand casting",
+        "C": "Green sand and dry sand casting",
+        "D": "Shell and investment casting"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "Hot chamber die casting is generally preferred for:",
+      "options": {
+        "A": "Low-melting-point metals like zinc that do not readily attack the injection system",
+        "B": "High-melting-point metals like steel",
+        "C": "All ferrous alloys",
+        "D": "Only ceramic materials"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "Cold chamber die casting is generally used for:",
+      "options": {
+        "A": "Metals like aluminium with higher melting points that would corrode a hot-chamber injection system",
+        "B": "Only zinc alloys",
+        "C": "Wax patterns",
+        "D": "Sand moulds"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "A key advantage of die casting is:",
+      "options": {
+        "A": "High production rate with excellent dimensional accuracy and surface finish for mass production",
+        "B": "Suitability for very high melting point metals",
+        "C": "Very low equipment/tooling cost",
+        "D": "No limitation on casting size"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "A limitation of investment casting compared to sand casting is:",
+      "options": {
+        "A": "Higher cost and generally limited to smaller-sized components",
+        "B": "Poor surface finish",
+        "C": "Inability to produce intricate shapes",
+        "D": "Inability to produce precision components"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "The pattern material selected depends on factors such as:",
+      "options": {
+        "A": "Number of castings required, dimensional accuracy needed, and complexity of shape",
+        "B": "Only the cost of the metal being cast",
+        "C": "Only the colour of the final casting",
+        "D": "The riser location only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "Common pattern materials include:",
+      "options": {
+        "A": "Wood, metal, plastic and wax",
+        "B": "Only sand",
+        "C": "Only steel",
+        "D": "Only ceramic"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "A 'split pattern' is used when:",
+      "options": {
+        "A": "The casting shape makes it impossible to withdraw a single-piece pattern from the mould",
+        "B": "Only a single casting is required",
+        "C": "The casting is very small",
+        "D": "No draft is required"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "A 'match-plate pattern' is characterised by:",
+      "options": {
+        "A": "Cope and drag pattern halves mounted on opposite sides of a single plate",
+        "B": "A pattern made entirely of wax",
+        "C": "A pattern with no parting line",
+        "D": "A one-piece solid pattern with no cope/drag distinction"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "Core sand generally requires higher strength than mould sand because:",
+      "options": {
+        "A": "Cores are surrounded by molten metal on most sides and subjected to greater thermal/metallostatic forces",
+        "B": "Cores never contact molten metal",
+        "C": "Core sand is always compacted less",
+        "D": "Cores do not need to resist gas pressure"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "'Core prints' are:",
+      "options": {
+        "A": "Extensions on the pattern that form seats to support and locate the core in the mould",
+        "B": "The printed marking on the final casting",
+        "C": "A type of riser",
+        "D": "The gating channel passing through the core"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "Core venting is important because it:",
+      "options": {
+        "A": "Allows gases generated within the core during pouring to escape, preventing defects",
+        "B": "Increases core strength",
+        "C": "Reduces core cost",
+        "D": "Has no effect on casting quality"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "Which of the following is generally NOT used as a core sand binder?",
+      "options": {
+        "A": "Oil (as in oil-sand cores)",
+        "B": "Sodium silicate",
+        "C": "Bentonite clay (mainly used in mould sand, not core sand)",
+        "D": "Resin (as in resin-shell cores)"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "Solidification of a pure metal in a mould begins:",
+      "options": {
+        "A": "At the mould wall, where nucleation and heat extraction are highest",
+        "B": "At the geometric centre of the casting",
+        "C": "Simultaneously throughout the casting",
+        "D": "At the riser only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "Chvorinov's rule relates the solidification time of a casting to:",
+      "options": {
+        "A": "Its (Volume/Surface area) ratio, i.e., t = C(V/A)ⁿ",
+        "B": "The pouring temperature only",
+        "C": "The mould material cost",
+        "D": "The number of risers used"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "If the (Volume/Surface area) ratio of casting A is twice that of casting B (same mould, n = 2), the solidification time of A relative to B is:",
+      "options": {
+        "A": "4 times",
+        "B": "2 times",
+        "C": "8 times",
+        "D": "Equal"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "Directional solidification in casting is achieved to ensure:",
+      "options": {
+        "A": "Progressive solidification from the farthest point toward the riser, so liquid metal is always available to feed shrinkage",
+        "B": "Uniform solidification throughout at the same instant",
+        "C": "Solidification starts at the riser first",
+        "D": "No feeding of shrinkage is needed"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "Chills are placed in a mould primarily to:",
+      "options": {
+        "A": "Locally increase the cooling rate and promote directional solidification",
+        "B": "Increase the pouring temperature",
+        "C": "Insulate the mould and slow cooling everywhere",
+        "D": "Completely replace risers in all cases"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "Which zone is NOT typically observed in the solidified structure of a casting?",
+      "options": {
+        "A": "Chill zone (fine equiaxed grains near the mould wall)",
+        "B": "Columnar zone",
+        "C": "Central equiaxed zone",
+        "D": "A single uniform grain zone throughout"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "Shrinkage in castings occurs in three stages — liquid shrinkage, solidification shrinkage, and:",
+      "options": {
+        "A": "Solid-state (patternmaker's) shrinkage as the solid cools to room temperature",
+        "B": "Gas shrinkage",
+        "C": "Core shrinkage",
+        "D": "Riser shrinkage"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "A riser is primarily designed to compensate for which stage(s) of shrinkage?",
+      "options": {
+        "A": "Liquid shrinkage and solidification shrinkage",
+        "B": "Solid-state (patternmaker's) shrinkage",
+        "C": "Only solid-state shrinkage",
+        "D": "None of the shrinkage stages"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "The main functions of a gating system include:",
+      "options": {
+        "A": "Delivering molten metal to the mould cavity while minimising turbulence, oxidation and erosion",
+        "B": "Increasing casting weight only",
+        "C": "Preventing solidification entirely",
+        "D": "Reducing the pattern size"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "The components of a gating system, in typical order of metal flow, are:",
+      "options": {
+        "A": "Pouring basin → sprue → runner → gate → mould cavity",
+        "B": "Riser → sprue → mould cavity",
+        "C": "Gate → sprue → runner → riser",
+        "D": "Mould cavity → gate → sprue → pouring basin"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "A tapered sprue (decreasing cross-section from top to bottom) is used to:",
+      "options": {
+        "A": "Prevent aspiration/air entrainment as flow velocity increases downward",
+        "B": "Increase turbulence intentionally",
+        "C": "Increase the metal pouring time",
+        "D": "Reduce metal velocity as it descends"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "Using Bernoulli's equation, if molten metal falls through a sprue height of 0.2 m (neglecting losses, g = 9.81 m/s²), the velocity at the sprue exit is approximately:",
+      "options": {
+        "A": "1.98 m/s",
+        "B": "0.98 m/s",
+        "C": "3.96 m/s",
+        "D": "9.81 m/s"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "A gating ratio of 1 : 2 : 2 (sprue : runner : gate, by cross-sectional area) is an example of:",
+      "options": {
+        "A": "A non-pressurised gating system",
+        "B": "A fully pressurised gating system",
+        "C": "A gating system with no runner",
+        "D": "A bottom gating system without a sprue"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "In a pressurised gating system, the total gate area is generally:",
+      "options": {
+        "A": "Smaller than or equal to the runner area, maintaining backpressure to reduce turbulence at the gate",
+        "B": "Much larger than the sprue area",
+        "C": "Irrelevant to system design",
+        "D": "Always zero"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "Bottom gating (uphill gating) is preferred over top gating for many alloys mainly because it:",
+      "options": {
+        "A": "Reduces turbulence and metal splashing/oxidation during mould filling",
+        "B": "Increases mould-filling time drastically",
+        "C": "Always requires a larger sprue",
+        "D": "Eliminates the need for a riser"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "A 'skim gate' or 'whirl gate' in the gating system is primarily used to:",
+      "options": {
+        "A": "Trap slag/dross and prevent it from entering the mould cavity",
+        "B": "Increase pouring velocity",
+        "C": "Reduce casting weight",
+        "D": "Speed up solidification of the gate itself"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "The main function of a riser in casting is to:",
+      "options": {
+        "A": "Act as a reservoir of molten metal to compensate for solidification shrinkage",
+        "B": "Vent gases only",
+        "C": "Guide pattern removal",
+        "D": "Support the core only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "For a riser to be effective, it must solidify:",
+      "options": {
+        "A": "After the casting section it is feeding (i.e., last to solidify)",
+        "B": "Before the casting section it is feeding",
+        "C": "At exactly the same time as the casting",
+        "D": "Timing of riser solidification is irrelevant"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "According to Chvorinov's rule, to ensure a riser solidifies later than the casting, the riser's (Volume/Surface area) ratio should be:",
+      "options": {
+        "A": "Greater than that of the casting",
+        "B": "Less than that of the casting",
+        "C": "Equal to that of the casting",
+        "D": "Independent of the casting's ratio"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "A cylindrical riser is generally more metal-efficient than which shape, owing to a lower surface-area-to-volume ratio for a given volume?",
+      "options": {
+        "A": "A thin plate/slab-shaped riser",
+        "B": "A spherical riser",
+        "C": "Shape has no bearing on efficiency",
+        "D": "A cubical riser, which is always most efficient"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "'Riser yield' is defined as:",
+      "options": {
+        "A": "Ratio of casting weight to (casting weight + riser weight), expressed as a percentage",
+        "B": "Ratio of riser weight to casting weight only",
+        "C": "The tensile strength of the riser metal",
+        "D": "The number of risers used per mould"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "Open risers (open to the atmosphere) compared to blind risers primarily differ in that open risers:",
+      "options": {
+        "A": "Allow visual inspection and easier gas escape, but may lose heat faster",
+        "B": "Are completely enclosed within the mould, invisible from outside",
+        "C": "Cannot be used for feeding shrinkage",
+        "D": "Are never used in green sand moulds"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "'Blowholes' in a casting are caused primarily by:",
+      "options": {
+        "A": "Entrapped gas that could not escape the mould during solidification",
+        "B": "Excessive machining allowance",
+        "C": "Improper gating ratio only",
+        "D": "Incorrect riser-yield calculation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "'Shrinkage cavity' defects occur when:",
+      "options": {
+        "A": "Adequate directional solidification/feeding via risers is not provided, leaving voids in the last-to-solidify region",
+        "B": "The mould is too permeable",
+        "C": "The pouring temperature is too low",
+        "D": "The pattern has excessive draft"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "A 'cold shut' defect occurs when:",
+      "options": {
+        "A": "Two streams of molten metal meet without fusing completely, often due to low pouring temperature or slow filling",
+        "B": "The mould is preheated excessively",
+        "C": "The riser is oversized",
+        "D": "The core is placed correctly"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "'Sand inclusion'/dross defects in castings are primarily caused by:",
+      "options": {
+        "A": "Loose sand or slag particles carried into the mould cavity along with the molten metal",
+        "B": "Excessive riser size",
+        "C": "Correct gating design",
+        "D": "Proper mould venting"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}

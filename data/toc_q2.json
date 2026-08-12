@@ -1,0 +1,1448 @@
+{
+  "code": "20CS006",
+  "title": "Theory of Computation (R2020)",
+  "quiz_title": "Quiz 2: Regular Expressions & Regular Languages",
+  "department": "cse",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A regular expression is used to represent a language that is:",
+      "options": {
+        "A": "Context-free",
+        "B": "Regular",
+        "C": "Recursively enumerable",
+        "D": "Context-sensitive"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "Which symbol denotes the empty string in regular expressions?",
+      "options": {
+        "A": "φ",
+        "B": "ε",
+        "C": "∅",
+        "D": "λ only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "The regular expression φ (phi) represents:",
+      "options": {
+        "A": "The empty string",
+        "B": "The empty set (no strings)",
+        "C": "Any single character",
+        "D": "All strings over the alphabet"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "In regular expressions, the operator with the highest precedence is:",
+      "options": {
+        "A": "Union (+)",
+        "B": "Concatenation (.)",
+        "C": "Kleene star (*)",
+        "D": "Parentheses have no precedence role"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "The correct order of precedence (highest to lowest) for RE operators is:",
+      "options": {
+        "A": "Union, Concatenation, Star",
+        "B": "Star, Concatenation, Union",
+        "C": "Concatenation, Star, Union",
+        "D": "Star, Union, Concatenation"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "Which algebraic law correctly represents idempotency of union?",
+      "options": {
+        "A": "R + R = R",
+        "B": "R.R = R",
+        "C": "R* = R",
+        "D": "R + φ = φ"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "According to the identity law, R.ε equals:",
+      "options": {
+        "A": "ε",
+        "B": "φ",
+        "C": "R",
+        "D": "R*"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "According to the annihilator law, R.φ equals:",
+      "options": {
+        "A": "R",
+        "B": "ε",
+        "C": "φ",
+        "D": "R*"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "Kleene's theorem establishes the equivalence between:",
+      "options": {
+        "A": "DFA and CFG",
+        "B": "Regular expressions and Finite Automata",
+        "C": "PDA and Turing Machines",
+        "D": "NFA and PDA"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "Which construction method is used to convert a regular expression into an NFA?",
+      "options": {
+        "A": "Subset construction",
+        "B": "Thompson's construction",
+        "C": "Myhill-Nerode construction",
+        "D": "Arden's construction"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "Converting a DFA into a regular expression is commonly done using:",
+      "options": {
+        "A": "Thompson's construction",
+        "B": "State elimination method",
+        "C": "Pumping lemma",
+        "D": "Subset construction"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "Arden's Theorem is primarily used to:",
+      "options": {
+        "A": "Minimize a DFA",
+        "B": "Solve equations to obtain a regular expression from a finite automaton",
+        "C": "Convert NFA to DFA",
+        "D": "Prove pumping lemma"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "Arden's theorem requires the equation to be of the form R = Q + RP, provided that:",
+      "options": {
+        "A": "Q does not contain ε",
+        "B": "P does not contain ε",
+        "C": "R does not contain ε",
+        "D": "P and Q are both empty"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "Which of the following languages is NOT regular?",
+      "options": {
+        "A": "{a^n b^n | n ≥ 0}",
+        "B": "{a^n | n ≥ 0}",
+        "C": "{ab, ba}",
+        "D": "(a+b)*"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "The Pumping Lemma for regular languages is mainly used to:",
+      "options": {
+        "A": "Construct a DFA from a language",
+        "B": "Prove that a given language is not regular",
+        "C": "Minimize a finite automaton",
+        "D": "Convert an NFA to a DFA"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "In the pumping lemma, if a string w in language L has length ≥ pumping length p, then w can be split into:",
+      "options": {
+        "A": "Two parts, xy",
+        "B": "Three parts xyz with |xy| ≤ p and |y| ≥ 1",
+        "C": "Four equal parts",
+        "D": "Only single characters"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "To prove a language is not regular using pumping lemma, we assume:",
+      "options": {
+        "A": "The language is regular and derive a contradiction",
+        "B": "The language is context-free",
+        "C": "The automaton has infinite states",
+        "D": "The language has no pumping length"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "Regular languages are closed under which of the following operations?",
+      "options": {
+        "A": "Union only",
+        "B": "Union, intersection, and complement",
+        "C": "Only concatenation",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "The complement of a regular language is:",
+      "options": {
+        "A": "Never regular",
+        "B": "Always regular",
+        "C": "Regular only if the alphabet is unary",
+        "D": "Context-free but not regular"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "Which decision problem asks whether a given finite automaton accepts no strings at all?",
+      "options": {
+        "A": "Membership problem",
+        "B": "Emptiness problem",
+        "C": "Finiteness problem",
+        "D": "Equivalence problem"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "A regular expression over alphabet Σ is built recursively starting from base cases which include:",
+      "options": {
+        "A": "Only ε",
+        "B": "φ, ε, and every symbol a in Σ",
+        "C": "Only symbols in Σ",
+        "D": "Only φ"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "The regular expression (a+b)* denotes:",
+      "options": {
+        "A": "Only strings of even length",
+        "B": "All strings over {a,b} including the empty string",
+        "C": "Only strings starting with a",
+        "D": "No strings"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is an example of the '+' operator's use as a regular operator (union) rather than 'one or more'?",
+      "options": {
+        "A": "a+",
+        "B": "a+b meaning a or b",
+        "C": "a.b+",
+        "D": "(ab)+"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "The distributive law in regular expression algebra states:",
+      "options": {
+        "A": "R(S+T) = RS + RT",
+        "B": "R+S = S+R only",
+        "C": "R* = RR*",
+        "D": "R.φ = R"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "Which law states R** = R*?",
+      "options": {
+        "A": "Idempotent law of star",
+        "B": "Distributive law",
+        "C": "Identity law",
+        "D": "Annihilator law"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "Kleene's theorem is a foundational result because it shows that regular expressions, finite automata, and regular grammars all describe:",
+      "options": {
+        "A": "Different classes of languages",
+        "B": "The same class of languages (regular languages)",
+        "C": "Only context-free languages",
+        "D": "Only unary languages"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "When converting a regular expression to an NFA using Thompson's construction, each basic symbol 'a' is represented by:",
+      "options": {
+        "A": "A DFA with two states and no epsilon transitions",
+        "B": "An NFA fragment with one start state, one accept state, and a transition labeled a",
+        "C": "A single state with a self-loop",
+        "D": "A PDA fragment"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "In the state elimination method for converting FA to RE, when a state is eliminated, the regular expressions on the remaining transitions are updated using:",
+      "options": {
+        "A": "Union only",
+        "B": "Concatenation and union combining incoming, self-loop, and outgoing paths",
+        "C": "Intersection",
+        "D": "Complementation"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "Arden's Theorem gives a unique solution for the equation R = Q + RP when:",
+      "options": {
+        "A": "P is empty",
+        "B": "P does not contain ε (empty string)",
+        "C": "Q contains ε",
+        "D": "R = φ"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "Which of the following is a classic example of a non-regular language?",
+      "options": {
+        "A": "(ab)*",
+        "B": "{a^n b^n | n ≥ 0}",
+        "C": "a*b*",
+        "D": "{a, aa, aaa}"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "The pumping length 'p' in the pumping lemma corresponds to:",
+      "options": {
+        "A": "The number of alphabet symbols",
+        "B": "The number of states in the smallest DFA accepting the language",
+        "C": "The length of the shortest string in L",
+        "D": "The number of final states"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "To disprove regularity using the pumping lemma, after choosing a string w, the proof strategy is to show that:",
+      "options": {
+        "A": "Some pumped string x y^i z remains in L for all i",
+        "B": "For every valid split xyz, there exists some i such that xy^iz is not in L",
+        "C": "The automaton has finite states",
+        "D": "L is context-free"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "Regular languages are closed under intersection because:",
+      "options": {
+        "A": "Intersection can be simulated using a product automaton combining two DFAs",
+        "B": "Intersection always produces the empty set",
+        "C": "DFAs cannot represent intersection",
+        "D": "Only NFAs support intersection"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "Which of these is NOT generally a closure property of regular languages?",
+      "options": {
+        "A": "Union",
+        "B": "Star (Kleene closure)",
+        "C": "Reversal",
+        "D": "Finding the square root of a language length"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "The finiteness problem for a regular language asks:",
+      "options": {
+        "A": "Whether the language has an infinite number of states",
+        "B": "Whether the language contains a finite number of strings",
+        "C": "Whether the automaton is deterministic",
+        "D": "Whether the automaton has ε-transitions"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "A Moore machine's output depends on:",
+      "options": {
+        "A": "The current state only",
+        "B": "The current state and current input symbol",
+        "C": "Only the input symbol",
+        "D": "The next state only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "A Mealy machine's output depends on:",
+      "options": {
+        "A": "The current state only",
+        "B": "The current state and the current input symbol",
+        "C": "Only the previous output",
+        "D": "None of the above"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "When converting a Mealy machine to an equivalent Moore machine, the number of states in the Moore machine:",
+      "options": {
+        "A": "Is always exactly equal to the Mealy machine",
+        "B": "May increase because output must be split by incoming transition value",
+        "C": "Always decreases",
+        "D": "Becomes zero"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "Which statement about Moore and Mealy machines is TRUE?",
+      "options": {
+        "A": "They generate different classes of languages",
+        "B": "They are equivalent in the sequences of outputs they can generate (with minor length difference)",
+        "C": "Moore machines cannot be converted to Mealy machines",
+        "D": "Mealy machines cannot have more than 2 states"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "A key limitation of finite automata is that they cannot:",
+      "options": {
+        "A": "Recognize any language",
+        "B": "Count unboundedly or remember unbounded information (e.g., matching nested parentheses)",
+        "C": "Accept regular languages",
+        "D": "Be represented using regular expressions"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is NOT a valid regular expression operator?",
+      "options": {
+        "A": "Union (+)",
+        "B": "Concatenation (.)",
+        "C": "Kleene star (*)",
+        "D": "Recursion (↻)"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "The regular expression a* denotes:",
+      "options": {
+        "A": "Exactly one 'a'",
+        "B": "Zero or more occurrences of 'a'",
+        "C": "One or more occurrences of 'a'",
+        "D": "Exactly two occurrences of 'a'"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "The regular expression a+ (in the 'one or more' sense used informally) can be expressed using standard RE operators as:",
+      "options": {
+        "A": "a*",
+        "B": "aa*",
+        "C": "a.φ",
+        "D": "a+a"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "Which algebraic identity correctly shows the relation between star and concatenation?",
+      "options": {
+        "A": "R* = ε + RR*",
+        "B": "R* = φ",
+        "C": "R* = R + ε only",
+        "D": "R* = RR"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "The commutative law applies to which RE operator?",
+      "options": {
+        "A": "Concatenation",
+        "B": "Union (+)",
+        "C": "Star",
+        "D": "Both concatenation and star"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "According to Kleene's Theorem, every finite automaton corresponds to:",
+      "options": {
+        "A": "A unique context-free grammar only",
+        "B": "Some regular expression describing the same language",
+        "C": "A Turing machine only",
+        "D": "No equivalent representation"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "In Thompson's construction, the concatenation of two regular expressions R1 and R2 is implemented by:",
+      "options": {
+        "A": "Placing them in parallel with a new start state",
+        "B": "Connecting the accept state of R1's NFA to the start state of R2's NFA via an epsilon transition",
+        "C": "Using a product automaton",
+        "D": "Adding a self-loop"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "In Thompson's construction, the union R1+R2 is implemented by:",
+      "options": {
+        "A": "A new start state with epsilon transitions to both R1 and R2's start states, merging into a new final state",
+        "B": "Directly connecting R1's final state to R2's start state",
+        "C": "Removing all epsilon transitions",
+        "D": "Using Arden's theorem"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "When converting a DFA to a regular expression using the state elimination technique, the first step typically is to:",
+      "options": {
+        "A": "Add a new single start state and single final state connected by epsilon transitions",
+        "B": "Delete all final states",
+        "C": "Convert the DFA to an NFA first",
+        "D": "Apply the pumping lemma"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "Arden's theorem is stated for equations of the form R = Q + RP; the theorem gives the solution as:",
+      "options": {
+        "A": "R = QP*",
+        "B": "R = Q*P",
+        "C": "R = PQ*",
+        "D": "R = Q + P"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "Which of the following languages CAN be proven non-regular using the pumping lemma?",
+      "options": {
+        "A": "{ww^R | w ∈ {a,b}*} (palindromes)",
+        "B": "a*b*",
+        "C": "(ab)*",
+        "D": "a*"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "In the pumping lemma proof technique, the adversary (automaton) picks the pumping length p, and then the prover:",
+      "options": {
+        "A": "Picks a string w with |w| ≥ p that lies in L",
+        "B": "Immediately concludes the language is regular",
+        "C": "Picks the alphabet",
+        "D": "Picks the number of final states"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "Which condition must ALWAYS hold in the pumping lemma decomposition w = xyz?",
+      "options": {
+        "A": "|xy| ≤ p and |y| ≥ 1",
+        "B": "|x| = |z|",
+        "C": "y must contain only the symbol 'a'",
+        "D": "|xyz| ≤ p"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "Regular languages are closed under complementation. This is proven by:",
+      "options": {
+        "A": "Swapping the final and non-final states of a DFA that accepts the language",
+        "B": "Reversing all transitions",
+        "C": "Adding new states with self-loops",
+        "D": "Applying Arden's theorem"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "Which of the following operations does NOT preserve regularity in general (i.e., is not a closure property covered in this unit)?",
+      "options": {
+        "A": "Union",
+        "B": "Concatenation",
+        "C": "Star closure",
+        "D": "Arbitrary set difference with a non-regular language"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "The equivalence problem for regular languages asks:",
+      "options": {
+        "A": "Whether two automata accept the same language",
+        "B": "Whether an automaton has epsilon transitions",
+        "C": "Whether a string belongs to a language",
+        "D": "Whether a DFA is minimal"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "A Moore machine is formally defined as a 6-tuple that includes an output function that maps:",
+      "options": {
+        "A": "States to outputs",
+        "B": "Transitions to outputs",
+        "C": "Input symbols to outputs directly",
+        "D": "Final states to strings"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "A Mealy machine's output function maps:",
+      "options": {
+        "A": "States alone to outputs",
+        "B": "(state, input symbol) pairs to outputs",
+        "C": "Only final states to outputs",
+        "D": "The alphabet to itself"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "Compared to a Mealy machine producing an output sequence of length n for an input of length n, the corresponding Moore machine's output sequence typically has length:",
+      "options": {
+        "A": "n",
+        "B": "n - 1",
+        "C": "n + 1 (due to the extra initial output)",
+        "D": "0"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "One practical application of finite automata is:",
+      "options": {
+        "A": "Solving NP-complete problems optimally",
+        "B": "Lexical analysis in compilers (tokenizing input)",
+        "C": "Simulating Turing machines exactly",
+        "D": "Proving undecidability of the halting problem"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 61,
+      "question": "A language L is called regular if there exists:",
+      "options": {
+        "A": "A Turing machine that decides it",
+        "B": "A regular expression (or finite automaton) that describes/accepts it",
+        "C": "A context-free grammar only",
+        "D": "A pushdown automaton only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 62,
+      "question": "Which of the following correctly ranks RE operator precedence from LOWEST to HIGHEST?",
+      "options": {
+        "A": "Union, Concatenation, Star",
+        "B": "Star, Union, Concatenation",
+        "C": "Concatenation, Star, Union",
+        "D": "Star, Concatenation, Union"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 63,
+      "question": "The associative law for concatenation states:",
+      "options": {
+        "A": "(RS)T = R(ST)",
+        "B": "RS = SR",
+        "C": "R(S+T) = RS+RT",
+        "D": "R* = (R*)*"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 64,
+      "question": "Which identity is TRUE for regular expressions?",
+      "options": {
+        "A": "ε* = ε",
+        "B": "φ* = φ",
+        "C": "R + R* = R",
+        "D": "R.R* = R*"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 65,
+      "question": "Kleene's theorem implies that the class of regular languages is exactly the class of languages accepted by:",
+      "options": {
+        "A": "Only deterministic finite automata",
+        "B": "Finite automata (deterministic or non-deterministic)",
+        "C": "Only pushdown automata",
+        "D": "Only Turing machines"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 66,
+      "question": "In Thompson's construction, the Kleene star R* of a regular expression R is implemented by adding:",
+      "options": {
+        "A": "A new start/final state pair with epsilon transitions allowing zero or more traversals of R's NFA",
+        "B": "A direct transition bypassing R entirely with no way back",
+        "C": "Two separate final states only",
+        "D": "A product construction with another automaton"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 67,
+      "question": "When using the state elimination method to convert an FA to a regular expression, intermediate states are removed one at a time while:",
+      "options": {
+        "A": "Ignoring self-loops",
+        "B": "Updating the RE labels on remaining edges to account for paths through the eliminated state, including any self-loop as a star",
+        "C": "Deleting the final state first always",
+        "D": "Converting to a Mealy machine"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 68,
+      "question": "Arden's Theorem cannot be directly applied if the equation is of the form R = Q + RP where:",
+      "options": {
+        "A": "Q = φ",
+        "B": "P contains ε",
+        "C": "P = φ",
+        "D": "Q contains only terminal symbols"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 69,
+      "question": "The language {a^n b^n c^n | n ≥ 0} is:",
+      "options": {
+        "A": "Regular",
+        "B": "Not regular (in fact not even context-free)",
+        "C": "Accepted by some DFA",
+        "D": "Expressible as a regular expression"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 70,
+      "question": "The Pumping Lemma states that for a regular language L, there exists a pumping length p such that every string w in L with |w| ≥ p can be split into xyz satisfying which conditions?",
+      "options": {
+        "A": "|xy| ≤ p, |y| ≥ 1, and xy^iz ∈ L for all i ≥ 0",
+        "B": "|x| ≥ p only",
+        "C": "y must equal z",
+        "D": "xyz must be a palindrome"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 71,
+      "question": "Which of the following is typically used as a counterexample to show {a^n b^n | n ≥ 0} is not regular?",
+      "options": {
+        "A": "Choosing w = a^p b^p and showing pumping y (which lies within the a's) breaks the equal-count property",
+        "B": "Choosing w = ε",
+        "C": "Showing the language is infinite",
+        "D": "Constructing a DFA for it directly"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 72,
+      "question": "Regular languages are closed under reversal, meaning if L is regular, then L^R (all strings of L reversed) is:",
+      "options": {
+        "A": "Never regular",
+        "B": "Also regular",
+        "C": "Regular only if L is finite",
+        "D": "Context-free but not regular"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 73,
+      "question": "Which of the following is a closure property of regular languages?",
+      "options": {
+        "A": "Closure under homomorphism",
+        "B": "Closure under exponentiation of language length",
+        "C": "Closure under square root operation",
+        "D": "None of the above"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 74,
+      "question": "The membership problem for regular languages asks:",
+      "options": {
+        "A": "Whether a given string belongs to the language described by a given automaton/RE",
+        "B": "Whether two automata are equal",
+        "C": "Whether the language is empty",
+        "D": "Whether the language is infinite"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 75,
+      "question": "In a Moore machine, the output associated with the initial state is produced:",
+      "options": {
+        "A": "Never",
+        "B": "Before any input symbol is read",
+        "C": "Only after the last input symbol",
+        "D": "Only if the machine halts in a final state"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 76,
+      "question": "In a Mealy machine, an output is produced:",
+      "options": {
+        "A": "Only at the start",
+        "B": "On each transition, i.e., for each input symbol processed",
+        "C": "Only at the end of the string",
+        "D": "Never, Mealy machines have no outputs"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 77,
+      "question": "To convert a Moore machine to an equivalent Mealy machine, the output for a transition on symbol 'a' into state q is taken as:",
+      "options": {
+        "A": "The output associated with state q in the Moore machine",
+        "B": "The input symbol itself",
+        "C": "Always 0",
+        "D": "The output of the previous state"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 78,
+      "question": "Which of the following is TRUE regarding Moore and Mealy machines?",
+      "options": {
+        "A": "Both are examples of finite automata with output (transducers)",
+        "B": "Only Mealy machines are automata",
+        "C": "Only Moore machines can be minimized",
+        "D": "They cannot be converted into each other"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 79,
+      "question": "A key limitation of finite automata (and hence regular languages) is their inability to:",
+      "options": {
+        "A": "Recognize languages requiring unbounded memory, such as matching an arbitrary number of nested brackets",
+        "B": "Recognize any finite language",
+        "C": "Be minimized",
+        "D": "Be represented by transition diagrams"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 80,
+      "question": "Finite automata find real-world application in which of the following areas?",
+      "options": {
+        "A": "Text pattern matching / string searching (e.g., regular expressions in text editors)",
+        "B": "Solving NP-hard optimization problems",
+        "C": "Deciding the halting problem",
+        "D": "Simulating context-sensitive grammars exactly"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 81,
+      "question": "Regular expressions and finite automata are equally powerful in terms of:",
+      "options": {
+        "A": "The class of languages they describe/recognize (regular languages)",
+        "B": "Their required memory (automata need infinite memory)",
+        "C": "Solving undecidable problems",
+        "D": "Recognizing context-free languages"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 82,
+      "question": "Which of the following expressions is equivalent to a(a+b)*?",
+      "options": {
+        "A": "All strings starting with 'a'",
+        "B": "All strings ending with 'a'",
+        "C": "All strings containing no 'a'",
+        "D": "The empty language"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 83,
+      "question": "The law R + φ = R is known as the:",
+      "options": {
+        "A": "Identity law for union",
+        "B": "Annihilator law",
+        "C": "Distributive law",
+        "D": "Idempotent law"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 84,
+      "question": "The law R.ε = ε.R = R is known as the:",
+      "options": {
+        "A": "Identity law for concatenation",
+        "B": "Annihilator law",
+        "C": "Commutative law",
+        "D": "Associative law"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 85,
+      "question": "Kleene's theorem is significant in compiler design because it justifies:",
+      "options": {
+        "A": "Using regular expressions to specify tokens which are then implemented as finite automata (lexical analyzers)",
+        "B": "Using context-free grammars for lexical analysis only",
+        "C": "Avoiding automata entirely in compilers",
+        "D": "Using Turing machines for tokenization"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 86,
+      "question": "Which NFA construction rule applies to the base case regular expression 'ε' in Thompson's construction?",
+      "options": {
+        "A": "A single state that is both start and accept, with no transitions needed",
+        "B": "Two states connected by a transition labeled ε",
+        "C": "A state with a self-loop labeled ε",
+        "D": "No NFA can be constructed for ε"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 87,
+      "question": "In the state elimination method, once all intermediate states are removed, the final regular expression is read off:",
+      "options": {
+        "A": "From the single transition label connecting the unique start state to the unique final state",
+        "B": "From the alphabet used",
+        "C": "From the number of states removed",
+        "D": "From the pumping length"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 88,
+      "question": "Arden's Theorem is especially useful for constructing regular expressions directly from:",
+      "options": {
+        "A": "A system of equations derived from a finite automaton's transitions",
+        "B": "A context-free grammar's derivation tree",
+        "C": "A Turing machine's tape",
+        "D": "A pushdown automaton's stack"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 89,
+      "question": "Which of the following is generally true about non-regular languages?",
+      "options": {
+        "A": "They can never be accepted by any finite automaton with a finite number of states",
+        "B": "They are always finite",
+        "C": "They are always accepted by some DFA",
+        "D": "They can always be written as a regular expression"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 90,
+      "question": "The pumping lemma is a necessary (not sufficient) condition for regularity, meaning:",
+      "options": {
+        "A": "If a language satisfies the pumping lemma, it must be regular",
+        "B": "A language failing the pumping lemma is definitely not regular, but satisfying it doesn't guarantee regularity",
+        "C": "The pumping lemma proves a language IS regular",
+        "D": "The pumping lemma applies only to context-free languages"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 91,
+      "question": "When applying the pumping lemma to {a^i b^j | i > j}, a suitable choice of string to derive a contradiction is:",
+      "options": {
+        "A": "w = a^(p+1) b^p",
+        "B": "w = ε",
+        "C": "w = b^p a^p",
+        "D": "w = a^p"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 92,
+      "question": "Which of these is a valid closure property used to combine regular languages L1 and L2?",
+      "options": {
+        "A": "L1 ∪ L2 is regular",
+        "B": "L1 - L2 is never regular",
+        "C": "L1 ∩ L2 is never regular",
+        "D": "None of the above are closure properties"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 93,
+      "question": "The decision property that checks if a regular language contains ALL possible strings over its alphabet (i.e., L = Σ*) is called the:",
+      "options": {
+        "A": "Totality problem",
+        "B": "Emptiness problem",
+        "C": "Membership problem",
+        "D": "Finiteness problem"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 94,
+      "question": "Which of the following best differentiates Moore and Mealy machines?",
+      "options": {
+        "A": "Moore machine output depends only on the present state; Mealy machine output depends on present state and input",
+        "B": "Mealy machines cannot have final states while Moore machines can",
+        "C": "Moore machines process infinite strings only",
+        "D": "Mealy machines require more states in every case"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 95,
+      "question": "A Moore machine is formally represented as (Q, Σ, Δ, δ, λ, q0) where λ typically denotes:",
+      "options": {
+        "A": "The output function mapping states to output symbols",
+        "B": "The set of final states",
+        "C": "The input alphabet",
+        "D": "The transition function only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 96,
+      "question": "A Mealy machine is formally represented as (Q, Σ, Δ, δ, λ, q0) where λ typically denotes:",
+      "options": {
+        "A": "The output function mapping (state, input) pairs to output symbols",
+        "B": "The set of accepting states",
+        "C": "The output alphabet only",
+        "D": "The number of states"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 97,
+      "question": "If a Mealy machine has n states, the equivalent Moore machine may require:",
+      "options": {
+        "A": "Exactly n states always",
+        "B": "Possibly more than n states, since a state may need to be split per incoming output value",
+        "C": "Always fewer than n states",
+        "D": "Zero states"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 98,
+      "question": "Which statement is TRUE about output sequences of equivalent Moore and Mealy machines for the same input string?",
+      "options": {
+        "A": "They are always identical in both length and content",
+        "B": "The Moore machine's output is one symbol longer than the Mealy machine's output for the same input",
+        "C": "The Mealy machine always produces more outputs",
+        "D": "They can never be made equivalent"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 99,
+      "question": "A key limitation of finite automata is that they have no auxiliary memory, which prevents them from recognizing languages requiring:",
+      "options": {
+        "A": "Simple pattern matching",
+        "B": "Counting or matching unbounded quantities (e.g., a^n b^n)",
+        "C": "Finite string recognition",
+        "D": "Regular expression evaluation"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 100,
+      "question": "Applications of finite automata and regular expressions include all of the following EXCEPT:",
+      "options": {
+        "A": "Lexical analysis in compilers",
+        "B": "Text search and pattern matching utilities (like grep)",
+        "C": "Design of simple protocol/control logic circuits",
+        "D": "Solving the Post Correspondence Problem in general"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 101,
+      "question": "The set of all regular languages over an alphabet Σ is generated starting from base languages φ, {ε}, and {a} for each a in Σ, closed under:",
+      "options": {
+        "A": "Union, concatenation, and Kleene star",
+        "B": "Only union",
+        "C": "Only intersection",
+        "D": "Only complementation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 102,
+      "question": "Which regular expression represents all strings over {a,b} that contain at least one 'a'?",
+      "options": {
+        "A": "b*ab*",
+        "B": "(a+b)*",
+        "C": "b*",
+        "D": "a*"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 103,
+      "question": "The law (R*)* = R* demonstrates:",
+      "options": {
+        "A": "Idempotency of the star operation",
+        "B": "Distributivity",
+        "C": "Commutativity of union",
+        "D": "Annihilation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 104,
+      "question": "Which of these correctly shows the distributive law over concatenation and union?",
+      "options": {
+        "A": "R(S+T) = RS + RT and (S+T)R = SR + TR",
+        "B": "R+ST = (R+S)(R+T)",
+        "C": "RS + T = R(S+T)",
+        "D": "R* + S* = (R+S)*"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 105,
+      "question": "Kleene's Theorem, together with the Myhill-Nerode theorem, is often used to establish which key fact about regular languages?",
+      "options": {
+        "A": "That regular languages equal the languages accepted by finite automata, with a minimal DFA existing for each",
+        "B": "That all languages are regular",
+        "C": "That regular languages require infinite states",
+        "D": "That regular expressions cannot express finite languages"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 106,
+      "question": "When constructing an NFA from a regular expression using Thompson's construction, the resulting NFA has how many final states?",
+      "options": {
+        "A": "Exactly one",
+        "B": "Exactly two",
+        "C": "As many as the number of symbols",
+        "D": "Zero"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 107,
+      "question": "In the FA-to-RE state elimination method, a self-loop labeled R on a state being eliminated contributes to the new path expression as:",
+      "options": {
+        "A": "R*",
+        "B": "R+",
+        "C": "R alone",
+        "D": "It is ignored"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 108,
+      "question": "Solving R = aR + b using Arden's Theorem gives:",
+      "options": {
+        "A": "R = a*b",
+        "B": "R = ba*",
+        "C": "R = b*a",
+        "D": "R = ab*"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 109,
+      "question": "Which technique is typically NOT used to prove that a language is non-regular?",
+      "options": {
+        "A": "Pumping lemma",
+        "B": "Closure properties (deriving a contradiction via a known non-regular/regular language)",
+        "C": "Myhill-Nerode theorem (distinguishability of states)",
+        "D": "Thompson's construction"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 110,
+      "question": "For the language L = {a^n b^n | n ≥ 1}, applying the pumping lemma, pumping down (i=0) the substring y (composed of a's) results in a string with:",
+      "options": {
+        "A": "Equal numbers of a's and b's, remaining in L",
+        "B": "Fewer a's than b's, which is not in L, giving the required contradiction",
+        "C": "The same string, no change",
+        "D": "More a's than b's"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 111,
+      "question": "If L1 and L2 are regular languages, then L1L2 (their concatenation) is:",
+      "options": {
+        "A": "Regular",
+        "B": "Never regular",
+        "C": "Regular only if both are finite",
+        "D": "Undefined"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 112,
+      "question": "If L is a regular language, then L* (Kleene star of L) is:",
+      "options": {
+        "A": "Regular",
+        "B": "Not necessarily regular",
+        "C": "Only regular if L is finite",
+        "D": "Always empty"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 113,
+      "question": "The decision property of checking whether two DFAs accept the same language is called the:",
+      "options": {
+        "A": "Equivalence problem",
+        "B": "Emptiness problem",
+        "C": "Membership problem",
+        "D": "Reachability problem only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 114,
+      "question": "In a Moore machine transition diagram, each state is typically labeled with:",
+      "options": {
+        "A": "The state name along with its associated output symbol",
+        "B": "Only the output symbol, no state name",
+        "C": "The entire input string",
+        "D": "Nothing extra beyond the state name"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 115,
+      "question": "In a Mealy machine transition diagram, each transition edge is typically labeled with:",
+      "options": {
+        "A": "Input symbol / output symbol (e.g., a/1)",
+        "B": "Only the state name",
+        "C": "Only the output symbol",
+        "D": "The pumping length"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 116,
+      "question": "Converting a Moore machine with n states to a Mealy machine generally results in:",
+      "options": {
+        "A": "The same number of states, n",
+        "B": "Always n+1 states",
+        "C": "Always fewer than n states",
+        "D": "A machine with no final states"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 117,
+      "question": "Which of the following is an advantage of Mealy machines over Moore machines in circuit design?",
+      "options": {
+        "A": "Mealy machines often require fewer states and can react to input changes within the same clock cycle",
+        "B": "Mealy machines cannot be implemented in hardware",
+        "C": "Mealy machines always produce longer output sequences",
+        "D": "Mealy machines do not require a transition function"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 118,
+      "question": "Which of the following CANNOT be recognized by any finite automaton, illustrating a fundamental limitation of FA?",
+      "options": {
+        "A": "The language of balanced parentheses of arbitrary depth",
+        "B": "The language a*b*",
+        "C": "The language of strings with an even number of a's",
+        "D": "The language (ab)*"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 119,
+      "question": "Regular expressions are widely applied in real-world software for:",
+      "options": {
+        "A": "Input validation (e.g., validating email address formats)",
+        "B": "Solving the halting problem",
+        "C": "Type-checking in context-sensitive grammars",
+        "D": "Simulating pushdown automata"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 120,
+      "question": "Overall, this unit establishes that regular expressions, finite automata (DFA/NFA), and right-linear grammars are all:",
+      "options": {
+        "A": "Equivalent formalisms for describing exactly the class of regular languages",
+        "B": "Different in the languages they can express",
+        "C": "Only theoretically related but not practically equivalent",
+        "D": "Applicable only to finite languages"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}

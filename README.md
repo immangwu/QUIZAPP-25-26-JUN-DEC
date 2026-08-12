@@ -6,17 +6,38 @@ A department-themed quiz portal: students pick **Mechanical Engineering** (red t
 or **Computer Science & Engineering** (green theme), log in with credentials generated
 from the nominal rolls, pick a subject, and take a 10-minute, tab-switch-monitored MCQ quiz.
 
-## Subjects included
+## Subjects & quizzes included
 
-| Department | Code | Subject | Questions |
-|---|---|---|---|
-| Mechanical | 20MEP11 | Unconventional Machining Process | 100 |
-| Mechanical | 20ME014 | Heat and Mass Transfer | 100 |
-| CSE | 20CS006 | Theory of Computation (R2020) | 120 |
+| Department | Code | Subject | Quiz 01 | Quiz 02 |
+|---|---|---|---|---|
+| Mechanical | 20MEP11 | Unconventional Machining Process | Introduction & Mechanical Energy Based Processes (100 Q) | Thermo-Electric Energy Based Processes (60 Q) |
+| Mechanical | 20ME014 | Heat and Mass Transfer | Conduction (100 Q) | Convection Heat Transfer (60 Q) |
+| Mechanical | 25ME252 | Production Processes and Fabrication | Metal Casting Processes (60 Q) | — |
+| CSE | 20CS006 | Theory of Computation (R2020) | Finite Automata (120 Q) | Regular Expressions & Regular Languages (120 Q) |
 
-Question banks live in `data/*.json` (parsed from the source PDFs via `data/parse_quiz.py`
-and `data/raw_*.txt`). Correct answers are stored but **never shown to students** — the
-result page only shows right/wrong per question and marks awarded.
+Each subject can have multiple quizzes; students pick the subject, then which quiz
+(Quiz 01, Quiz 02, ...) to attempt — attempt numbering, prior-attempt history and
+faculty filtering are all scoped per quiz, not just per subject.
+
+Question banks live in `data/<key>_q<n>.json` (one file per quiz, e.g. `ucmp_q1.json`,
+`ucmp_q2.json`), parsed either from `data/raw_*.txt` via `data/parse_quiz.py` (original
+subjects) or directly from source `.docx` files via `data/parse_docx_quiz.py` (newer
+quizzes — edit the `SOURCES` list at the top of that script to add more). Correct
+answers are stored but **never shown to students** — the result page only shows
+right/wrong per question and marks awarded.
+
+### Adding a new quiz or subject
+
+1. Add an entry to `SOURCES` in `data/parse_docx_quiz.py` pointing at the source
+   `.docx` (see the two supported layouts documented in that file's docstring), then
+   run `python data/parse_docx_quiz.py` to produce `data/<key>_q<n>.json`.
+2. Register it in `utils/quiz_data.py`'s `SUBJECTS` dict — either add a `{"quiz_no":
+   N, "file": "<key>_qN"}` entry to an existing subject's `quizzes` list, or add a
+   whole new subject dict (with a fresh `key`/`code`/`title`) under the right
+   department.
+3. No changes needed to `app.py`, `storage.py`, or the admin dashboard — the quiz
+   picker, attempt tracking, and faculty filters all pick up new subjects/quizzes
+   automatically from `quiz_data.py`.
 
 ## Quick start (local, no Google Sheets yet)
 
@@ -69,7 +90,7 @@ passwords unchanged and only adds passwords for new students.
 - **Faculty**: from the department picker, open "Faculty / Admin Login" and log in
   (default `admin` / `admin123` — override via the `[admin]` section in
   `secrets.toml`, see `secrets.toml.example`). The dashboard lets you filter by
-  department/subject, then:
+  department/subject/quiz (Quiz 01 / Quiz 02 / ...), then:
   - Download the full filtered results as **CSV** or a formatted **PDF report**
     (name, register no, subject, score, percentage, flagged status, timestamp).
   - Pick one student's attempt from a dropdown and download **that student's exact

@@ -18,6 +18,8 @@ import gspread
 from google.oauth2.service_account import Credentials
 import toml
 
+from utils.storage import RESULT_FIELDS
+
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive",
@@ -54,15 +56,19 @@ def main():
     try:
         results_ws = spreadsheet.worksheet("results")
     except gspread.WorksheetNotFound:
-        results_ws = spreadsheet.add_worksheet(title="results", rows=1000, cols=12)
-        results_ws.update([[
-            "timestamp", "department", "subject_code", "reg_no", "name",
-            "attempt_no", "score", "total", "percentage", "flagged",
-            "tab_switch_count", "answers_json",
-        ]])
+        results_ws = spreadsheet.add_worksheet(title="results", rows=1000, cols=len(RESULT_FIELDS))
+        results_ws.update([RESULT_FIELDS])
         print("Created results worksheet with header row")
     else:
-        print("results worksheet already exists — left untouched")
+        header = results_ws.row_values(1)
+        if header and "quiz_no" not in header:
+            print(
+                "results worksheet already exists but predates the 'quiz_no' column — "
+                "add a 'quiz_no' column to the sheet manually (existing rows can be left "
+                "blank; they're treated as Quiz 1)."
+            )
+        else:
+            print("results worksheet already exists — left untouched")
 
 
 if __name__ == "__main__":

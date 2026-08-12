@@ -11,9 +11,10 @@ Google credentials.
 Sheets layout (once configured), all in one spreadsheet:
   - "cse_credentials"     columns: reg_no, name, password
   - "mechanical_credentials"  columns: reg_no, name, password
-  - "results"             columns: timestamp, department, subject_code,
-                           reg_no, name, attempt_no, score, total, percentage,
-                           flagged, tab_switch_count, answers_json
+  - "results"             see RESULT_FIELDS below. quiz_no is appended as the last
+                           column (not inserted mid-row) so sheets created before
+                           multi-quiz support stay column-aligned for existing rows;
+                           a blank quiz_no is treated as Quiz 1.
 """
 import json
 import os
@@ -28,8 +29,14 @@ RESULTS_CSV = os.path.join(LOCAL_RESULTS_DIR, "results.csv")
 RESULT_FIELDS = [
     "timestamp", "department", "subject_code", "reg_no", "name",
     "attempt_no", "score", "total", "percentage", "flagged",
-    "tab_switch_count", "answers_json", "question_ids_json",
+    "tab_switch_count", "answers_json", "question_ids_json", "quiz_no",
 ]
+
+
+def _quiz_no_of(row):
+    """Rows saved before quiz_no existed (single-quiz-per-subject era) are treated as
+    Quiz 1 for filtering/attempt-numbering purposes."""
+    return str(row.get("quiz_no") or "1")
 
 
 _LAST_SHEETS_ERROR = None
@@ -128,30 +135,36 @@ def save_result(record):
         writer.writerow({k: record.get(k, "") for k in RESULT_FIELDS})
 
 
-def get_attempts(reg_no, subject_code):
-    """Returns list of previous attempt records for this student+subject (for attempt numbering & history)."""
+def get_attempts(reg_no, subject_code, quiz_no=None):
+    """Returns list of previous attempt records for this student+subject(+quiz), for
+    attempt numbering & history. quiz_no=None matches every quiz under that subject
+    (used for backward-compatible callers); pass an int to scope to one quiz."""
+    def _match(r):
+        if str(r.get("reg_no")) != str(reg_no) or r.get("subject_code") != subject_code:
+            return False
+        return quiz_no is None or _quiz_no_of(r) == str(quiz_no)
+
     records = []
     _, spreadsheet = _get_gspread_client()
     if spreadsheet is not None:
         try:
             ws = spreadsheet.worksheet("results")
             rows = ws.get_all_records()
-            records = [r for r in rows if str(r.get("reg_no")) == str(reg_no) and r.get("subject_code") == subject_code]
-            return records
+            return [r for r in rows if _match(r)]
         except Exception:
             pass
 
     _ensure_local_results_file()
     with open(RESULTS_CSV, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            if row.get("reg_no") == str(reg_no) and row.get("subject_code") == subject_code:
+            if _match(row):
                 records.append(row)
     return records
 
 
-def get_all_results(department=None, subject_code=None):
-    """Returns every result record, optionally filtered by department and/or subject_code.
-    Used by the faculty dashboard for CSV/PDF export."""
+def get_all_results(department=None, subject_code=None, quiz_no=None):
+    """Returns every result record, optionally filtered by department, subject_code,
+    and/or quiz_no. Used by the faculty dashboard for CSV/PDF export."""
     records = []
     _, spreadsheet = _get_gspread_client()
     if spreadsheet is not None:
@@ -169,22 +182,25 @@ def get_all_results(department=None, subject_code=None):
         records = [r for r in records if r.get("department") == department]
     if subject_code:
         records = [r for r in records if r.get("subject_code") == subject_code]
+    if quiz_no is not None:
+        records = [r for r in records if _quiz_no_of(r) == str(quiz_no)]
     return records
 
 
-def _matches(row, timestamp, reg_no, subject_code, attempt_no):
+def _matches(row, timestamp, reg_no, subject_code, quiz_no, attempt_no):
     return (
         str(row.get("timestamp")) == str(timestamp)
         and str(row.get("reg_no")) == str(reg_no)
         and str(row.get("subject_code")) == str(subject_code)
+        and _quiz_no_of(row) == str(quiz_no or "1")
         and str(row.get("attempt_no")) == str(attempt_no)
     )
 
 
-def delete_result(timestamp, reg_no, subject_code, attempt_no):
-    """Deletes the single result row matching all four fields (their combination is
-    effectively unique — a student can't submit two attempts of the same subject in
-    the same second). Returns True if a row was deleted."""
+def delete_result(timestamp, reg_no, subject_code, quiz_no, attempt_no):
+    """Deletes the single result row matching all fields (their combination is
+    effectively unique — a student can't submit two attempts of the same subject+quiz
+    in the same second). Returns True if a row was deleted."""
     _, spreadsheet = _get_gspread_client()
     if spreadsheet is not None:
         try:
@@ -193,7 +209,7 @@ def delete_result(timestamp, reg_no, subject_code, attempt_no):
             header, rows = all_values[0], all_values[1:]
             for i, row in enumerate(rows):
                 record = dict(zip(header, row))
-                if _matches(record, timestamp, reg_no, subject_code, attempt_no):
+                if _matches(record, timestamp, reg_no, subject_code, quiz_no, attempt_no):
                     ws.delete_rows(i + 2)  # +1 header, +1 1-indexed
                     return True
             return False
@@ -203,7 +219,7 @@ def delete_result(timestamp, reg_no, subject_code, attempt_no):
     _ensure_local_results_file()
     with open(RESULTS_CSV, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    remaining = [r for r in rows if not _matches(r, timestamp, reg_no, subject_code, attempt_no)]
+    remaining = [r for r in rows if not _matches(r, timestamp, reg_no, subject_code, quiz_no, attempt_no)]
     deleted = len(remaining) != len(rows)
     if deleted:
         with open(RESULTS_CSV, "w", newline="", encoding="utf-8") as f:

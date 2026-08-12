@@ -1,0 +1,728 @@
+{
+  "code": "20ME014",
+  "title": "Heat and Mass Transfer",
+  "quiz_title": "Quiz 2: Convection Heat Transfer",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "For steady, incompressible 2-D flow, the continuity equation is expressed as:",
+      "options": {
+        "A": "∂u/∂x + ∂v/∂y = 0",
+        "B": "∂u/∂x − ∂v/∂y = 0",
+        "C": "∂u/∂t + ∂v/∂t = 0",
+        "D": "u∂u/∂x + v∂v/∂y = 0"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "The boundary layer concept, introduced by Prandtl, states that viscous effects are significant only:",
+      "options": {
+        "A": "Throughout the entire flow field",
+        "B": "In a thin region adjacent to the solid surface",
+        "C": "Far away from the surface",
+        "D": "Only in turbulent flow"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "The non-dimensional parameter governing transition from laminar to turbulent flow is the:",
+      "options": {
+        "A": "Prandtl number",
+        "B": "Reynolds number",
+        "C": "Nusselt number",
+        "D": "Grashof number"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "The thermal boundary layer thickness relative to the velocity (hydrodynamic) boundary layer thickness depends primarily on the:",
+      "options": {
+        "A": "Reynolds number only",
+        "B": "Prandtl number",
+        "C": "Grashof number",
+        "D": "Nusselt number"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "For a fluid with Prandtl number Pr >> 1 (e.g., oils), the thermal boundary layer is:",
+      "options": {
+        "A": "Thicker than the velocity boundary layer",
+        "B": "Thinner than the velocity boundary layer",
+        "C": "Equal to the velocity boundary layer",
+        "D": "Not defined"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "For liquid metals (Pr << 1), the thermal boundary layer is:",
+      "options": {
+        "A": "Much thicker than the velocity boundary layer",
+        "B": "Much thinner than the velocity boundary layer",
+        "C": "Equal to the velocity boundary layer",
+        "D": "Zero"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "The boundary layer energy equation, under boundary layer approximations, neglects:",
+      "options": {
+        "A": "Convection terms",
+        "B": "Axial (streamwise) conduction compared to normal (transverse) conduction",
+        "C": "Viscous dissipation always",
+        "D": "All conduction terms"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "The Prandtl number is physically the ratio of:",
+      "options": {
+        "A": "Momentum diffusivity to thermal diffusivity",
+        "B": "Thermal diffusivity to momentum diffusivity",
+        "C": "Inertia force to viscous force",
+        "D": "Buoyancy force to viscous force"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "Air (ν = 15 × 10⁻⁶ m²/s) flows over a flat plate at 2 m/s. The Reynolds number at x = 0.5 m from the leading edge is approximately:",
+      "options": {
+        "A": "6.67 × 10⁴",
+        "B": "6.67 × 10³",
+        "C": "6.67 × 10⁵",
+        "D": "1.5 × 10⁵"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "The 'no-slip condition' in boundary layer theory implies that:",
+      "options": {
+        "A": "Fluid velocity equals the free-stream velocity at the wall",
+        "B": "Fluid velocity at the solid surface equals the velocity of the surface (zero for a stationary wall)",
+        "C": "There is no viscosity at the wall",
+        "D": "Temperature gradient is zero at the wall"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "For laminar flow over a flat plate, the hydrodynamic boundary layer thickness varies with distance x from the leading edge as:",
+      "options": {
+        "A": "δ ∝ x",
+        "B": "δ ∝ x^0.5",
+        "C": "δ ∝ x^0.8",
+        "D": "δ ∝ x²"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "The critical Reynolds number for transition from laminar to turbulent flow over a flat plate is generally taken as:",
+      "options": {
+        "A": "2300",
+        "B": "5 × 10⁵",
+        "C": "4000",
+        "D": "10⁸"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "The local Nusselt number for laminar flow over an isothermal flat plate is given by:",
+      "options": {
+        "A": "Nu_x = 0.332 Re_x^0.5 Pr^(1/3)",
+        "B": "Nu_x = 0.023 Re_x^0.8 Pr^0.4",
+        "C": "Nu_x = 0.037 Re_x^0.8 Pr^(1/3)",
+        "D": "Nu_x = 3.66"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "Air flows over a flat plate with Re_x = 4 × 10⁴ and Pr = 0.7 (laminar). Using Nu_x = 0.332 Re_x^0.5 Pr^(1/3), the local Nusselt number is approximately:",
+      "options": {
+        "A": "59",
+        "B": "5.9",
+        "C": "590",
+        "D": "0.59"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "The average Nusselt number for laminar flow over an isothermal flat plate of length L is given by:",
+      "options": {
+        "A": "Nu_L = 0.664 Re_L^0.5 Pr^(1/3)",
+        "B": "Nu_L = 0.332 Re_L^0.5 Pr^(1/3)",
+        "C": "Nu_L = 0.037 Re_L^0.8 Pr^(1/3)",
+        "D": "Nu_L = 4.36"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "The turbulent flat-plate correlation Nu_x = 0.0296 Re_x^0.8 Pr^(1/3) is valid for the Prandtl number range:",
+      "options": {
+        "A": "0.6 ≤ Pr ≤ 60",
+        "B": "Pr < 0.1 only",
+        "C": "Pr > 1000 only",
+        "D": "Only Pr = 1"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "As per the Reynolds analogy, for Pr ≈ 1, the relation between skin-friction coefficient (C_f) and Stanton number (St) is approximately:",
+      "options": {
+        "A": "St = C_f/2",
+        "B": "St = 2C_f",
+        "C": "St = C_f²",
+        "D": "St and C_f are unrelated"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "In flow over a flat plate, increasing the free-stream velocity (all else constant) causes the boundary layer thickness at a given x to:",
+      "options": {
+        "A": "Increase",
+        "B": "Decrease",
+        "C": "Remain unchanged",
+        "D": "Become infinite"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "Water (ν = 0.8 × 10⁻⁶ m²/s) flows over a flat plate at 3 m/s. The distance from the leading edge at which transition to turbulence begins (Re_c = 5 × 10⁵) is approximately:",
+      "options": {
+        "A": "0.133 m",
+        "B": "1.33 m",
+        "C": "0.0133 m",
+        "D": "13.3 m"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "For flow over a flat plate with an unheated starting length, the local heat transfer coefficient downstream is:",
+      "options": {
+        "A": "Independent of the unheated length",
+        "B": "Modified/reduced due to the thermal boundary layer starting downstream of the leading edge",
+        "C": "Always zero",
+        "D": "Applicable only to turbulent flow"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "For flow across a single cylinder, the Reynolds number used in correlations is based on the:",
+      "options": {
+        "A": "Cylinder diameter",
+        "B": "Cylinder length",
+        "C": "Cylinder circumference",
+        "D": "Boundary layer thickness"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "Boundary layer separation on a cylinder in cross-flow occurs mainly due to:",
+      "options": {
+        "A": "A favourable pressure gradient",
+        "B": "An adverse pressure gradient on the rear half of the cylinder",
+        "C": "Absence of viscosity",
+        "D": "Constant velocity flow"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "The sudden drop in drag coefficient of a cylinder around Re ≈ 2 × 10⁵ (the 'drag crisis') occurs because:",
+      "options": {
+        "A": "Laminar separation is delayed as the boundary layer transitions to turbulent and stays attached longer",
+        "B": "The flow stagnates completely",
+        "C": "Fluid viscosity is reduced",
+        "D": "Cylinder diameter increases"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "A widely used empirical correlation for the average Nusselt number for cross-flow over a cylinder, valid over a wide Reynolds number range, is the:",
+      "options": {
+        "A": "Churchill–Bernstein correlation",
+        "B": "Dittus–Boelter correlation",
+        "C": "Colburn analogy for flat plates",
+        "D": "Reynolds analogy"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "The correlation Nu = 2 + (0.4Re^0.5 + 0.06Re^(2/3))Pr^0.4(μ/μ_s)^0.25 for flow over a sphere is known as:",
+      "options": {
+        "A": "Whitaker's correlation",
+        "B": "Churchill–Chu correlation",
+        "C": "Dittus–Boelter equation",
+        "D": "Colburn equation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "As Reynolds number → 0 for flow over a sphere, the Nusselt number approaches:",
+      "options": {
+        "A": "0",
+        "B": "2 (the pure conduction limit)",
+        "C": "3.66",
+        "D": "Infinity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "For flow normal to a single cylinder, at very low Reynolds numbers the flow remains attached and is dominated by:",
+      "options": {
+        "A": "Viscous forces (creeping flow)",
+        "B": "Turbulent eddies",
+        "C": "Vortex shedding only",
+        "D": "Boundary layer separation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "Periodic vortex shedding behind a cylinder in cross-flow, occurring over a certain Reynolds number range, is characterised by the dimensionless:",
+      "options": {
+        "A": "Strouhal number",
+        "B": "Grashof number",
+        "C": "Biot number",
+        "D": "Stanton number"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "In tube bank/bundle arrangements, the two common configurations studied are:",
+      "options": {
+        "A": "Aligned (in-line) and staggered arrangements",
+        "B": "Horizontal and vertical arrangements only",
+        "C": "Circular and square arrangements",
+        "D": "Convergent and divergent arrangements"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "In tube bank heat transfer analysis, S_T and S_L represent:",
+      "options": {
+        "A": "Transverse pitch and longitudinal pitch between tubes",
+        "B": "Tube thickness and tube length",
+        "C": "Surface temperature and liquid temperature",
+        "D": "Shell thickness and tube length"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "The Zhukauskas correlation, commonly used for tube-bank convection, requires a correction factor for:",
+      "options": {
+        "A": "The number of tube rows (N_L) when fewer than about 20 rows",
+        "B": "Tube material only",
+        "C": "Fluid colour",
+        "D": "Tube surface roughness only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "For the same pitch, the heat transfer coefficient in a staggered tube-bank arrangement compared to an aligned arrangement is generally:",
+      "options": {
+        "A": "Higher, due to increased flow mixing/turbulence",
+        "B": "Lower",
+        "C": "Exactly the same",
+        "D": "Zero"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "In tube-bank flow, the maximum velocity used in the Reynolds number calculation occurs at the:",
+      "options": {
+        "A": "Minimum flow area (transverse plane between adjacent tubes)",
+        "B": "Inlet of the tube bank",
+        "C": "Exit plane of the tube bank",
+        "D": "Centreline of the tubes"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "In a tube bank, the pressure drop across the bank is an important design parameter because it determines the:",
+      "options": {
+        "A": "Pumping power requirement",
+        "B": "Wall temperature only",
+        "C": "Tube material selection only",
+        "D": "Fluid density"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "For laminar flow in a circular pipe, the hydrodynamic entry length is approximately given by:",
+      "options": {
+        "A": "L_h ≈ 0.05 Re_D D",
+        "B": "L_h ≈ 10 D",
+        "C": "L_h ≈ 0.05 Re_D Pr D",
+        "D": "L_h ≈ Re_D / D"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "For turbulent flow in a pipe, the entrance length (both hydrodynamic and thermal) is approximately:",
+      "options": {
+        "A": "10 to 60 pipe diameters",
+        "B": "0.05 Re D",
+        "C": "Equal to the pipe length always",
+        "D": "Independent of Reynolds number, fixed at 1D"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "The thermal entry length for laminar flow in a pipe is given by:",
+      "options": {
+        "A": "L_t ≈ 0.05 Re_D Pr D",
+        "B": "L_t ≈ 0.05 Re_D D",
+        "C": "L_t ≈ 10D",
+        "D": "L_t = L_h always, for any Pr"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "For fully developed laminar flow in a circular tube with constant wall heat flux, the Nusselt number is:",
+      "options": {
+        "A": "4.36",
+        "B": "3.66",
+        "C": "0.023 Re^0.8 Pr^0.4",
+        "D": "2.0"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "For fully developed laminar flow in a circular tube with constant wall temperature, the Nusselt number is:",
+      "options": {
+        "A": "3.66",
+        "B": "4.36",
+        "C": "8.23",
+        "D": "0"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "Water flows through a pipe of diameter 0.02 m with Reynolds number 1500 (laminar). The hydrodynamic entry length is approximately:",
+      "options": {
+        "A": "1.5 m",
+        "B": "0.15 m",
+        "C": "15 m",
+        "D": "0.015 m"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "The Dittus–Boelter equation, Nu = 0.023 Re^0.8 Pr^n, is applicable for:",
+      "options": {
+        "A": "Fully developed turbulent flow in smooth tubes, with n = 0.4 for heating and n = 0.3 for cooling",
+        "B": "Laminar flow only",
+        "C": "Flow over flat plates only",
+        "D": "Free convection only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "Within the entrance region of a pipe, the local heat transfer coefficient compared to the fully developed value is:",
+      "options": {
+        "A": "Higher near the entrance, decreasing to the fully developed value downstream",
+        "B": "Lower near the entrance",
+        "C": "Constant throughout",
+        "D": "Zero near the entrance"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "In fully developed flow, the quantity that remains invariant (in non-dimensional form) with axial distance x is the:",
+      "options": {
+        "A": "Shape of the velocity/temperature profile",
+        "B": "Pressure",
+        "C": "Bulk mean temperature",
+        "D": "Wall shear stress magnitude, in all cases"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "Simultaneously developing (combined entry length) hydrodynamic and thermal boundary layers commonly occur when:",
+      "options": {
+        "A": "Pr ≈ 1 (e.g., gases), so both boundary layers develop at similar rates",
+        "B": "Pr >> 1 only",
+        "C": "Pr << 1 only",
+        "D": "Flow is always fully turbulent"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "Free convection is driven primarily by:",
+      "options": {
+        "A": "An externally imposed pressure gradient (pump/fan)",
+        "B": "Buoyancy forces arising from density variation due to temperature difference",
+        "C": "Forced mechanical mixing",
+        "D": "Surface tension effects only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "The dimensionless number characterising the ratio of buoyancy to viscous forces in free convection is the:",
+      "options": {
+        "A": "Grashof number",
+        "B": "Reynolds number",
+        "C": "Nusselt number",
+        "D": "Biot number"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "The Grashof number is defined as:",
+      "options": {
+        "A": "Gr = gβΔT L³ / ν²",
+        "B": "Gr = VL/ν",
+        "C": "Gr = ν/α",
+        "D": "Gr = hL/k"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "The Rayleigh number used in free convection correlations is defined as:",
+      "options": {
+        "A": "Ra = Gr × Pr",
+        "B": "Ra = Gr / Pr",
+        "C": "Ra = Re × Pr",
+        "D": "Ra = Nu × Pr"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "The critical Rayleigh number for transition from a laminar to a turbulent free-convection boundary layer on a vertical plate is approximately:",
+      "options": {
+        "A": "10⁹",
+        "B": "2300",
+        "C": "5 × 10⁵",
+        "D": "10³"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "For a vertical plate with L = 0.5 m, β = 3.3 × 10⁻³ K⁻¹, ΔT = 20°C, ν = 15 × 10⁻⁶ m²/s and g = 9.81 m/s², the Grashof number is approximately:",
+      "options": {
+        "A": "3.6 × 10⁸",
+        "B": "3.6 × 10⁶",
+        "C": "3.6 × 10¹⁰",
+        "D": "3.6 × 10⁴"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "The widely used Churchill–Chu correlation is applicable for free convection over:",
+      "options": {
+        "A": "Vertical plates and cylinders (with adapted forms for horizontal cylinders/spheres)",
+        "B": "Only forced convection over flat plates",
+        "C": "Only tube banks",
+        "D": "Only turbulent pipe flow"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "For a heated horizontal plate facing upward (hot surface up) in free convection, the heat transfer coefficient compared to a hot surface facing downward is generally:",
+      "options": {
+        "A": "Higher, since buoyant plumes rise freely away from the surface",
+        "B": "Lower",
+        "C": "The same",
+        "D": "Zero"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "For free convection from a long horizontal cylinder, the characteristic length used in the Grashof/Rayleigh number is the:",
+      "options": {
+        "A": "Cylinder diameter",
+        "B": "Cylinder length",
+        "C": "Cylinder circumference",
+        "D": "Boundary layer thickness"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "A commonly used correlation for free convection over a sphere of diameter D (valid for Pr ≥ 0.7) is:",
+      "options": {
+        "A": "Nu = 2 + [0.589 Ra_D^(1/4)] / [1 + (0.469/Pr)^(9/16)]^(4/9)",
+        "B": "Nu = 0.023 Re^0.8 Pr^0.4",
+        "C": "Nu = 0.332 Re^0.5 Pr^(1/3)",
+        "D": "Nu = 3.66, always"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "Boundary layers are broadly classified as:",
+      "options": {
+        "A": "Velocity (hydrodynamic), thermal, and concentration boundary layers",
+        "B": "Laminar boundary layer only",
+        "C": "Internal and external boundary layers only",
+        "D": "Steady and unsteady boundary layers only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "Convection heat transfer is classified, based on the cause of fluid motion, into:",
+      "options": {
+        "A": "Forced convection and free (natural) convection",
+        "B": "Laminar convection and turbulent convection only",
+        "C": "Internal convection and radiation",
+        "D": "Steady convection and conduction"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "Forced convection over a flat plate (external flow) finds direct application in the design of:",
+      "options": {
+        "A": "Flat-plate solar collectors, aircraft wings and cooling fins",
+        "B": "Nuclear reactor internals only",
+        "C": "Refrigerant flow inside compressor coils only",
+        "D": "Electric transformers only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "Convection heat transfer in flow across tube banks/bundles is directly applied in the design of:",
+      "options": {
+        "A": "Shell-and-tube heat exchangers and boiler/condenser tube bundles",
+        "B": "Flat-plate solar collectors",
+        "C": "Automobile tyres",
+        "D": "Aircraft wings"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "Free convection principles are primarily applied in the design of:",
+      "options": {
+        "A": "Electronic cooling (natural-convection heat sinks), building insulation and fan-less radiators",
+        "B": "High-speed turbine blade cooling",
+        "C": "Rocket nozzle cooling",
+        "D": "Nuclear fuel rod forced cooling"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "Internal (pipe/duct) flow convection principles, including entrance effects, are essential in the design of:",
+      "options": {
+        "A": "Heat exchanger tubes, piping systems and HVAC ducts",
+        "B": "Aircraft external skin",
+        "C": "Free-falling raindrops",
+        "D": "Open-channel river flow"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}
