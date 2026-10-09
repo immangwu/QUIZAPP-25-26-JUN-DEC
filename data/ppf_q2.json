@@ -1,0 +1,1208 @@
+{
+  "code": "25ME252",
+  "title": "Production Processes and Fabrication",
+  "quiz_title": "Quiz 2: Powder Metallurgy & Plastic Processing",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In atomization, metal powder is produced by",
+      "options": {
+        "A": "electrolytic deposition",
+        "B": "chemical reduction of oxides",
+        "C": "breaking a stream of molten metal into droplets",
+        "D": "machining chips"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "The most widely used method for producing metal powders on a large scale is",
+      "options": {
+        "A": "atomization",
+        "B": "carbonyl process",
+        "C": "electrolysis",
+        "D": "condensation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "Gas atomization generally produces powder particles that are",
+      "options": {
+        "A": "spherical",
+        "B": "dendritic",
+        "C": "needle-shaped",
+        "D": "irregular and flaky"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "Water atomization generally produces powder particles that are",
+      "options": {
+        "A": "hollow",
+        "B": "flaky",
+        "C": "perfectly spherical",
+        "D": "irregular in shape"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "Irregular powder particles from water atomization are preferred for die compaction because they give",
+      "options": {
+        "A": "no shrinkage",
+        "B": "lower density only",
+        "C": "better green strength due to mechanical interlocking",
+        "D": "poor flow"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "Spherical gas-atomized powders are preferred for",
+      "options": {
+        "A": "hot isostatic pressing and additive manufacturing",
+        "B": "self-lubricating bearings only",
+        "C": "making flakes",
+        "D": "crushing"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "In centrifugal atomization, droplets are formed by",
+      "options": {
+        "A": "chemical reaction",
+        "B": "high-voltage discharge",
+        "C": "a rotating disc or rotating electrode",
+        "D": "electrolysis"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "Gas atomization of reactive metals like titanium uses",
+      "options": {
+        "A": "steam",
+        "B": "air",
+        "C": "oxygen",
+        "D": "inert gas such as argon"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "Crushing and milling are suitable for producing powders of",
+      "options": {
+        "A": "liquid metals",
+        "B": "brittle materials and ceramics",
+        "C": "polymers only",
+        "D": "ductile metals like copper"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "The equipment commonly used for mechanical comminution of brittle materials is a",
+      "options": {
+        "A": "lathe",
+        "B": "ball mill",
+        "C": "extruder",
+        "D": "blow molder"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "Electrolytic copper powder is noted for its",
+      "options": {
+        "A": "very high purity and dendritic shape",
+        "B": "high oxide content",
+        "C": "large size",
+        "D": "spherical shape"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "Very fine, high-purity iron and nickel powders are produced by the",
+      "options": {
+        "A": "crushing",
+        "B": "blending",
+        "C": "carbonyl process",
+        "D": "water atomization"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is NOT a powder characteristic used for evaluation?",
+      "options": {
+        "A": "Flow rate",
+        "B": "Apparent density",
+        "C": "Particle size distribution",
+        "D": "Melt flow index"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "The flow rate of metal powder is measured using a",
+      "options": {
+        "A": "Charpy tester",
+        "B": "Hall flowmeter",
+        "C": "pyrometer",
+        "D": "Brinell tester"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "Particle size of metal powders is commonly determined by",
+      "options": {
+        "A": "hardness test",
+        "B": "tensile test",
+        "C": "sieve analysis",
+        "D": "impact test"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "The density of loose powder in a container without compaction is called",
+      "options": {
+        "A": "true density",
+        "B": "green density",
+        "C": "sintered density",
+        "D": "apparent density"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "Blending in powder metallurgy is done to",
+      "options": {
+        "A": "obtain uniform distribution of particle sizes and constituents",
+        "B": "harden the part",
+        "C": "melt the powder",
+        "D": "sinter the part"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "The lubricant commonly added to metal powder before compaction is",
+      "options": {
+        "A": "kerosene",
+        "B": "sodium chloride",
+        "C": "zinc stearate",
+        "D": "graphite electrode"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "Lubricants are added to metal powders mainly to",
+      "options": {
+        "A": "increase shrinkage",
+        "B": "increase oxidation",
+        "C": "reduce green strength",
+        "D": "reduce die-wall friction and aid ejection"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "The compact obtained after pressing and before sintering is called a",
+      "options": {
+        "A": "green compact",
+        "B": "sintered compact",
+        "C": "preform",
+        "D": "casting"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "Typical compaction pressure for iron powder parts in die pressing is about",
+      "options": {
+        "A": "1 – 10 MPa",
+        "B": "400 – 800 MPa",
+        "C": "5000 – 8000 MPa",
+        "D": "0.1 – 1 MPa"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "In single-action die pressing, density in the compact is",
+      "options": {
+        "A": "uniform throughout",
+        "B": "highest near the moving punch and lowest far away",
+        "C": "zero at the centre",
+        "D": "lowest near the punch"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "Density variation in die-pressed compacts is mainly due to",
+      "options": {
+        "A": "sintering temperature",
+        "B": "friction between powder and die wall",
+        "C": "furnace atmosphere",
+        "D": "lubricant colour"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "Double-action pressing is used to",
+      "options": {
+        "A": "reduce die cost",
+        "B": "avoid sintering",
+        "C": "melt the powder",
+        "D": "obtain more uniform density in the compact"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "Long, slender P/M parts are difficult to die-press because of",
+      "options": {
+        "A": "low cost",
+        "B": "high flow",
+        "C": "large density variation along the length",
+        "D": "high melting point"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "Green strength of a compact is due to",
+      "options": {
+        "A": "mechanical interlocking and cold welding of particles",
+        "B": "chemical reaction",
+        "C": "melting",
+        "D": "metallurgical bonding by diffusion"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "In isostatic pressing, pressure is applied",
+      "options": {
+        "A": "by rolling",
+        "B": "only from bottom",
+        "C": "uniformly from all directions through a fluid",
+        "D": "only from top"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "Cold Isostatic Pressing (CIP) uses a mould made of",
+      "options": {
+        "A": "glass",
+        "B": "flexible rubber or elastomer",
+        "C": "hardened tool steel",
+        "D": "graphite"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "The pressurising medium in CIP is usually",
+      "options": {
+        "A": "water or oil",
+        "B": "molten salt",
+        "C": "air at 1 bar",
+        "D": "argon gas"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "Hot Isostatic Pressing (HIP) uses",
+      "options": {
+        "A": "oil at low temperature",
+        "B": "vacuum only",
+        "C": "water at room temperature",
+        "D": "inert gas (argon) at high temperature and pressure"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "In HIP, the powder is generally contained in a",
+      "options": {
+        "A": "rubber bag",
+        "B": "open die",
+        "C": "sealed metal or glass can",
+        "D": "paper bag"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "HIP produces parts with",
+      "options": {
+        "A": "only surface densification",
+        "B": "high porosity",
+        "C": "very low strength",
+        "D": "near 100 % density and uniform properties"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "HIP is also used for",
+      "options": {
+        "A": "painting castings",
+        "B": "closing internal porosity in castings",
+        "C": "cleaning powders",
+        "D": "blending"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "Compared to die pressing, isostatic pressing gives",
+      "options": {
+        "A": "more uniform density",
+        "B": "flat parts only",
+        "C": "higher die wear",
+        "D": "lower density uniformity"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "Metal Injection Molding (MIM) is best suited for",
+      "options": {
+        "A": "simple bars only",
+        "B": "thick plates",
+        "C": "small, complex, high-volume parts",
+        "D": "very large castings"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "Sintering is carried out at a temperature of about",
+      "options": {
+        "A": "0.2 – 0.3 of melting point",
+        "B": "0.7 – 0.9 of melting point (absolute)",
+        "C": "above the melting point",
+        "D": "room temperature"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "The primary mechanism of bonding during sintering is",
+      "options": {
+        "A": "riveting",
+        "B": "solid-state diffusion",
+        "C": "adhesive bonding",
+        "D": "melting of the entire compact"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "During sintering, the contact points between particles grow to form",
+      "options": {
+        "A": "voids",
+        "B": "cracks",
+        "C": "flash",
+        "D": "necks"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "Sintering generally causes the compact to",
+      "options": {
+        "A": "shrink and densify",
+        "B": "expand greatly",
+        "C": "melt completely",
+        "D": "lose all strength"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "A protective atmosphere is used during sintering to",
+      "options": {
+        "A": "cool the part",
+        "B": "prevent oxidation and reduce oxides",
+        "C": "add colour",
+        "D": "increase oxidation"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is commonly used as a sintering atmosphere?",
+      "options": {
+        "A": "Hydrogen",
+        "B": "Dissociated ammonia",
+        "C": "Endothermic gas",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "In liquid-phase sintering",
+      "options": {
+        "A": "the entire compact melts",
+        "B": "no heating is done",
+        "C": "one constituent melts and aids densification",
+        "D": "only pressure is applied"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "Tungsten carbide–cobalt cemented carbides are produced by",
+      "options": {
+        "A": "liquid-phase sintering",
+        "B": "forging",
+        "C": "injection molding of plastics",
+        "D": "die casting"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "The three zones of a continuous sintering furnace are",
+      "options": {
+        "A": "feed, compression and metering zones",
+        "B": "melting, casting and cooling zones",
+        "C": "heating, blowing and cutting zones",
+        "D": "burn-off, high-temperature and cooling zones"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "The purpose of the burn-off (pre-heat) zone in a sintering furnace is to",
+      "options": {
+        "A": "coat the compact",
+        "B": "quench the compact",
+        "C": "remove lubricants and binders",
+        "D": "melt the compact"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "Filling the pores of a sintered part with a molten metal of lower melting point is called",
+      "options": {
+        "A": "infiltration",
+        "B": "impregnation",
+        "C": "coining",
+        "D": "sizing"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "Filling the pores of a sintered part with oil is called",
+      "options": {
+        "A": "sizing",
+        "B": "plating",
+        "C": "infiltration",
+        "D": "impregnation"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "Self-lubricating porous bronze bearings are made by P/M followed by",
+      "options": {
+        "A": "painting",
+        "B": "oil impregnation",
+        "C": "copper infiltration",
+        "D": "electroplating"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "Sizing (repressing) of sintered parts is done to",
+      "options": {
+        "A": "remove the lubricant",
+        "B": "melt the part",
+        "C": "increase porosity",
+        "D": "improve dimensional accuracy"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "Coining in powder metallurgy is used to",
+      "options": {
+        "A": "remove oil",
+        "B": "increase density and impart surface detail",
+        "C": "blend powders",
+        "D": "decrease density"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "Porous metal filters are best produced by",
+      "options": {
+        "A": "powder metallurgy",
+        "B": "machining",
+        "C": "sand casting",
+        "D": "forging"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "Refractory metals like tungsten and molybdenum are shaped by P/M because",
+      "options": {
+        "A": "they are very soft",
+        "B": "they are ductile at room temperature",
+        "C": "their melting points are very high",
+        "D": "they are cheap"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "Which component is typically produced by powder metallurgy?",
+      "options": {
+        "A": "Steel rails",
+        "B": "Ship hulls",
+        "C": "Large crankshafts for marine engines",
+        "D": "Oil-pump gears"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "A major limitation of powder metallurgy is",
+      "options": {
+        "A": "no material wastage",
+        "B": "high cost of powders and dies",
+        "C": "controlled porosity",
+        "D": "close tolerances"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "Powder metallurgy is economical mainly for",
+      "options": {
+        "A": "one-off parts",
+        "B": "prototypes only",
+        "C": "large production quantities",
+        "D": "very large parts"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "An advantage of powder metallurgy is",
+      "options": {
+        "A": "near-net shape with minimum material wastage",
+        "B": "no porosity at all",
+        "C": "unlimited part size",
+        "D": "low die cost"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "Which property can be deliberately controlled in P/M parts but not easily in castings?",
+      "options": {
+        "A": "Weight of the furnace",
+        "B": "Colour",
+        "C": "Melting point",
+        "D": "Porosity"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "For a component requiring full density and isotropic properties from a superalloy powder, the best route is",
+      "options": {
+        "A": "HIP",
+        "B": "powder rolling",
+        "C": "single-action die pressing",
+        "D": "loose powder sintering"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "Thermoplastics are polymers that",
+      "options": {
+        "A": "set permanently on heating",
+        "B": "are always brittle",
+        "C": "soften on heating and harden on cooling repeatedly",
+        "D": "cannot be melted"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "Thermosetting plastics",
+      "options": {
+        "A": "are recyclable by melting",
+        "B": "undergo cross-linking and cannot be remelted",
+        "C": "are always transparent",
+        "D": "can be remelted many times"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 61,
+      "question": "Which of the following is a thermoplastic?",
+      "options": {
+        "A": "Bakelite (phenol formaldehyde)",
+        "B": "Melamine formaldehyde",
+        "C": "Polyethylene",
+        "D": "Epoxy"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 62,
+      "question": "Which of the following is a thermosetting plastic?",
+      "options": {
+        "A": "PVC",
+        "B": "Nylon",
+        "C": "Polystyrene",
+        "D": "Phenol formaldehyde (Bakelite)"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 63,
+      "question": "The structure of thermoplastics consists of",
+      "options": {
+        "A": "three-dimensional cross-linked network",
+        "B": "linear or branched chains",
+        "C": "metallic bonds",
+        "D": "ionic crystals"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 64,
+      "question": "Thermosetting plastics have",
+      "options": {
+        "A": "a three-dimensional cross-linked network",
+        "B": "no chains",
+        "C": "only linear chains",
+        "D": "metallic bonding"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 65,
+      "question": "Plasticizers are added to plastics to",
+      "options": {
+        "A": "increase hardness",
+        "B": "add colour",
+        "C": "increase flexibility",
+        "D": "increase brittleness"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 66,
+      "question": "Fillers such as wood flour and glass fibre are added to plastics to",
+      "options": {
+        "A": "make them transparent",
+        "B": "improve strength and reduce cost",
+        "C": "increase melting point drastically",
+        "D": "make them conductive"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 67,
+      "question": "Stabilizers are added to plastics to protect them against",
+      "options": {
+        "A": "moisture absorption only",
+        "B": "hardness",
+        "C": "colour",
+        "D": "heat and UV degradation"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 68,
+      "question": "Which of the following is an elastomer?",
+      "options": {
+        "A": "Natural rubber",
+        "B": "Polystyrene",
+        "C": "Acrylic",
+        "D": "Bakelite"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 69,
+      "question": "Polycarbonate is preferred for safety glasses and helmets because of its",
+      "options": {
+        "A": "high conductivity",
+        "B": "low cost",
+        "C": "opacity",
+        "D": "high impact strength and transparency"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 70,
+      "question": "Injection molding is mainly used for",
+      "options": {
+        "A": "metals only",
+        "B": "ceramics only",
+        "C": "thermoplastics",
+        "D": "glass"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 71,
+      "question": "In a plunger-type injection molding machine, a torpedo (spreader) is used to",
+      "options": {
+        "A": "spread the plastic into a thin layer for uniform heating",
+        "B": "eject the part",
+        "C": "cut the sprue",
+        "D": "cool the mould"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 72,
+      "question": "A major drawback of plunger-type injection molding machines is",
+      "options": {
+        "A": "very high output",
+        "B": "non-uniform heating and poor mixing of the melt",
+        "C": "low pressure loss",
+        "D": "excellent melt homogeneity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 73,
+      "question": "In a reciprocating screw injection molding machine, the screw",
+      "options": {
+        "A": "only ejects the part",
+        "B": "only cools the plastic",
+        "C": "only clamps the mould",
+        "D": "melts, mixes and also injects the plastic"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 74,
+      "question": "The channel through which molten plastic enters the mould cavity directly is called the",
+      "options": {
+        "A": "vent",
+        "B": "gate",
+        "C": "sprue bush",
+        "D": "runner"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 75,
+      "question": "The correct sequence of an injection molding cycle is",
+      "options": {
+        "A": "mould close → inject → hold → cool → open → eject",
+        "B": "inject → mould close → eject → cool",
+        "C": "cool → inject → close → eject",
+        "D": "eject → cool → inject → close"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 76,
+      "question": "The longest portion of an injection molding cycle is usually the",
+      "options": {
+        "A": "ejection time",
+        "B": "injection time",
+        "C": "cooling time",
+        "D": "mould closing time"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 77,
+      "question": "Clamping force in injection molding must be sufficient to",
+      "options": {
+        "A": "cool the part",
+        "B": "prevent the mould from opening during injection",
+        "C": "melt the plastic",
+        "D": "cut the sprue"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 78,
+      "question": "A 'short shot' defect in injection molding occurs due to",
+      "options": {
+        "A": "excess cooling time",
+        "B": "excessive clamping force",
+        "C": "too much material",
+        "D": "insufficient material or injection pressure"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 79,
+      "question": "Flash in injection molded parts is caused by",
+      "options": {
+        "A": "short cooling time",
+        "B": "low injection pressure",
+        "C": "insufficient clamping force or worn parting surfaces",
+        "D": "high mould rigidity"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 80,
+      "question": "Sink marks in injection molded parts usually occur at",
+      "options": {
+        "A": "thick sections",
+        "B": "gates only",
+        "C": "parting lines only",
+        "D": "thin sections"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 81,
+      "question": "Weld (knit) lines in molded parts form where",
+      "options": {
+        "A": "the mould is cooled",
+        "B": "the sprue is cut",
+        "C": "two melt fronts meet",
+        "D": "the part is ejected"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 82,
+      "question": "Mass production of plastic bottle caps, combs and toy parts is best done by",
+      "options": {
+        "A": "injection molding",
+        "B": "film blowing",
+        "C": "compression molding",
+        "D": "rotational molding"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 83,
+      "question": "Compression molding is mainly used for",
+      "options": {
+        "A": "hollow bottles",
+        "B": "thermoplastic films",
+        "C": "pipes",
+        "D": "thermosetting plastics"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 84,
+      "question": "In compression molding, the charge placed in the mould cavity is often in the form of a",
+      "options": {
+        "A": "parison",
+        "B": "pre-weighed preform or pellet",
+        "C": "molten slug from an extruder only",
+        "D": "film bubble"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 85,
+      "question": "Typical products made by compression molding are",
+      "options": {
+        "A": "plastic films",
+        "B": "electrical switch plates, dinnerware and handles",
+        "C": "plastic bottles",
+        "D": "pipes"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 86,
+      "question": "Transfer molding differs from compression molding in that the material is",
+      "options": {
+        "A": "heated in a separate chamber (pot) and forced into the closed mould",
+        "B": "rotated biaxially",
+        "C": "blown with air",
+        "D": "placed directly in an open cavity"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 87,
+      "question": "Transfer molding is preferred over compression molding for",
+      "options": {
+        "A": "very large flat sheets",
+        "B": "hollow tanks",
+        "C": "films",
+        "D": "intricate parts with metal inserts"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 88,
+      "question": "Encapsulation of integrated circuits and electronic components is commonly done by",
+      "options": {
+        "A": "rotational molding",
+        "B": "blow molding",
+        "C": "transfer molding",
+        "D": "film blowing"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 89,
+      "question": "Blow molding is used to produce",
+      "options": {
+        "A": "hollow thin-walled containers like bottles",
+        "B": "rods",
+        "C": "flat sheets",
+        "D": "solid gears"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 90,
+      "question": "The tube of softened plastic used in extrusion blow molding is called a",
+      "options": {
+        "A": "preform charge",
+        "B": "billet",
+        "C": "sprue",
+        "D": "parison"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 91,
+      "question": "PET carbonated-drink bottles are commonly produced by",
+      "options": {
+        "A": "compression molding",
+        "B": "injection stretch blow molding",
+        "C": "transfer molding",
+        "D": "rotational molding"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 92,
+      "question": "Rotational molding is best suited for",
+      "options": {
+        "A": "small precision gears",
+        "B": "electrical switches",
+        "C": "large hollow seamless parts like water tanks",
+        "D": "thin films"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 93,
+      "question": "In rotational molding, the mould is",
+      "options": {
+        "A": "blown with air",
+        "B": "rotated about two perpendicular axes while being heated",
+        "C": "pressed under high pressure",
+        "D": "fed by a reciprocating screw"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 94,
+      "question": "Rotational molding requires",
+      "options": {
+        "A": "very high injection pressure",
+        "B": "a parison",
+        "C": "a torpedo",
+        "D": "no high pressure, so moulds are relatively inexpensive"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 95,
+      "question": "In film blowing, the ratio of bubble diameter to die diameter is called the",
+      "options": {
+        "A": "blow-up ratio",
+        "B": "L/D ratio",
+        "C": "draw ratio",
+        "D": "compression ratio"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 96,
+      "question": "In blown film extrusion, the frost line is the region where",
+      "options": {
+        "A": "the screw ends",
+        "B": "the polymer melts",
+        "C": "the polymer solidifies",
+        "D": "the film is cut"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 97,
+      "question": "Polyethylene carry bags and packaging films are produced by",
+      "options": {
+        "A": "transfer molding",
+        "B": "compression molding",
+        "C": "rotational molding",
+        "D": "film blowing"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 98,
+      "question": "The three zones of a plastic extruder screw are",
+      "options": {
+        "A": "clamp, inject and eject zones",
+        "B": "burn-off, sintering and cooling zones",
+        "C": "feed, compression (transition) and metering zones",
+        "D": "heating, sintering and cooling zones"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 99,
+      "question": "In plastic extrusion, the screen pack and breaker plate are used to",
+      "options": {
+        "A": "cut the product",
+        "B": "filter contaminants and build back pressure",
+        "C": "cool the extrudate",
+        "D": "heat the die"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 100,
+      "question": "Continuous products such as pipes, rods and window profiles are produced by",
+      "options": {
+        "A": "extrusion",
+        "B": "injection molding",
+        "C": "compression molding",
+        "D": "blow molding"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}

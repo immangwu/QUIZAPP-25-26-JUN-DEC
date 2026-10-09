@@ -1,0 +1,1208 @@
+{
+  "code": "20MEP11",
+  "title": "Unconventional Machining Process",
+  "quiz_title": "Quiz 3: Process Parameters & Performance (CO2)",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is an OUTPUT (response) parameter in machining?",
+      "options": {
+        "A": "Material removal rate",
+        "B": "Stand-off distance",
+        "C": "Abrasive grain size",
+        "D": "Nozzle pressure"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is an INPUT (process) parameter in AJM?",
+      "options": {
+        "A": "Stand-off distance",
+        "B": "Surface roughness",
+        "C": "Overcut",
+        "D": "Kerf taper"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is NOT an output parameter of EDM?",
+      "options": {
+        "A": "Pulse on-time",
+        "B": "Surface roughness",
+        "C": "MRR",
+        "D": "Tool wear rate"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "Surface roughness (Ra) of machined parts is usually expressed in",
+      "options": {
+        "A": "μm",
+        "B": "cm",
+        "C": "mm",
+        "D": "m"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "Among the non-traditional processes, the highest specific power consumption is for",
+      "options": {
+        "A": "ECM",
+        "B": "EDM",
+        "C": "LBM",
+        "D": "PAM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "Among the non-traditional processes, the highest material removal rate is obtained in",
+      "options": {
+        "A": "AJM",
+        "B": "PAM",
+        "C": "USM",
+        "D": "EBM"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "Among the non-traditional processes, the lowest specific power consumption is for",
+      "options": {
+        "A": "EBM",
+        "B": "LBM",
+        "C": "PAM",
+        "D": "AJM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "Which process produces NO heat-affected zone?",
+      "options": {
+        "A": "ECM",
+        "B": "PAM",
+        "C": "EDM",
+        "D": "LBM"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "In AJM, as the abrasive flow rate increases, MRR",
+      "options": {
+        "A": "decreases continuously",
+        "B": "first increases and then decreases",
+        "C": "remains constant",
+        "D": "increases continuously"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "In AJM, the mixing ratio is defined as",
+      "options": {
+        "A": "velocity / pressure",
+        "B": "mass flow rate of abrasive / mass flow rate of gas",
+        "C": "nozzle diameter / SOD",
+        "D": "gas pressure / abrasive size"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "In AJM, increasing the gas pressure generally results in",
+      "options": {
+        "A": "lower MRR",
+        "B": "no change in MRR",
+        "C": "higher MRR",
+        "D": "zero MRR"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "In AJM, as the stand-off distance increases, the width of cut",
+      "options": {
+        "A": "increases",
+        "B": "decreases",
+        "C": "becomes zero",
+        "D": "remains same"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "Use of coarser abrasive grains in AJM gives",
+      "options": {
+        "A": "higher MRR and poorer finish",
+        "B": "no effect",
+        "C": "lower MRR and better finish",
+        "D": "lower MRR and poorer finish"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "The jet velocity of the carrier gas in AJM is about",
+      "options": {
+        "A": "10 – 50 m/s",
+        "B": "50 – 100 m/s",
+        "C": "150 – 300 m/s",
+        "D": "1000 – 1500 m/s"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "The abrasive grain flow rate in AJM is",
+      "options": {
+        "A": "0.1 – 2 g/min",
+        "B": "3 – 20 g/min",
+        "C": "30 – 56 g/min",
+        "D": "68 – 85 g/min"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "Which nozzle property does NOT influence MRR in AJM?",
+      "options": {
+        "A": "Distance from workpiece",
+        "B": "Outside temperature",
+        "C": "Wear",
+        "D": "Size"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "Typical surface roughness obtained in AJM is",
+      "options": {
+        "A": "0.01 – 0.10 μm",
+        "B": "0.15 – 1.5 μm",
+        "C": "2.0 – 5.0 μm",
+        "D": "7.0 – 10.0 μm"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "In WJM, as the pump pressure increases, the depth of cut",
+      "options": {
+        "A": "decreases",
+        "B": "becomes zero",
+        "C": "increases",
+        "D": "remains same"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "In WJM, as the traverse (feed) speed increases, the depth of cut",
+      "options": {
+        "A": "increases",
+        "B": "first decreases then increases",
+        "C": "decreases",
+        "D": "remains same"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "In WJM, an increase in nozzle diameter (at same pressure) results in",
+      "options": {
+        "A": "higher depth of cut",
+        "B": "lower jet power",
+        "C": "zero MRR",
+        "D": "no change"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "Which property of the jet fluid affects MRR in WJM?",
+      "options": {
+        "A": "Velocity",
+        "B": "Flow rate",
+        "C": "Viscosity",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "Typical stand-off distance in WJM is",
+      "options": {
+        "A": "0.1 – 1 mm",
+        "B": "1 – 2 mm",
+        "C": "2 – 6 mm",
+        "D": "6 – 14 mm"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "In AWJM, as the abrasive flow rate increases, the depth of cut",
+      "options": {
+        "A": "becomes zero",
+        "B": "increases up to a limit and then decreases",
+        "C": "decreases continuously",
+        "D": "remains same"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "In AWJM, an increase in stand-off distance results in",
+      "options": {
+        "A": "deeper cut",
+        "B": "narrower kerf",
+        "C": "wider kerf and more taper",
+        "D": "better surface finish"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "In AWJM, increasing the traverse speed generally",
+      "options": {
+        "A": "increases striations and surface roughness",
+        "B": "has no effect",
+        "C": "improves surface finish",
+        "D": "increases depth of cut"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "Which of the following is NOT a process parameter of AWJM?",
+      "options": {
+        "A": "Orifice diameter",
+        "B": "Frequency of vibration",
+        "C": "Water pressure",
+        "D": "Stand-off distance"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "The water pressure range commonly used in AWJM is",
+      "options": {
+        "A": "1000 – 1500 bar",
+        "B": "1500 – 2500 bar",
+        "C": "2500 – 4000 bar",
+        "D": "4000 – 10000 bar"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "Stand-off distance used in AWJM is",
+      "options": {
+        "A": "1.0 – 2.0 mm",
+        "B": "2.0 – 4.0 mm",
+        "C": "4.0 – 6.0 mm",
+        "D": "6.0 – 10.0 mm"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "In AWJM, a material giving higher MRR produces",
+      "options": {
+        "A": "no roughness",
+        "B": "mirror finish",
+        "C": "smaller surface roughness",
+        "D": "larger surface roughness"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "Surface roughness in AWJM depends on",
+      "options": {
+        "A": "workpiece material",
+        "B": "grit size",
+        "C": "abrasive type",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "In USM, as the amplitude of vibration increases, MRR",
+      "options": {
+        "A": "increases",
+        "B": "decreases",
+        "C": "remains same",
+        "D": "becomes zero"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "In USM, as the vibration frequency increases, MRR",
+      "options": {
+        "A": "remains constant",
+        "B": "decreases",
+        "C": "first increases and then decreases",
+        "D": "increases continuously"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "In USM, increasing the static feed pressure increases MRR",
+      "options": {
+        "A": "only for glass",
+        "B": "up to a limiting value",
+        "C": "never",
+        "D": "continuously without limit"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "In USM, an increase in slurry viscosity causes MRR to",
+      "options": {
+        "A": "decrease",
+        "B": "increase",
+        "C": "double",
+        "D": "remain same"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "The recommended abrasive concentration in USM slurry is about",
+      "options": {
+        "A": "10 – 15 %",
+        "B": "15 – 20 %",
+        "C": "25 – 30 %",
+        "D": "30 – 35 %"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "In USM, as the tool cross-sectional area increases, MRR",
+      "options": {
+        "A": "remains same",
+        "B": "first decreases then increases",
+        "C": "decreases",
+        "D": "increases"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "In USM, surface finish improves with the use of",
+      "options": {
+        "A": "coarser abrasive grit",
+        "B": "higher amplitude",
+        "C": "larger tool area",
+        "D": "finer abrasive grit"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "In USM, the vibration amplitude determines the abrasive particle",
+      "options": {
+        "A": "torque",
+        "B": "velocity",
+        "C": "force",
+        "D": "pressure"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "Typical frequency of tool oscillation in USM is",
+      "options": {
+        "A": "5 – 10 kHz",
+        "B": "10 – 15 kHz",
+        "C": "18 – 20 kHz",
+        "D": "25 – 50 kHz"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "The dominant mechanism of material removal in USM is",
+      "options": {
+        "A": "hammering of abrasive grains",
+        "B": "melting",
+        "C": "cavitation",
+        "D": "chemical action"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "The contribution of cavitation to total material removal in USM is",
+      "options": {
+        "A": "< 5 %",
+        "B": "5 – 10 %",
+        "C": "10 – 20 %",
+        "D": "20 – 50 %"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "Conicity of holes in USM can be reduced by",
+      "options": {
+        "A": "direct injection of slurry",
+        "B": "tools with negative taper",
+        "C": "high static pressure",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "Accuracy in USM is affected by",
+      "options": {
+        "A": "accurate feed",
+        "B": "unsteady abrasive flow",
+        "C": "ultrasonic frequency",
+        "D": "steady abrasive flow"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "Accuracy levels in USM are generally limited to",
+      "options": {
+        "A": "± 0.01 mm",
+        "B": "± 0.05 mm",
+        "C": "± 0.10 mm",
+        "D": "± 0.50 mm"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "In EDM, as the discharge current increases, MRR",
+      "options": {
+        "A": "decreases",
+        "B": "becomes zero",
+        "C": "remains same",
+        "D": "increases"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "In EDM, an increase in discharge current results in surface roughness that is",
+      "options": {
+        "A": "unchanged",
+        "B": "zero",
+        "C": "higher (poorer)",
+        "D": "lower (better)"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "In EDM, increasing the pulse off-time (keeping on-time constant)",
+      "options": {
+        "A": "increases MRR",
+        "B": "decreases MRR",
+        "C": "increases tool wear sharply",
+        "D": "has no effect"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "Duty factor in EDM is defined as",
+      "options": {
+        "A": "Tₒₙ / (Tₒₙ + Tₒₒ)",
+        "B": "Tₒₒ / Tₒₙ",
+        "C": "V / I",
+        "D": "I / V"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "In an RC-type EDM circuit, the energy per spark is given by",
+      "options": {
+        "A": "CV",
+        "B": "½ CV²",
+        "C": "V²/R",
+        "D": "IR"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "In an RC-type EDM circuit, increasing the capacitance results in",
+      "options": {
+        "A": "lower MRR and better finish",
+        "B": "lower MRR and poorer finish",
+        "C": "higher MRR and poorer finish",
+        "D": "no change"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "Overcut in EDM increases with",
+      "options": {
+        "A": "increase in discharge current",
+        "B": "decrease in current",
+        "C": "decrease in voltage",
+        "D": "increase in off-time"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "Thickness of the recast layer in EDM increases with",
+      "options": {
+        "A": "dielectric cleanliness",
+        "B": "off-time",
+        "C": "electrode size",
+        "D": "discharge energy"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "Tool wear ratio in EDM is defined as",
+      "options": {
+        "A": "current / voltage",
+        "B": "volume of work removed / volume of tool worn",
+        "C": "volume of tool worn / volume of work removed",
+        "D": "MRR / time"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "Inadequate flushing of dielectric in EDM leads to",
+      "options": {
+        "A": "arcing",
+        "B": "poor MRR",
+        "C": "poor surface finish",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "Typical spark gap maintained in EDM is",
+      "options": {
+        "A": "0.01 – 0.05 mm",
+        "B": "0.5 – 1 mm",
+        "C": "1 – 2 mm",
+        "D": "5 – 10 mm"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "Kerf width in WEDM is approximately equal to",
+      "options": {
+        "A": "wire diameter",
+        "B": "wire diameter + 2 × spark gap",
+        "C": "2 × wire diameter",
+        "D": "spark gap only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "In WEDM, the linear cutting speed decreases when the workpiece thickness",
+      "options": {
+        "A": "decreases",
+        "B": "becomes zero",
+        "C": "remains same",
+        "D": "increases"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "Insufficient wire tension in WEDM causes",
+      "options": {
+        "A": "wire deflection and taper errors",
+        "B": "better accuracy",
+        "C": "no effect",
+        "D": "higher MRR"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "Wire breakage in WEDM is caused by",
+      "options": {
+        "A": "very high pulse energy",
+        "B": "poor flushing",
+        "C": "excessive wire tension",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "The material removal in LBM mainly depends on the",
+      "options": {
+        "A": "colour of the workpiece only",
+        "B": "power density of the beam",
+        "C": "electrical conductivity",
+        "D": "hardness of the workpiece"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 61,
+      "question": "In LBM, a lens of shorter focal length gives",
+      "options": {
+        "A": "smaller spot and higher power density",
+        "B": "zero power density",
+        "C": "larger spot and lower power density",
+        "D": "no change"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 62,
+      "question": "In LBM, highly reflective workpiece materials result in",
+      "options": {
+        "A": "higher MRR",
+        "B": "no change",
+        "C": "lower MRR",
+        "D": "infinite MRR"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 63,
+      "question": "In LBM, shorter pulse duration results in",
+      "options": {
+        "A": "larger heat-affected zone",
+        "B": "thicker recast layer",
+        "C": "no HAZ change",
+        "D": "smaller heat-affected zone"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 64,
+      "question": "In LBM, increasing assist gas pressure helps to",
+      "options": {
+        "A": "increase HAZ",
+        "B": "remove molten material and reduce dross",
+        "C": "reduce cutting speed",
+        "D": "absorb the laser"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 65,
+      "question": "Input parameters of LBM include",
+      "options": {
+        "A": "laser power",
+        "B": "pulse frequency",
+        "C": "focal position",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 66,
+      "question": "Typical accelerating voltage used in EBM is",
+      "options": {
+        "A": "1 – 5 kV",
+        "B": "10 – 20 kV",
+        "C": "50 – 150 kV",
+        "D": "500 – 1000 kV"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 67,
+      "question": "In EBM, the beam is focused to a spot diameter of about",
+      "options": {
+        "A": "10 – 200 μm",
+        "B": "1 – 2 mm",
+        "C": "5 – 10 mm",
+        "D": "1 – 2 cm"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 68,
+      "question": "In PAM, the cutting speed decreases with increase in",
+      "options": {
+        "A": "plate thickness",
+        "B": "gas flow",
+        "C": "arc current",
+        "D": "power"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 69,
+      "question": "Process parameters of PAM include",
+      "options": {
+        "A": "arc current",
+        "B": "gas flow rate",
+        "C": "torch stand-off",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 70,
+      "question": "In PAM, increasing torch stand-off distance results in",
+      "options": {
+        "A": "narrower kerf",
+        "B": "better finish",
+        "C": "deeper cut",
+        "D": "increased kerf bevel (taper)"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 71,
+      "question": "The temperature of plasma in PAM is in the range of",
+      "options": {
+        "A": "1,000 – 2,000 °C",
+        "B": "3,000 – 5,000 °C",
+        "C": "11,000 – 28,000 °C",
+        "D": "50,000 – 100,000 °C"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 72,
+      "question": "Machining rate in IBM depends on",
+      "options": {
+        "A": "workpiece material",
+        "B": "type of ions",
+        "C": "incident angle",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 73,
+      "question": "In IBM, the number of atoms sputtered at oblique incidence compared to normal incidence is",
+      "options": {
+        "A": "lesser",
+        "B": "zero",
+        "C": "greater",
+        "D": "same"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 74,
+      "question": "Energy required for effective removal of atoms in IBM is about",
+      "options": {
+        "A": "1 – 5 eV",
+        "B": "5 – 10 eV",
+        "C": "10 – 15 eV",
+        "D": "15 – 20 eV"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 75,
+      "question": "According to Faraday's laws, MRR in ECM is directly proportional to",
+      "options": {
+        "A": "spark gap",
+        "B": "current",
+        "C": "tool hardness",
+        "D": "workpiece hardness"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 76,
+      "question": "In ECM, the equilibrium inter-electrode gap is",
+      "options": {
+        "A": "directly proportional to feed rate",
+        "B": "equal to tool diameter",
+        "C": "inversely proportional to feed rate",
+        "D": "independent of feed rate"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 77,
+      "question": "In ECM, the equilibrium gap increases with increase in",
+      "options": {
+        "A": "applied voltage",
+        "B": "feed rate",
+        "C": "workpiece hardness",
+        "D": "tool hardness"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 78,
+      "question": "Typical voltage applied in ECM is",
+      "options": {
+        "A": "0.5 – 2 V DC",
+        "B": "5 – 30 V DC",
+        "C": "70 – 150 V DC",
+        "D": "10 – 50 kV"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 79,
+      "question": "Typical current density in ECM is about",
+      "options": {
+        "A": "0.5 – 5 A/cm²",
+        "B": "20 – 200 A/cm²",
+        "C": "1000 – 2000 A/cm²",
+        "D": "5000 – 10000 A/cm²"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 80,
+      "question": "In ECM, an increase in electrolyte temperature",
+      "options": {
+        "A": "has no effect",
+        "B": "stops machining",
+        "C": "decreases conductivity",
+        "D": "increases conductivity and MRR"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 81,
+      "question": "Insufficient electrolyte flow in ECM leads to",
+      "options": {
+        "A": "sparking",
+        "B": "electrolyte boiling",
+        "C": "poor surface finish",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 82,
+      "question": "Better surface finish in ECM is obtained at",
+      "options": {
+        "A": "zero flow velocity",
+        "B": "higher current density",
+        "C": "lower current density",
+        "D": "higher gap"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 83,
+      "question": "In ECM, increasing the tool feed rate (within limits)",
+      "options": {
+        "A": "increases tool wear",
+        "B": "increases MRR",
+        "C": "has no effect on MRR",
+        "D": "decreases MRR"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 84,
+      "question": "In ECG, the percentage of material removed by electrochemical action is about",
+      "options": {
+        "A": "10 %",
+        "B": "50 %",
+        "C": "90 %",
+        "D": "100 %"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 85,
+      "question": "Etch rate in chemical machining depends on",
+      "options": {
+        "A": "etchant concentration",
+        "B": "etchant temperature",
+        "C": "workpiece material",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 86,
+      "question": "Etch factor in chemical machining is defined as the ratio of",
+      "options": {
+        "A": "undercut to time",
+        "B": "maskant thickness to depth",
+        "C": "time to depth",
+        "D": "etch depth to undercut"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 87,
+      "question": "In chemical machining and PCM, the depth of etch is controlled mainly by",
+      "options": {
+        "A": "immersion time",
+        "B": "tank size",
+        "C": "maskant colour",
+        "D": "light intensity"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 88,
+      "question": "In ES drilling, higher MRR is associated with",
+      "options": {
+        "A": "smaller feed rates and smaller tool diameters",
+        "B": "larger feed rates and smaller tool diameters",
+        "C": "larger feed rates and larger tool diameters",
+        "D": "smaller feed rates and larger tool diameters"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 89,
+      "question": "Voltage used in ES drilling is",
+      "options": {
+        "A": "10 – 40 V",
+        "B": "40 – 70 V",
+        "C": "70 – 150 V",
+        "D": "150 – 300 V"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 90,
+      "question": "Which parameters must be carefully monitored in ES drilling?",
+      "options": {
+        "A": "Acid temperature",
+        "B": "Electrolyte pressure",
+        "C": "Electrolyte concentration",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 91,
+      "question": "In AFM, MRR increases with increase in",
+      "options": {
+        "A": "extrusion pressure",
+        "B": "number of cycles",
+        "C": "abrasive concentration",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 92,
+      "question": "In AFM, the radial force acting on the abrasive is responsible for",
+      "options": {
+        "A": "heating the media",
+        "B": "shearing of peaks",
+        "C": "rotating the workpiece",
+        "D": "indentation of abrasive into the surface"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 93,
+      "question": "In AFM, surface finish improvement saturates after",
+      "options": {
+        "A": "zero cycles",
+        "B": "a certain number of cycles",
+        "C": "it never saturates",
+        "D": "the first cycle"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 94,
+      "question": "In MAF, increasing the magnetic flux density",
+      "options": {
+        "A": "has no effect",
+        "B": "reduces the material removal rate",
+        "C": "raises the material removal rate",
+        "D": "stops finishing"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 95,
+      "question": "In MAF, increasing the working gap between magnet and workpiece",
+      "options": {
+        "A": "decreases finishing force and MRR",
+        "B": "doubles MRR",
+        "C": "increases finishing force",
+        "D": "has no effect"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 96,
+      "question": "Magnetic pressure acting on the abrasives in MAF is proportional to",
+      "options": {
+        "A": "cube of the flux density",
+        "B": "square root of the flux density",
+        "C": "square of the flux density",
+        "D": "flux density"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 97,
+      "question": "In MRF, the yield stress (stiffness) of the MR fluid is controlled by",
+      "options": {
+        "A": "workpiece hardness",
+        "B": "magnetic field strength",
+        "C": "colour of the fluid",
+        "D": "room humidity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 98,
+      "question": "According to Preston's equation, MRR in CMP is proportional to",
+      "options": {
+        "A": "pad hardness only",
+        "B": "pressure only",
+        "C": "velocity only",
+        "D": "pressure × relative velocity"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 99,
+      "question": "In MRAFF, the finishing action is controlled by",
+      "options": {
+        "A": "magnetic field",
+        "B": "extrusion pressure",
+        "C": "number of cycles",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 100,
+      "question": "Compared to AWJM, the material removal rate in Ice Jet Machining is",
+      "options": {
+        "A": "low",
+        "B": "same",
+        "C": "very high",
+        "D": "infinite"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}

@@ -1,0 +1,1208 @@
+{
+  "code": "20ME014",
+  "title": "Heat and Mass Transfer",
+  "quiz_title": "Quiz 4: Radiation",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Thermal radiation is energy emitted by matter due to:",
+      "options": {
+        "A": "Chemical reactions",
+        "B": "Its temperature, in the form of electromagnetic waves",
+        "C": "Nuclear fission only",
+        "D": "Mechanical vibration only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "Unlike conduction and convection, radiation heat transfer:",
+      "options": {
+        "A": "Requires a material medium",
+        "B": "Can occur through a vacuum",
+        "C": "Cannot occur in a vacuum",
+        "D": "Only occurs in solids"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "The wavelength range of thermal radiation is approximately:",
+      "options": {
+        "A": "0.1 to 100 micrometers",
+        "B": "10⁻¹⁰ to 10⁻¹² m",
+        "C": "1000 to 2000 m",
+        "D": "0.01 to 0.1 nanometers"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "Planck's law describes:",
+      "options": {
+        "A": "The spectral distribution of emissive power of a blackbody as a function of wavelength and temperature",
+        "B": "Only the total emissive power",
+        "C": "Convective heat transfer coefficient",
+        "D": "Conduction through solids"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "Wien's displacement law states that:",
+      "options": {
+        "A": "The wavelength of maximum emissive power is inversely proportional to absolute temperature",
+        "B": "Emissive power is independent of temperature",
+        "C": "The wavelength of maximum emission increases with temperature",
+        "D": "Blackbody radiation has no peak wavelength"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "According to Wien's displacement law, λmaxT = constant, where the constant is approximately:",
+      "options": {
+        "A": "2898 μm·K",
+        "B": "5.67 × 10⁻⁸ W/m²K⁴",
+        "C": "6.626 × 10⁻³⁴ J·s",
+        "D": "3 × 10⁸ m/s"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "The Stefan–Boltzmann law states that the total emissive power of a blackbody is proportional to:",
+      "options": {
+        "A": "T (absolute temperature)",
+        "B": "T²",
+        "C": "T⁴ (fourth power of absolute temperature)",
+        "D": "1/T"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "The Stefan–Boltzmann constant has a value of approximately:",
+      "options": {
+        "A": "5.67 × 10⁻⁸ W/m²K⁴",
+        "B": "6.67 × 10⁻¹¹ N·m²/kg²",
+        "C": "1.38 × 10⁻²³ J/K",
+        "D": "8.314 J/mol·K"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "Kirchhoff's law of radiation states that, at thermal equilibrium:",
+      "options": {
+        "A": "Emissivity equals absorptivity for a surface at a given wavelength and temperature",
+        "B": "Emissivity equals reflectivity",
+        "C": "Absorptivity equals transmissivity",
+        "D": "Emissivity is always 1 for any surface"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "Lambert's cosine law relates to:",
+      "options": {
+        "A": "The directional distribution of radiation intensity from a diffuse surface",
+        "B": "The wavelength distribution of radiation",
+        "C": "The total energy balance of a blackbody",
+        "D": "The absorption coefficient of gases"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "A diffuse emitter, according to Lambert's law, emits radiation:",
+      "options": {
+        "A": "Only in the normal direction",
+        "B": "Such that intensity is independent of direction",
+        "C": "Only along the surface tangent",
+        "D": "Randomly with no pattern"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "The irradiation on a surface is defined as:",
+      "options": {
+        "A": "The rate at which radiation leaves a surface",
+        "B": "The rate at which radiation is incident on a surface per unit area",
+        "C": "The absorptivity of a surface",
+        "D": "The temperature of a surface"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "The radiosity of a surface is defined as:",
+      "options": {
+        "A": "The total rate of radiation leaving a surface (emitted + reflected) per unit area",
+        "B": "The total radiation absorbed by a surface",
+        "C": "The net heat transfer by conduction",
+        "D": "The reflectivity of a surface"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "For an opaque surface, the sum of absorptivity (α) and reflectivity (ρ) equals:",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Infinity",
+        "D": "The transmissivity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "For a semi-transparent surface, the energy balance of incident radiation involves:",
+      "options": {
+        "A": "Absorptivity and reflectivity only",
+        "B": "Absorptivity, reflectivity, and transmissivity, summing to 1",
+        "C": "Only transmissivity",
+        "D": "Only emissivity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "Emissive power of a surface is defined as:",
+      "options": {
+        "A": "Rate of radiant energy emitted by a surface per unit area",
+        "B": "Rate of radiant energy absorbed by a surface",
+        "C": "Rate of heat conduction through a surface",
+        "D": "Surface temperature"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "The radiation emitted by a real surface compared to a blackbody at the same temperature is:",
+      "options": {
+        "A": "Always greater",
+        "B": "Always equal",
+        "C": "Always less than or equal to the blackbody emission",
+        "D": "Unrelated to blackbody emission"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "The fraction of blackbody radiation within a specific wavelength band is found using:",
+      "options": {
+        "A": "Radiation function / blackbody fraction tables (λT tables)",
+        "B": "Fourier series only",
+        "C": "Newton's law of cooling",
+        "D": "Reynolds number correlations"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "The sun's surface can be approximated as a blackbody radiating at approximately:",
+      "options": {
+        "A": "273 K",
+        "B": "373 K",
+        "C": "5800 K",
+        "D": "100 K"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "As the temperature of a blackbody increases, the peak wavelength of its emission spectrum:",
+      "options": {
+        "A": "Increases",
+        "B": "Decreases (shifts toward shorter wavelengths)",
+        "C": "Remains constant",
+        "D": "Becomes zero"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "Spectral emissive power refers to:",
+      "options": {
+        "A": "Total emissive power integrated over all wavelengths",
+        "B": "Emissive power per unit wavelength at a given wavelength",
+        "C": "Emissive power per unit area only",
+        "D": "Emissive power in the visible spectrum only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "The fundamental radiation laws (Planck's, Wien's, Stefan–Boltzmann's) are derived specifically for:",
+      "options": {
+        "A": "Real (gray) surfaces",
+        "B": "An ideal blackbody",
+        "C": "Transparent gases",
+        "D": "Opaque metals only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "Radiation intensity I is defined as:",
+      "options": {
+        "A": "Rate of radiant energy per unit solid angle per unit projected area",
+        "B": "Total emissive power",
+        "C": "Absorptivity",
+        "D": "Surface temperature"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "Integration of Planck's spectral distribution over all wavelengths yields:",
+      "options": {
+        "A": "Wien's displacement law constant",
+        "B": "The Stefan–Boltzmann law (total emissive power ∝ T⁴)",
+        "C": "Kirchhoff's law",
+        "D": "The shape factor"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "Solar radiation reaching Earth is primarily in which spectral range?",
+      "options": {
+        "A": "Ultraviolet, visible, and near-infrared (short wavelength)",
+        "B": "Only far infrared (long wavelength)",
+        "C": "Only microwave",
+        "D": "Only X-rays"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "A blackbody is defined as a surface that:",
+      "options": {
+        "A": "Absorbs all incident radiation and reflects none",
+        "B": "Reflects all incident radiation",
+        "C": "Transmits all incident radiation",
+        "D": "Absorbs only visible light"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "A blackbody, at any given temperature and wavelength, emits:",
+      "options": {
+        "A": "Less radiation than any other real surface",
+        "B": "The maximum possible radiation among all surfaces",
+        "C": "Zero radiation",
+        "D": "Only reflected radiation"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "A practical approximation of a blackbody is:",
+      "options": {
+        "A": "A polished mirror",
+        "B": "A small opening (cavity) in an isothermal enclosure",
+        "C": "A transparent glass sheet",
+        "D": "A perfectly reflective surface"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "Emissivity (ε) of a surface is defined as the ratio of:",
+      "options": {
+        "A": "Emissive power of the surface to that of a blackbody at the same temperature",
+        "B": "Absorbed radiation to incident radiation",
+        "C": "Reflected radiation to incident radiation",
+        "D": "Transmitted radiation to incident radiation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "For a blackbody, emissivity is:",
+      "options": {
+        "A": "0",
+        "B": "Between 0 and 1",
+        "C": "Exactly 1",
+        "D": "Greater than 1"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "A gray body is defined as a surface whose:",
+      "options": {
+        "A": "Emissivity varies strongly with wavelength",
+        "B": "Emissivity is constant (independent of wavelength) over the relevant spectrum",
+        "C": "Emissivity is zero",
+        "D": "Absorptivity is always 1"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "For a gray, diffuse surface, Kirchhoff's law implies:",
+      "options": {
+        "A": "Emissivity equals absorptivity (ε = α) at a given temperature",
+        "B": "Emissivity is always greater than absorptivity",
+        "C": "Reflectivity equals emissivity",
+        "D": "Transmissivity equals emissivity"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "A white (perfectly reflective) surface has:",
+      "options": {
+        "A": "Emissivity and absorptivity equal to 1",
+        "B": "Emissivity and absorptivity equal to 0, reflectivity equal to 1",
+        "C": "Infinite emissivity",
+        "D": "Zero reflectivity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "Most real engineering surfaces behave approximately as:",
+      "options": {
+        "A": "Perfect blackbodies",
+        "B": "Gray, diffuse surfaces (for simplified analysis)",
+        "C": "Perfectly transparent media",
+        "D": "Perfect mirrors"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "The emissivity of a surface generally depends on:",
+      "options": {
+        "A": "Surface material, finish/roughness, and temperature",
+        "B": "Only ambient temperature",
+        "C": "Only the shape of the object",
+        "D": "Nothing; it is a universal constant"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "Polished metallic surfaces typically have:",
+      "options": {
+        "A": "Very high emissivity, close to 1",
+        "B": "Low emissivity, often less than 0.1",
+        "C": "Emissivity greater than 1",
+        "D": "Emissivity always equal to 1"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "Non-metallic surfaces such as painted or oxidized surfaces typically have emissivity values that are:",
+      "options": {
+        "A": "Close to zero",
+        "B": "Relatively high, often above 0.8",
+        "C": "Always exactly 1",
+        "D": "Negative"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "The emissive power of a gray body at temperature T is given by:",
+      "options": {
+        "A": "E = εσT⁴",
+        "B": "E = σT⁴ only",
+        "C": "E = εσT",
+        "D": "E = σ/T⁴"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "A surface with directionally uniform emissivity (intensity independent of direction) is called:",
+      "options": {
+        "A": "A specular surface",
+        "B": "A diffuse surface",
+        "C": "A transparent surface",
+        "D": "A blackbody only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "Selective surfaces (e.g., solar absorber coatings) are designed to have:",
+      "options": {
+        "A": "High absorptivity for solar (short) wavelengths and low emissivity for long (thermal) wavelengths",
+        "B": "Equal absorptivity and emissivity at all wavelengths",
+        "C": "Zero absorptivity at all wavelengths",
+        "D": "Emissivity greater than 1"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "The concept of a gray body simplifies radiation calculations by assuming:",
+      "options": {
+        "A": "Properties vary with wavelength exactly like a blackbody",
+        "B": "Radiative properties (ε, α, ρ) are constant over the wavelength spectrum of interest",
+        "C": "The surface absorbs no radiation",
+        "D": "The surface is in vacuum"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "Which of the following emissivity values would be physically impossible for a real surface?",
+      "options": {
+        "A": "0.3",
+        "B": "0.85",
+        "C": "1.2",
+        "D": "0.99"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "The emissivity of human skin in the infrared range is approximately:",
+      "options": {
+        "A": "0.97 (close to a blackbody)",
+        "B": "0.05",
+        "C": "0",
+        "D": "2.0"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "For a gray, opaque, diffuse surface (α = absorptivity, ρ = reflectivity), which relation holds?",
+      "options": {
+        "A": "α + ρ = 1",
+        "B": "α − ρ = 1",
+        "C": "α × ρ = 1",
+        "D": "α = 0 always"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "The total emissivity of a surface, used in engineering calculations, is obtained by:",
+      "options": {
+        "A": "Integrating the spectral emissivity weighted by the blackbody spectral distribution over all wavelengths",
+        "B": "Taking the emissivity at only one specific wavelength",
+        "C": "Assuming it is always exactly 0.5",
+        "D": "Ignoring wavelength dependence with no averaging"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "Net radiant heat exchange between a small gray surface and large surroundings (treated as a blackbody) is given by:",
+      "options": {
+        "A": "Q = εσA(Ts⁴ − Tsurr⁴)",
+        "B": "Q = σA(Ts − Tsurr)",
+        "C": "Q = εσA(Ts + Tsurr)",
+        "D": "Q = σA Ts⁴ only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "In many practical heat transfer problems, surrounding surfaces are approximated as blackbodies because:",
+      "options": {
+        "A": "They are usually small compared to the object",
+        "B": "Large enclosures approximate blackbody behavior for radiation exchange with a small object inside",
+        "C": "All real surfaces are blackbodies",
+        "D": "It simplifies calculations with no physical justification"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "A surface with emissivity close to zero would appear nearly:",
+      "options": {
+        "A": "Perfectly black",
+        "B": "Perfectly reflective/mirror-like for radiation exchange",
+        "C": "Perfectly transparent",
+        "D": "Identical to a blackbody"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "The gray-body assumption breaks down significantly when:",
+      "options": {
+        "A": "The surface's spectral emissivity varies strongly with wavelength over the relevant range",
+        "B": "The surface temperature is constant",
+        "C": "The surface area is small",
+        "D": "The surface is isothermal"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "The emissive power of a blackbody integrated over all wavelengths is given directly by:",
+      "options": {
+        "A": "Stefan–Boltzmann law: Eb = σT⁴",
+        "B": "Wien's law only",
+        "C": "Kirchhoff's law only",
+        "D": "Planck's law only, with no integration"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "The shape factor (view factor) F12 between two surfaces represents:",
+      "options": {
+        "A": "The fraction of radiation leaving surface 1 that is intercepted directly by surface 2",
+        "B": "The emissivity of surface 1",
+        "C": "The absorptivity of surface 2",
+        "D": "The total heat transfer coefficient between surfaces"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "Shape factor values always lie in the range:",
+      "options": {
+        "A": "−1 to 1",
+        "B": "0 to 1",
+        "C": "1 to infinity",
+        "D": "Only negative values"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "The reciprocity relation for shape factors is given by:",
+      "options": {
+        "A": "A1F12 = A2F21",
+        "B": "F12 = F21 always, regardless of areas",
+        "C": "A1F12 = A2F12",
+        "D": "F12 + F21 = 1 always"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "The summation rule for shape factors from surface i in an enclosure with N surfaces states:",
+      "options": {
+        "A": "The sum of Fij for j = 1 to N equals 1",
+        "B": "The sum of Fij equals 0",
+        "C": "The sum of Fij equals N",
+        "D": "Fij is always equal for all j"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "The shape factor of a surface with respect to itself (Fii) is zero when the surface is:",
+      "options": {
+        "A": "Concave",
+        "B": "Flat or convex",
+        "C": "Always, regardless of shape",
+        "D": "Spherical only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "For a concave surface, the self-view factor Fii is:",
+      "options": {
+        "A": "Always zero",
+        "B": "Greater than zero, since the surface can 'see' part of itself",
+        "C": "Always equal to 1",
+        "D": "Undefined"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "Shape factor algebra is used to:",
+      "options": {
+        "A": "Determine shape factors for complex geometries by combining known shape factors of simpler sub-surfaces",
+        "B": "Calculate emissivity values",
+        "C": "Determine thermal conductivity",
+        "D": "Calculate convective heat transfer coefficients"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "For two infinite parallel plates (very large compared to their separation), the shape factor F12 is:",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "0.5",
+        "D": "Undefined"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "For a small object completely enclosed within a large cavity, the shape factor from the small object to the cavity (F12) is:",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "0.5",
+        "D": "Equal to the ratio of areas"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "Shape factor charts/graphs are typically used to determine F12 for standard geometries such as:",
+      "options": {
+        "A": "Coaxial parallel disks, perpendicular rectangles with a common edge, etc.",
+        "B": "Only spheres",
+        "C": "Only flat infinite plates",
+        "D": "They are never needed; shape factors are always derived analytically from scratch"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 61,
+      "question": "In a three-surface enclosure, the number of shape factors that must be determined directly (before using reciprocity and summation rules) is generally:",
+      "options": {
+        "A": "Nine",
+        "B": "Fewer than the total possible combinations, since many can be derived using reciprocity and summation",
+        "C": "Exactly 1",
+        "D": "Always 3 regardless of geometry"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 62,
+      "question": "The shape factor between two surfaces depends on:",
+      "options": {
+        "A": "Their geometry, relative orientation, and distance between them",
+        "B": "Only their emissivity",
+        "C": "Only their temperature",
+        "D": "Only their color"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 63,
+      "question": "If surface 1 cannot 'see' surface 2 at all (no direct line of sight), the shape factor F12 is:",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "0.5",
+        "D": "Negative"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 64,
+      "question": "The symmetry rule in shape factor algebra is used when:",
+      "options": {
+        "A": "Two or more surfaces are geometrically symmetric, simplifying shape factor relations",
+        "B": "There is no symmetry at all",
+        "C": "Surfaces have different areas only",
+        "D": "Temperatures of surfaces are equal"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 65,
+      "question": "For a flat surface facing a hemisphere that completely encloses it, the shape factor from the flat surface to the hemisphere is:",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "0.5",
+        "D": "Cannot be determined"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 66,
+      "question": "The view factor is dimensionless because it represents:",
+      "options": {
+        "A": "A ratio (fraction) of radiant energy leaving one surface that reaches another",
+        "B": "An absolute energy quantity",
+        "C": "A temperature ratio",
+        "D": "An area ratio unrelated to radiation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 67,
+      "question": "Shape factors are purely a function of:",
+      "options": {
+        "A": "Geometry only (independent of surface temperature or radiative properties)",
+        "B": "Surface temperature",
+        "C": "Surface emissivity",
+        "D": "The medium's thermal conductivity"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 68,
+      "question": "For two concentric spheres (a complete two-surface enclosure), the self-view factor F11 for the inner sphere is:",
+      "options": {
+        "A": "0 (since it is convex and cannot see itself)",
+        "B": "1",
+        "C": "0.5",
+        "D": "Equal to F22"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 69,
+      "question": "In radiative heat exchange network analysis, shape factor is used along with emissivity to determine:",
+      "options": {
+        "A": "Thermal conductivity",
+        "B": "The net radiative heat exchange between surfaces",
+        "C": "Convective heat transfer coefficient",
+        "D": "Specific heat"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 70,
+      "question": "For two identical, parallel, directly-opposed finite rectangular plates, the shape factor generally:",
+      "options": {
+        "A": "Increases as the separation distance decreases (plates closer together)",
+        "B": "Is independent of separation distance",
+        "C": "Decreases as the plates get closer",
+        "D": "Is always zero"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 71,
+      "question": "Shape factor determination for complex 3D geometries is often done using:",
+      "options": {
+        "A": "Hottel's crossed-string method (for 2D) or numerical/graphical methods",
+        "B": "Only direct measurement with a thermometer",
+        "C": "Ignoring geometry completely",
+        "D": "Stefan–Boltzmann law alone"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 72,
+      "question": "Hottel's crossed-string method is primarily applicable to:",
+      "options": {
+        "A": "Two-dimensional (long) geometries",
+        "B": "Point sources only",
+        "C": "Three-dimensional spheres exclusively",
+        "D": "Blackbody cavities only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 73,
+      "question": "The shape factor from a differential area element to a finite surface is determined by:",
+      "options": {
+        "A": "Integrating the shape factor relation (involving cosines of angles and distance) over the finite surface",
+        "B": "A simple algebraic sum",
+        "C": "Multiplying areas directly",
+        "D": "Taking the average temperature"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 74,
+      "question": "For a two-surface enclosure where surface 1 is flat and completely enclosed by surface 2, F21 is given by:",
+      "options": {
+        "A": "A1F12/A2 (from reciprocity)",
+        "B": "A2F12/A1",
+        "C": "F12, since F12 always equals F21",
+        "D": "0, always"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 75,
+      "question": "Shape factor concepts are essential in radiation network analysis because they allow calculation of:",
+      "options": {
+        "A": "Energy exchange fractions between multiple radiating surfaces in an enclosure",
+        "B": "Convective losses only",
+        "C": "Conductive resistances only",
+        "D": "Material properties"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 76,
+      "question": "The electrical network analogy for radiation heat transfer relates radiative heat flow to:",
+      "options": {
+        "A": "Current flow through a network of resistances, analogous to Ohm's law",
+        "B": "Fluid flow through pipes",
+        "C": "Mass diffusion",
+        "D": "Magnetic flux"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 77,
+      "question": "In the radiation network analogy, the 'surface resistance' of a gray, diffuse, opaque surface is given by:",
+      "options": {
+        "A": "(1 − ε)/(εA)",
+        "B": "εA",
+        "C": "A/(1 − ε)",
+        "D": "1/(εA²)"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 78,
+      "question": "For a blackbody (ε = 1), the surface resistance in the radiation network is:",
+      "options": {
+        "A": "Infinite",
+        "B": "Zero",
+        "C": "Equal to 1",
+        "D": "Negative"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 79,
+      "question": "In the radiation network analogy, the 'space resistance' (geometric resistance) between two surfaces is given by:",
+      "options": {
+        "A": "1/(A1F12)",
+        "B": "A1F12",
+        "C": "(1 − ε)/(εA)",
+        "D": "εσT⁴"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 80,
+      "question": "In the radiation network analogy, the driving potential (analogous to voltage) is represented by:",
+      "options": {
+        "A": "Blackbody emissive power (Eb = σT⁴) at nodes, with radiosity (J) as intermediate nodes",
+        "B": "Current",
+        "C": "Resistance",
+        "D": "Shape factor"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 81,
+      "question": "For radiative heat exchange between two large parallel gray plates, the network consists of:",
+      "options": {
+        "A": "Two surface resistances and one space resistance in series",
+        "B": "Only one resistance",
+        "C": "Infinite resistances",
+        "D": "No resistances, direct connection"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 82,
+      "question": "Net radiative heat transfer between two infinite parallel gray plates (emissivities ε1, ε2) is given by:",
+      "options": {
+        "A": "Q = σA(T1⁴ − T2⁴) / [1/ε1 + 1/ε2 − 1]",
+        "B": "Q = σA(T1⁴ − T2⁴)",
+        "C": "Q = εσA(T1⁴ − T2⁴)/2",
+        "D": "Q = σA(T1 − T2)"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 83,
+      "question": "Radiation shields are thin, high-reflectivity (low-emissivity) sheets placed between two radiating surfaces to:",
+      "options": {
+        "A": "Increase heat transfer between them",
+        "B": "Reduce the net radiative heat transfer between them",
+        "C": "Have no effect on heat transfer",
+        "D": "Increase their temperature difference"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 84,
+      "question": "A radiation shield works by:",
+      "options": {
+        "A": "Absorbing and re-emitting radiation at a lower rate, adding additional resistance to the radiation network",
+        "B": "Perfectly transmitting all radiation without any effect",
+        "C": "Converting radiation into conduction",
+        "D": "Increasing the shape factor between the two surfaces"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 85,
+      "question": "For two identical parallel plates (emissivity ε) separated by a single radiation shield (also emissivity ε), the heat transfer rate becomes approximately:",
+      "options": {
+        "A": "The same as without the shield",
+        "B": "About half of what it would be without any shield",
+        "C": "Doubled",
+        "D": "Reduced to zero"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 86,
+      "question": "For n identical radiation shields placed between two parallel plates, each with emissivity equal to that of the plates, the heat transfer rate is reduced approximately by a factor of:",
+      "options": {
+        "A": "1/(n+1), compared to the no-shield case",
+        "B": "n",
+        "C": "Unaffected by the number of shields",
+        "D": "1/n²"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 87,
+      "question": "Using multiple low-emissivity shields rather than one shield to reduce radiation heat transfer:",
+      "options": {
+        "A": "Is less effective than a single shield",
+        "B": "Progressively reduces net heat transfer further with each added shield",
+        "C": "Has no additional benefit beyond one shield",
+        "D": "Increases heat transfer"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 88,
+      "question": "Radiation shields are commonly used in applications such as:",
+      "options": {
+        "A": "Thermos flasks, spacecraft thermal control, and cryogenic storage systems",
+        "B": "Only electrical wiring insulation",
+        "C": "Only hydraulic systems",
+        "D": "Only combustion chambers"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 89,
+      "question": "For effective radiation shielding, the shield material should ideally have:",
+      "options": {
+        "A": "High emissivity to maximize absorption",
+        "B": "Low emissivity (highly reflective) on both surfaces to minimize radiative emission",
+        "C": "High thermal conductivity, with no concern for emissivity",
+        "D": "Zero reflectivity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 90,
+      "question": "In the radiation network with a shield, the total resistance between two surfaces is given by:",
+      "options": {
+        "A": "The sum of all surface and space resistances in the series network, including the shield's two surface resistances",
+        "B": "Just the resistance of the shield alone",
+        "C": "Always zero",
+        "D": "The average of the individual resistances"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 91,
+      "question": "A superinsulation system typically uses:",
+      "options": {
+        "A": "A single thick metal plate",
+        "B": "Multiple layers of radiation shields separated by vacuum or low-conductivity spacers",
+        "C": "Only convective barriers",
+        "D": "Only a single layer of insulation with high emissivity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 92,
+      "question": "A radiation shield's own temperature, once in steady state between two surfaces, settles at a value:",
+      "options": {
+        "A": "Equal to the hotter surface's temperature",
+        "B": "Equal to the colder surface's temperature",
+        "C": "Between the temperatures of the two bounding surfaces",
+        "D": "Always 0 K"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 93,
+      "question": "The effectiveness of a radiation shield increases as its emissivity:",
+      "options": {
+        "A": "Increases toward 1",
+        "B": "Decreases toward 0",
+        "C": "Is unrelated to shielding effectiveness",
+        "D": "Equals 0.5 always for maximum effect"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 94,
+      "question": "For radiation shields with different emissivities on each side (ε3,1 and ε3,2), the overall resistance calculation must account for:",
+      "options": {
+        "A": "Both surface resistances of the shield individually, as they can differ",
+        "B": "Only one resistance value, assuming it is the same on both sides",
+        "C": "No shield resistance at all",
+        "D": "Only the space resistance, ignoring the shield's surface properties"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 95,
+      "question": "The primary purpose of using the electrical analogy for radiation networks is to:",
+      "options": {
+        "A": "Allow radiative heat transfer problems to be solved using familiar series/parallel resistance network techniques",
+        "B": "Convert radiative heat transfer into electrical energy",
+        "C": "Measure voltage directly on surfaces",
+        "D": "Eliminate the need for shape factors entirely"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 96,
+      "question": "In a three-surface radiation enclosure problem with a reradiating (insulated) surface, that surface is modeled in the network as:",
+      "options": {
+        "A": "A node with zero net heat flow (floating node) connected by resistances to other surfaces",
+        "B": "A perfect current source",
+        "C": "A surface with ε = 1 always",
+        "D": "An open circuit with infinite resistance to all other nodes"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 97,
+      "question": "Space resistance between two surfaces in a radiation network decreases when:",
+      "options": {
+        "A": "The shape factor F12 decreases",
+        "B": "The areas and shape factor (A1F12) increase, improving the view between surfaces",
+        "C": "The surfaces are far apart with a poor view",
+        "D": "Emissivity increases"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 98,
+      "question": "Radiation shielding is particularly important in reducing heat loss in:",
+      "options": {
+        "A": "Cryogenic fluid storage (e.g., liquid nitrogen/helium dewars) where even small heat gains matter greatly",
+        "B": "Standard room-temperature water pipes only",
+        "C": "Combustion processes only",
+        "D": "Electrical circuits only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 99,
+      "question": "The combined use of shape factor, surface resistance, and space resistance in a radiation network allows engineers to determine:",
+      "options": {
+        "A": "Net radiative heat exchange in multi-surface enclosures systematically",
+        "B": "Only conductive heat transfer",
+        "C": "Only convective heat transfer coefficients",
+        "D": "Fluid flow rates"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 100,
+      "question": "Compared to a surface with no shield, inserting a radiation shield between two radiating surfaces:",
+      "options": {
+        "A": "Always increases the effective thermal resistance of the radiative path, reducing net heat transfer",
+        "B": "Always decreases the effective thermal resistance",
+        "C": "Has no effect on thermal resistance",
+        "D": "Converts radiative heat transfer entirely into conduction"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}

@@ -15,6 +15,8 @@ SUBJECTS = {
             "quizzes": [
                 {"quiz_no": 1, "file": "ucmp_q1"},
                 {"quiz_no": 2, "file": "ucmp_q2"},
+                {"quiz_no": 3, "file": "ucmp_q3"},
+                {"quiz_no": 4, "file": "ucmp_q4"},
             ],
         },
         {
@@ -22,12 +24,15 @@ SUBJECTS = {
             "quizzes": [
                 {"quiz_no": 1, "file": "hmt_q1"},
                 {"quiz_no": 2, "file": "hmt_q2"},
+                {"quiz_no": 3, "file": "hmt_q3"},
+                {"quiz_no": 4, "file": "hmt_q4"},
             ],
         },
         {
             "key": "ppf", "code": "25ME252", "title": "Production Processes and Fabrication",
             "quizzes": [
                 {"quiz_no": 1, "file": "ppf_q1"},
+                {"quiz_no": 2, "file": "ppf_q2"},
             ],
         },
     ],

@@ -10,9 +10,9 @@ from the nominal rolls, pick a subject, and take a 10-minute, tab-switch-monitor
 
 | Department | Code | Subject | Quiz 01 | Quiz 02 | Quiz 03 | Quiz 04 |
 |---|---|---|---|---|---|---|
-| Mechanical | 20MEP11 | Unconventional Machining Process | Introduction & Mechanical Energy Based Processes (100 Q) | Thermo-Electric Energy Based Processes (60 Q) | — | — |
-| Mechanical | 20ME014 | Heat and Mass Transfer | Conduction (100 Q) | Convection Heat Transfer (60 Q) | — | — |
-| Mechanical | 25ME252 | Production Processes and Fabrication | Metal Casting Processes (60 Q) | — | — | — |
+| Mechanical | 20MEP11 | Unconventional Machining Process | Introduction & Mechanical Energy Based Processes (100 Q) | Thermo-Electric Energy Based Processes (60 Q) | Process Parameters & Performance, CO2 (100 Q) | Tool & Work Material Selection, CO4 (100 Q) |
+| Mechanical | 20ME014 | Heat and Mass Transfer | Conduction (100 Q) | Convection Heat Transfer (60 Q) | Phase Change Heat Transfer & Heat Exchangers (100 Q) | Radiation (100 Q) |
+| Mechanical | 25ME252 | Production Processes and Fabrication | Metal Casting Processes (60 Q) | Powder Metallurgy & Plastic Processing (100 Q) | — | — |
 | CSE | 20CS006 | Theory of Computation (R2020) | Finite Automata (120 Q) | Regular Expressions & Regular Languages (120 Q) | Context-Free Grammars & Normal Forms (120 Q) | Pushdown Automata (120 Q) |
 
 Each subject can have multiple quizzes; students pick the subject, then which quiz
@@ -23,14 +23,14 @@ Question banks live in `data/<key>_q<n>.json` (one file per quiz, e.g. `ucmp_q1.
 `ucmp_q2.json`), parsed either from `data/raw_*.txt` via `data/parse_quiz.py` (original
 subjects) or directly from source `.docx` files via `data/parse_docx_quiz.py` (newer
 quizzes — edit the `SOURCES` list at the top of that script to add more; three
-`.docx` layouts are supported). Correct
+`.docx` layouts and one PDF layout are supported; PDFs need `pip install pypdf`). Correct
 answers are stored but **never shown to students** — the result page only shows
 right/wrong per question and marks awarded.
 
 ### Adding a new quiz or subject
 
 1. Add an entry to `SOURCES` in `data/parse_docx_quiz.py` pointing at the source
-   `.docx` (see the three supported layouts documented in that file's docstring), then
+   `.docx` (see the supported layouts documented in that file's docstring), then
    run `python data/parse_docx_quiz.py` to produce `data/<key>_q<n>.json`.
 2. Register it in `utils/quiz_data.py`'s `SUBJECTS` dict — either add a `{"quiz_no":
    N, "file": "<key>_qN"}` entry to an existing subject's `quizzes` list, or add a

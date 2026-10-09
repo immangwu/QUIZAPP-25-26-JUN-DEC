@@ -1,0 +1,1208 @@
+{
+  "code": "20MEP11",
+  "title": "Unconventional Machining Process",
+  "quiz_title": "Quiz 4: Tool & Work Material Selection (CO4)",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which process is most suitable for machining hard, brittle, electrically non-conductive materials such as glass and ceramics?",
+      "options": {
+        "A": "PAM",
+        "B": "USM",
+        "C": "ECM",
+        "D": "EDM"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "EDM can be used to machine only those workpiece materials which are",
+      "options": {
+        "A": "electrically non-conductive",
+        "B": "transparent to light",
+        "C": "electrically conductive",
+        "D": "magnetic"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "For ECM, the workpiece material must essentially be",
+      "options": {
+        "A": "non-magnetic",
+        "B": "electrically conductive",
+        "C": "thermally insulating",
+        "D": "hard and brittle"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "Which group of processes CANNOT be used on non-conductive ceramics?",
+      "options": {
+        "A": "EDM",
+        "B": "ECM",
+        "C": "PAM",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "Which group of processes can machine both conductive and non-conductive materials?",
+      "options": {
+        "A": "USM",
+        "B": "AJM",
+        "C": "LBM",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "The material removal rate in EDM is largely independent of the workpiece",
+      "options": {
+        "A": "electrical conductivity",
+        "B": "thermal conductivity",
+        "C": "hardness",
+        "D": "melting point"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "In ECM, the material removal rate is independent of the workpiece",
+      "options": {
+        "A": "valency",
+        "B": "density",
+        "C": "hardness",
+        "D": "atomic weight"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "The machinability of a material by USM depends mainly on its",
+      "options": {
+        "A": "electrical conductivity",
+        "B": "brittleness",
+        "C": "magnetic property",
+        "D": "melting point"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "USM is poorly suited for machining",
+      "options": {
+        "A": "soft ductile metals like copper",
+        "B": "ceramics",
+        "C": "tungsten carbide",
+        "D": "glass"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "AJM is NOT recommended for machining",
+      "options": {
+        "A": "ceramics",
+        "B": "quartz",
+        "C": "soft ductile materials",
+        "D": "glass"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "Which process should be avoided for heat-sensitive materials?",
+      "options": {
+        "A": "PAM",
+        "B": "WJM",
+        "C": "CHM",
+        "D": "USM"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "A complex three-dimensional cavity has to be produced in a non-conductive ceramic. The best choice is",
+      "options": {
+        "A": "PAM",
+        "B": "USM",
+        "C": "EDM",
+        "D": "ECM"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "Electrochemical Discharge Machining (ECDM) is especially suited for machining",
+      "options": {
+        "A": "non-conductive glass",
+        "B": "pure copper",
+        "C": "mild steel only",
+        "D": "aluminium only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "Which of the following processes does NOT require a physical tool in contact or near contact?",
+      "options": {
+        "A": "EBM",
+        "B": "LBM",
+        "C": "IBM",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "In which process is the tool wear practically zero?",
+      "options": {
+        "A": "USM",
+        "B": "EDM",
+        "C": "ECM",
+        "D": "AJM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "The tool material in USM is generally",
+      "options": {
+        "A": "glass",
+        "B": "low carbon steel or stainless steel",
+        "C": "diamond",
+        "D": "ceramic"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "A USM tool should preferably be",
+      "options": {
+        "A": "magnetic and brittle",
+        "B": "tough and ductile",
+        "C": "soft and brittle",
+        "D": "hard and brittle"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "The abrasive used in USM for machining the hardest materials (e.g., diamond, WC) is",
+      "options": {
+        "A": "Boron carbide",
+        "B": "Glass beads",
+        "C": "Silicon carbide",
+        "D": "Aluminium oxide"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "The most common carrier liquid for abrasive slurry in USM is",
+      "options": {
+        "A": "kerosene",
+        "B": "mercury",
+        "C": "water",
+        "D": "petrol"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "Which property is required for the magnetostrictor material in USM?",
+      "options": {
+        "A": "High electrical resistivity only",
+        "B": "Low density only",
+        "C": "High magnetostriction coefficient",
+        "D": "Transparency"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "In rotary ultrasonic machining, the tool is usually",
+      "options": {
+        "A": "a brass rod",
+        "B": "a diamond-impregnated core drill",
+        "C": "a plastic rod",
+        "D": "a copper tube"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "In USM, the tool is made softer than the workpiece mainly to",
+      "options": {
+        "A": "avoid brittle fracture of the tool",
+        "B": "increase tool wear",
+        "C": "increase vibration amplitude",
+        "D": "reduce cost only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "In micro-USM, which tool material can produce holes of about 5 μm diameter?",
+      "options": {
+        "A": "Tungsten carbide",
+        "B": "Copper",
+        "C": "Brass",
+        "D": "Aluminium"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "Which nozzle material gives the longest life in AJM?",
+      "options": {
+        "A": "Brass",
+        "B": "Copper",
+        "C": "Synthetic sapphire",
+        "D": "Mild steel"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "Which material cannot be used for making AJM nozzles?",
+      "options": {
+        "A": "Tungsten carbide",
+        "B": "Steel alloy",
+        "C": "Sapphire",
+        "D": "Synthetic sapphire"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "For light cleaning, etching and polishing operations in AJM, the abrasive preferred is",
+      "options": {
+        "A": "Glass beads",
+        "B": "Boron carbide",
+        "C": "Diamond",
+        "D": "Silicon carbide"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "Sodium bicarbonate is used as abrasive in AJM for",
+      "options": {
+        "A": "machining tungsten carbide",
+        "B": "cutting thick steel",
+        "C": "fine cleaning of soft surfaces",
+        "D": "drilling deep holes"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "Which gas should never be used as the carrier gas in AJM?",
+      "options": {
+        "A": "CO2",
+        "B": "Oxygen",
+        "C": "Air",
+        "D": "Nitrogen"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "Masks used in AJM to confine the jet can be made of",
+      "options": {
+        "A": "copper",
+        "B": "glass",
+        "C": "rubber",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "The orifice (jewel) of a water jet cutting head is commonly made of",
+      "options": {
+        "A": "mild steel",
+        "B": "sapphire or diamond",
+        "C": "brass",
+        "D": "copper"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "Pure water jet machining (WJM) is best suited for",
+      "options": {
+        "A": "soft materials like food, paper, rubber and foam",
+        "B": "glass blocks",
+        "C": "thick hardened steel",
+        "D": "tungsten carbide"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "Which material is the most commonly used abrasive in AWJM?",
+      "options": {
+        "A": "Sodium bicarbonate",
+        "B": "Glass beads",
+        "C": "Dolomite",
+        "D": "Garnet"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "Compared to sand, garnet as an abrasive in AWJM is about",
+      "options": {
+        "A": "30 % more effective",
+        "B": "50 % less effective",
+        "C": "equally effective",
+        "D": "10 times less effective"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "The focusing (mixing) tube in AWJM is generally made of",
+      "options": {
+        "A": "copper",
+        "B": "aluminium",
+        "C": "tungsten carbide or boron carbide composite",
+        "D": "plastic"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "Which type of catcher is used in AWJM?",
+      "options": {
+        "A": "Water basin type",
+        "B": "Submerged steel balls type",
+        "C": "TiB2 plate type",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "For cutting carbon-fibre reinforced plastics (CFRP) without thermal damage, the preferred process is",
+      "options": {
+        "A": "EDM",
+        "B": "LBM",
+        "C": "AWJM",
+        "D": "PAM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "Cutting of food products hygienically is best done by",
+      "options": {
+        "A": "WJM",
+        "B": "ECM",
+        "C": "PAM",
+        "D": "EDM"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "Frosting and engraving of glass surfaces is economically done by",
+      "options": {
+        "A": "PAM",
+        "B": "ECM",
+        "C": "EDM",
+        "D": "AJM"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "In Ice Jet Machining, the abrasive particles are replaced by",
+      "options": {
+        "A": "silica",
+        "B": "ice particles",
+        "C": "garnet",
+        "D": "glass beads"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "Ice Jet Machining is preferred in food and medical industries mainly because",
+      "options": {
+        "A": "it has very high MRR",
+        "B": "it uses toxic chemicals",
+        "C": "it is contamination-free",
+        "D": "it needs vacuum"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "Which EDM electrode material is preferred for large electrodes due to easy machinability and low wear?",
+      "options": {
+        "A": "Zinc",
+        "B": "Aluminium",
+        "C": "Brass",
+        "D": "Graphite"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "For EDM of tungsten carbide with fine finish, the preferred electrode material is",
+      "options": {
+        "A": "aluminium",
+        "B": "copper-tungsten",
+        "C": "brass",
+        "D": "zinc"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "Which EDM electrode material shows the highest wear ratio?",
+      "options": {
+        "A": "Brass",
+        "B": "Copper-tungsten",
+        "C": "Graphite",
+        "D": "Silver-tungsten"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "The commonly used dielectric fluid in die-sinking EDM is",
+      "options": {
+        "A": "mercury",
+        "B": "brine solution",
+        "C": "kerosene / hydrocarbon oil",
+        "D": "sulphuric acid"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "The dielectric fluid generally used in Wire EDM is",
+      "options": {
+        "A": "paraffin wax",
+        "B": "deionised water",
+        "C": "kerosene",
+        "D": "transformer oil"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "The most common wire material in WEDM is",
+      "options": {
+        "A": "nickel",
+        "B": "aluminium",
+        "C": "mild steel",
+        "D": "brass"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "For very fine wire EDM (wire diameter below 0.1 mm), the wire material used is",
+      "options": {
+        "A": "tungsten or molybdenum",
+        "B": "zinc",
+        "C": "aluminium",
+        "D": "brass"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "Typical wire diameter range used in WEDM is",
+      "options": {
+        "A": "0.05 – 0.3 mm",
+        "B": "1 – 2 mm",
+        "C": "3 – 5 mm",
+        "D": "5 – 10 mm"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "Making dies and moulds with complex blind cavities in hardened tool steel is best done by",
+      "options": {
+        "A": "AJM",
+        "B": "CHM",
+        "C": "die-sinking EDM",
+        "D": "WJM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "Extrusion dies with complex through-profiles in hardened steel are best produced by",
+      "options": {
+        "A": "AJM",
+        "B": "WEDM",
+        "C": "USM",
+        "D": "CHM"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "Copper is used as EDM electrode material mainly because of its",
+      "options": {
+        "A": "high electrical conductivity and good surface finish",
+        "B": "low melting point",
+        "C": "magnetic property",
+        "D": "low cost only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "The laser best suited for cutting non-metals like wood, plastics, cloth and paper is",
+      "options": {
+        "A": "Nd:YAG laser",
+        "B": "He-Ne laser",
+        "C": "Ruby laser",
+        "D": "CO2 laser"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "For micro-drilling of metals, the commonly used laser is",
+      "options": {
+        "A": "Argon laser",
+        "B": "Nd:YAG laser",
+        "C": "Dye laser",
+        "D": "He-Ne laser"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "In an Nd:YAG laser, the lasing medium is a",
+      "options": {
+        "A": "liquid dye",
+        "B": "gas mixture",
+        "C": "semiconductor junction",
+        "D": "solid crystal"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "Materials difficult to process by LBM due to high reflectivity are",
+      "options": {
+        "A": "rubber",
+        "B": "wood and plastics",
+        "C": "copper and aluminium",
+        "D": "ceramics"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "The focusing lens for a CO2 laser is generally made of",
+      "options": {
+        "A": "zinc selenide (ZnSe)",
+        "B": "quartz",
+        "C": "acrylic",
+        "D": "ordinary glass"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "In laser cutting of mild steel, the assist gas that increases cutting speed by exothermic reaction is",
+      "options": {
+        "A": "helium",
+        "B": "nitrogen",
+        "C": "argon",
+        "D": "oxygen"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "For oxide-free (clean) laser-cut edges on stainless steel, the assist gas used is",
+      "options": {
+        "A": "air",
+        "B": "nitrogen",
+        "C": "CO2",
+        "D": "oxygen"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "Drilling holes smaller than 0.1 mm in diamond is best done by",
+      "options": {
+        "A": "LBM",
+        "B": "USM",
+        "C": "WJM",
+        "D": "AJM"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "PAM can be used to cut",
+      "options": {
+        "A": "wood",
+        "B": "ceramics",
+        "C": "only electrically conductive metals",
+        "D": "glass"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 61,
+      "question": "The electrode material in a plasma arc torch is generally",
+      "options": {
+        "A": "brass",
+        "B": "tungsten",
+        "C": "aluminium",
+        "D": "copper"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 62,
+      "question": "The plasma gas mixture preferred for cutting stainless steel and aluminium is",
+      "options": {
+        "A": "argon-hydrogen",
+        "B": "CO2",
+        "C": "pure oxygen",
+        "D": "air"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 63,
+      "question": "The nozzle of a plasma arc torch is generally made of water-cooled",
+      "options": {
+        "A": "plastic",
+        "B": "ceramic",
+        "C": "glass",
+        "D": "copper"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 64,
+      "question": "Economical cutting of thick stainless steel plates is done by",
+      "options": {
+        "A": "AJM",
+        "B": "CHM",
+        "C": "PAM",
+        "D": "USM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 65,
+      "question": "EBM can machine",
+      "options": {
+        "A": "only conductive materials",
+        "B": "almost any material irrespective of its properties",
+        "C": "only ferrous metals",
+        "D": "only non-metals"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 66,
+      "question": "The cathode (filament) in an EBM gun is made of",
+      "options": {
+        "A": "brass",
+        "B": "copper",
+        "C": "tungsten",
+        "D": "aluminium"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 67,
+      "question": "Drilling of fine holes in thin sheets with very high precision under vacuum is done by",
+      "options": {
+        "A": "AWJM",
+        "B": "PAM",
+        "C": "CHM",
+        "D": "EBM"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 68,
+      "question": "The ion source gas most commonly used in IBM is",
+      "options": {
+        "A": "argon",
+        "B": "hydrogen",
+        "C": "oxygen",
+        "D": "chlorine"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 69,
+      "question": "IBM is mainly selected for",
+      "options": {
+        "A": "deburring castings",
+        "B": "heavy stock removal",
+        "C": "cutting thick plates",
+        "D": "atomic-level finishing of optics and semiconductors"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 70,
+      "question": "The etchant commonly used for chemical machining of aluminium is",
+      "options": {
+        "A": "nitric acid",
+        "B": "sodium hydroxide (NaOH)",
+        "C": "sodium nitrate",
+        "D": "ferric chloride"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 71,
+      "question": "The etchant commonly used for copper and its alloys is",
+      "options": {
+        "A": "NaOH",
+        "B": "NaCl",
+        "C": "ferric chloride (FeCl3)",
+        "D": "HF"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 72,
+      "question": "Titanium alloys are chemically machined using etchants based on",
+      "options": {
+        "A": "hydrofluoric acid",
+        "B": "sodium nitrate",
+        "C": "sodium hydroxide",
+        "D": "sodium chloride"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 73,
+      "question": "Maskant materials used in chemical milling include",
+      "options": {
+        "A": "neoprene",
+        "B": "butyl rubber",
+        "C": "vinyl polymers",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 74,
+      "question": "In photochemical machining, the maskant used is a",
+      "options": {
+        "A": "neoprene rubber",
+        "B": "lead sheet",
+        "C": "wax",
+        "D": "photoresist"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 75,
+      "question": "Large-area shallow material removal on aircraft skin panels is best done by",
+      "options": {
+        "A": "EBM",
+        "B": "USM",
+        "C": "chemical milling",
+        "D": "EDM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 76,
+      "question": "Thin metal parts like shims, PCB patterns and encoder discs are produced by",
+      "options": {
+        "A": "photochemical machining",
+        "B": "AWJM",
+        "C": "PAM",
+        "D": "EDM"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 77,
+      "question": "ECM tool (cathode) materials commonly used are",
+      "options": {
+        "A": "copper",
+        "B": "brass",
+        "C": "stainless steel",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 78,
+      "question": "Which property is NOT essential for an ECM tool material?",
+      "options": {
+        "A": "Good machinability",
+        "B": "High hardness",
+        "C": "Good electrical conductivity",
+        "D": "Corrosion resistance"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 79,
+      "question": "The most commonly used electrolyte for ECM of steels is",
+      "options": {
+        "A": "kerosene",
+        "B": "sodium chloride (NaCl)",
+        "C": "sulphuric acid",
+        "D": "deionised water"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 80,
+      "question": "For better dimensional accuracy (passivating action) in ECM, the electrolyte preferred is",
+      "options": {
+        "A": "NaCl",
+        "B": "HCl",
+        "C": "water",
+        "D": "sodium nitrate (NaNO3)"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 81,
+      "question": "Contouring of jet engine turbine blades in nickel superalloys at high MRR without residual stress is done by",
+      "options": {
+        "A": "AJM",
+        "B": "USM",
+        "C": "ECM",
+        "D": "WJM"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 82,
+      "question": "The grinding wheel used in ECG is",
+      "options": {
+        "A": "metal (electrically conductive) bonded diamond",
+        "B": "resin bonded SiC",
+        "C": "rubber bonded",
+        "D": "vitrified bonded alumina"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 83,
+      "question": "ECG is most suitable for sharpening",
+      "options": {
+        "A": "plastic parts",
+        "B": "glass lenses",
+        "C": "cemented carbide cutting tools",
+        "D": "wooden tools"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 84,
+      "question": "In electrochemical honing, the tool consists of",
+      "options": {
+        "A": "a laser head",
+        "B": "abrasive honing stones on a conductive tool body",
+        "C": "a wire electrode",
+        "D": "a plain copper rod"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 85,
+      "question": "Electrochemical deburring is widely applied for",
+      "options": {
+        "A": "burrs at intersecting holes in hydraulic valve bodies",
+        "B": "drilling glass",
+        "C": "polishing lenses",
+        "D": "cutting sheet metal"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 86,
+      "question": "In electro-stream (ES) drilling, the cathodic tool is a",
+      "options": {
+        "A": "graphite rod",
+        "B": "brass tube",
+        "C": "copper rod",
+        "D": "platinum wire inside a glass nozzle"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 87,
+      "question": "The electrolyte used in ES drilling is",
+      "options": {
+        "A": "an acid (H2SO4 / HNO3 / HCl)",
+        "B": "kerosene",
+        "C": "deionised water",
+        "D": "brine only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 88,
+      "question": "Small diameter, deep cooling holes in nickel-superalloy turbine blades are best drilled by",
+      "options": {
+        "A": "WJM",
+        "B": "CHM",
+        "C": "AJM",
+        "D": "ES drilling"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 89,
+      "question": "The media in Abrasive Flow Machining consists of",
+      "options": {
+        "A": "water only",
+        "B": "kerosene and abrasive",
+        "C": "a viscoelastic polymer carrier with abrasive grains",
+        "D": "molten wax only"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 90,
+      "question": "Abrasives used in AFM include",
+      "options": {
+        "A": "SiC",
+        "B": "Al2O3",
+        "C": "B4C and diamond",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 91,
+      "question": "Deburring and polishing of internal passages of fuel injector nozzles is best done by",
+      "options": {
+        "A": "PAM",
+        "B": "AFM",
+        "C": "EDM",
+        "D": "LBM"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 92,
+      "question": "The magnetic particles commonly used in MAF are",
+      "options": {
+        "A": "iron particles",
+        "B": "glass particles",
+        "C": "aluminium particles",
+        "D": "copper particles"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 93,
+      "question": "A strong flexible magnetic abrasive brush is formed when the workpiece is",
+      "options": {
+        "A": "paramagnetic",
+        "B": "non-ferromagnetic",
+        "C": "ferromagnetic",
+        "D": "a polymer"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 94,
+      "question": "A magnetorheological (MR) fluid consists of",
+      "options": {
+        "A": "carbonyl iron particles",
+        "B": "a carrier fluid (water/oil)",
+        "C": "non-magnetic abrasive such as CeO2",
+        "D": "All of the mentioned"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 95,
+      "question": "The abrasive generally used in MRF of optical glass is",
+      "options": {
+        "A": "silicon carbide grit 60",
+        "B": "cerium oxide",
+        "C": "boron carbide",
+        "D": "garnet"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 96,
+      "question": "Finishing of aspheric optical lenses to nanometre level is best achieved by",
+      "options": {
+        "A": "PAM",
+        "B": "AWJM",
+        "C": "EDM",
+        "D": "MRF"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 97,
+      "question": "Chemo-Mechanical Polishing (CMP) is mainly used for",
+      "options": {
+        "A": "deburring castings",
+        "B": "drilling deep holes",
+        "C": "cutting thick plates",
+        "D": "planarisation of silicon wafers"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 98,
+      "question": "The polishing pad material commonly used in CMP is",
+      "options": {
+        "A": "glass",
+        "B": "polyurethane",
+        "C": "cast iron",
+        "D": "steel"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 99,
+      "question": "MRAFF is selected for nano-finishing of",
+      "options": {
+        "A": "complex internal geometries",
+        "B": "only external cylinders",
+        "C": "only wooden parts",
+        "D": "only flat plates"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 100,
+      "question": "Which hybrid process combines ultrasonic vibration with electrochemical dissolution for machining hard conductive alloys?",
+      "options": {
+        "A": "Plain USM",
+        "B": "AJM",
+        "C": "Ultrasonic assisted ECM",
+        "D": "PAM"
+      },
+      "answer": "C",
+      "marks": 1
+    }
+  ]
+}

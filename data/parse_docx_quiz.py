@@ -30,6 +30,13 @@ Two source layouts are supported, auto-detected per file:
    D) <option>
    Answer: X) <text>  [— optional explanation]
    ... answer is inline; header/"SET n" lines between questions are ignored.
+   (Also used by the HMT Quiz 3/4 docs.)
+
+4. PDF layout (used by the UCMP Quiz 3/4 and PPF Quiz 2 PDFs; needs `pypdf`):
+   n. <question text, may wrap>
+   (a) <option>  ...  (d) <option>
+   ... followed by an "ANSWER KEY" table of Q no / answer letter / option text.
+   Every key row's option text is cross-checked against the parsed option.
 
 Usage: edit SOURCES below, then `python parse_docx_quiz.py` (optionally followed by
 one or more output filenames, e.g. `toc_q3.json`, to re-parse only those).
@@ -93,6 +100,46 @@ SOURCES = [
         "quiz_title": "Quiz 4: Pushdown Automata",
         "department": "cse",
     },
+    {
+        "docx": "UCMP_Quiz03_CO2_Questions_and_Answer_Key.pdf",
+        "out": "ucmp_q3.json",
+        "code": "20MEP11",
+        "title": "Unconventional Machining Process",
+        "quiz_title": "Quiz 3: Process Parameters & Performance (CO2)",
+        "department": "mechanical",
+    },
+    {
+        "docx": "UCMP_Quiz04_CO4_Questions_and_Answer_Key.pdf",
+        "out": "ucmp_q4.json",
+        "code": "20MEP11",
+        "title": "Unconventional Machining Process",
+        "quiz_title": "Quiz 4: Tool & Work Material Selection (CO4)",
+        "department": "mechanical",
+    },
+    {
+        "docx": "Quiz03_Phase_Change_Heat_Transfer_and_Heat_Exchangers.docx",
+        "out": "hmt_q3.json",
+        "code": "20ME014",
+        "title": "Heat and Mass Transfer",
+        "quiz_title": "Quiz 3: Phase Change Heat Transfer & Heat Exchangers",
+        "department": "mechanical",
+    },
+    {
+        "docx": "Quiz04_Radiation.docx",
+        "out": "hmt_q4.json",
+        "code": "20ME014",
+        "title": "Heat and Mass Transfer",
+        "quiz_title": "Quiz 4: Radiation",
+        "department": "mechanical",
+    },
+    {
+        "docx": "PM_Plastic_Processing_CO5_Quiz_with_Answer_Key.pdf",
+        "out": "ppf_q2.json",
+        "code": "25ME252",
+        "title": "Production Processes and Fabrication",
+        "quiz_title": "Quiz 2: Powder Metallurgy & Plastic Processing",
+        "department": "mechanical",
+    },
 ]
 
 Q_TAGGED_RE = re.compile(r"^Q(\d+)\.\s*(.+)$")
@@ -104,6 +151,10 @@ ANSWER_INLINE_RE = re.compile(r"^Answer:\s*\(([A-D])\)")
 
 OPT_PAREN_RE = re.compile(r"^([A-D])\)\s*(.*)$")
 ANSWER_PAREN_RE = re.compile(r"^Answer:\s*([A-D])\)")
+
+PDF_Q_RE = re.compile(r"^(\d+)\.\s+(.*)$")
+PDF_OPT_RE = re.compile(r"^\(([a-d])\)\s*(.*)$")
+PDF_PAGE_RE = re.compile(r"^Page \d+$")
 
 
 def _paras(path):
@@ -217,18 +268,98 @@ def parse_qtagged_with_inline_answer(path):
     return [questions[k] for k in sorted(questions)]
 
 
+def _norm(s):
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def parse_pdf_with_answer_key(path):
+    """Layout 4 (PDF): 'n.' + lowercase (a)-(d) options, wrapped across lines, followed
+    by an 'ANSWER KEY' table of (Q no, answer letter, correct option text) rows."""
+    import pypdf
+
+    lines = [l.strip() for p in pypdf.PdfReader(path).pages
+             for l in p.extract_text().splitlines() if l.strip()]
+    running_header = lines[0]
+    lines = [l for l in lines if l != running_header and not PDF_PAGE_RE.match(l)]
+    key_at = next(i for i, l in enumerate(lines) if "ANSWER KEY" in l.upper())
+    # The answer-key page opens with its own "DEPARTMENT OF ..." title block before the
+    # "ANSWER KEY" line; end the question section there so it isn't glued onto Q-last (d).
+    title_at = max(i for i in range(key_at) if lines[i].upper().startswith("DEPARTMENT OF"))
+    q_lines = lines[:title_at]
+    # The key table's column headers repeat on every page it spans — drop them.
+    key_lines = [l for l in lines[key_at + 1:] if l not in ("Q.", "Ans.", "Correct Option")]
+
+    # Questions: only accept "n." as a new question when n is the next expected id,
+    # so wrapped text that happens to start with a number can't split a question.
+    questions, cur, cur_opt = {}, None, None
+    for line in q_lines:
+        qm = PDF_Q_RE.match(line)
+        om = PDF_OPT_RE.match(line)
+        if qm and int(qm.group(1)) == len(questions) + 1:
+            cur = {"id": int(qm.group(1)), "question": qm.group(2), "options": {}}
+            questions[cur["id"]] = cur
+            cur_opt = None
+        elif cur is None:
+            continue  # title/instructions block before Q1
+        elif om:
+            cur_opt = om.group(1).upper()
+            cur["options"][cur_opt] = om.group(2)
+        elif cur_opt:
+            cur["options"][cur_opt] += " " + line
+        else:
+            cur["question"] += " " + line
+
+    # Answer key: rows of "<n>", "<letter>", "<option text, possibly wrapped>".
+    start = next(i for i, l in enumerate(key_lines) if l == "1")
+    answers, i = {}, start
+    while i < len(key_lines):
+        qid = int(key_lines[i])
+        if qid != len(answers) + 1 or not re.match(r"^[a-d]$", key_lines[i + 1]):
+            raise ValueError(f"{path}: malformed answer key row near {key_lines[i:i + 3]!r}")
+        j = i + 2
+        text = []
+        while j < len(key_lines) and key_lines[j] != str(qid + 1):
+            text.append(key_lines[j])
+            j += 1
+        answers[qid] = (key_lines[i + 1].upper(), " ".join(text))
+        i = j
+
+    if sorted(questions) != sorted(answers):
+        raise ValueError(f"{path}: {len(questions)} questions but {len(answers)} answer key rows")
+
+    out = []
+    for qid in sorted(questions):
+        q = questions[qid]
+        q["question"] = _norm(q["question"])
+        q["options"] = {k: _norm(v) for k, v in q["options"].items()}
+        if sorted(q["options"]) != ["A", "B", "C", "D"]:
+            raise ValueError(f"{path}: Q{qid} has options {sorted(q['options'])}")
+        letter, key_text = answers[qid]
+        # Cross-check: the key's option text must match the option it points at.
+        if _norm(key_text).lower() != q["options"][letter].lower():
+            raise ValueError(f"{path}: Q{qid} key says {letter}) {key_text!r} "
+                             f"but option {letter} is {q['options'][letter]!r}")
+        q["answer"] = letter
+        q["marks"] = 1
+        out.append(q)
+    return out
+
+
 def main(only=None):
     for src in SOURCES:
         if only and src["out"] not in only:
             continue
         docx_path = os.path.join(ROOT, src["docx"])
-        paras, tables = _paras(docx_path)
-        if tables:
-            questions = parse_qtagged_with_table(docx_path)
-        elif any(OPT_PAREN_RE.match(p) for p in paras):
-            questions = parse_qtagged_with_inline_answer(docx_path)
+        if docx_path.lower().endswith(".pdf"):
+            questions = parse_pdf_with_answer_key(docx_path)
         else:
-            questions = parse_plain_with_inline_answer(docx_path)
+            paras, tables = _paras(docx_path)
+            if tables:
+                questions = parse_qtagged_with_table(docx_path)
+            elif any(OPT_PAREN_RE.match(p) for p in paras):
+                questions = parse_qtagged_with_inline_answer(docx_path)
+            else:
+                questions = parse_plain_with_inline_answer(docx_path)
 
         out = {
             "code": src["code"],

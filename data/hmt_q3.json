@@ -1,0 +1,1208 @@
+{
+  "code": "20ME014",
+  "title": "Heat and Mass Transfer",
+  "quiz_title": "Quiz 3: Phase Change Heat Transfer & Heat Exchangers",
+  "department": "mechanical",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Boiling heat transfer occurs when:",
+      "options": {
+        "A": "A solid surface is heated below the saturation temperature of a liquid",
+        "B": "A heated surface contacts a liquid at or above its saturation temperature, causing phase change to vapor",
+        "C": "A liquid is cooled below freezing",
+        "D": "A gas condenses"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "Pool boiling refers to boiling:",
+      "options": {
+        "A": "In a flowing stream with forced convection",
+        "B": "In a stationary/quiescent liquid heated by a submerged surface",
+        "C": "Only in micro-gravity",
+        "D": "Only in vacuum"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "Flow boiling (forced convection boiling) occurs when:",
+      "options": {
+        "A": "The liquid is stationary",
+        "B": "The liquid is forced to flow while being heated, causing boiling",
+        "C": "There is no heating at all",
+        "D": "Only natural convection occurs"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "The boiling curve (Nukiyama curve) plots:",
+      "options": {
+        "A": "Heat flux vs excess temperature (ΔTe = Ts − Tsat)",
+        "B": "Pressure vs volume",
+        "C": "Temperature vs time",
+        "D": "Velocity vs time"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "In the boiling curve, the regime before the onset of nucleate boiling is called:",
+      "options": {
+        "A": "Natural convection (free convection) boiling regime",
+        "B": "Film boiling regime",
+        "C": "Transition boiling regime",
+        "D": "Critical heat flux regime"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "The regime of pool boiling with the highest heat transfer coefficient is:",
+      "options": {
+        "A": "Natural convection boiling",
+        "B": "Nucleate boiling",
+        "C": "Transition boiling",
+        "D": "Film boiling"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "The point on the boiling curve where heat flux is maximum is called:",
+      "options": {
+        "A": "Leidenfrost point",
+        "B": "Critical heat flux (CHF) / burnout point",
+        "C": "Onset of nucleate boiling",
+        "D": "Saturation point"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "The Leidenfrost point refers to:",
+      "options": {
+        "A": "The point of maximum heat flux",
+        "B": "The point of minimum heat flux in film boiling (minimum film boiling point)",
+        "C": "The onset of nucleate boiling",
+        "D": "The point of zero heat flux"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "In nucleate boiling, bubbles are formed at:",
+      "options": {
+        "A": "The bulk liquid only",
+        "B": "Nucleation sites on the heated surface (cavities, scratches)",
+        "C": "Only at the free liquid surface",
+        "D": "Random locations unrelated to the surface"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "Exceeding the critical heat flux in boiling can lead to:",
+      "options": {
+        "A": "Improved heat transfer",
+        "B": "Burnout — a sudden rise in surface temperature due to transition to film boiling",
+        "C": "No significant change",
+        "D": "Reduced surface temperature"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "In film boiling, the heated surface is covered by:",
+      "options": {
+        "A": "A liquid film only",
+        "B": "A continuous vapor film that insulates the surface from the liquid",
+        "C": "Solid deposits",
+        "D": "Ice"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "Heat transfer in the film boiling regime occurs mainly by:",
+      "options": {
+        "A": "Conduction and radiation through the vapor film",
+        "B": "Pure convection in the liquid",
+        "C": "Direct contact boiling",
+        "D": "Evaporation at the bulk liquid"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "The Rohsenow correlation is used to predict:",
+      "options": {
+        "A": "Condensation heat transfer coefficient",
+        "B": "Nucleate pool boiling heat transfer",
+        "C": "Critical heat flux only",
+        "D": "LMTD"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "Zuber's correlation is commonly used to estimate:",
+      "options": {
+        "A": "Nucleate boiling heat transfer coefficient",
+        "B": "Critical heat flux in pool boiling",
+        "C": "Condensate film thickness",
+        "D": "Fin efficiency"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "Subcooled boiling occurs when:",
+      "options": {
+        "A": "The bulk liquid temperature is above the saturation temperature",
+        "B": "The bulk liquid temperature is below saturation while surface temperature exceeds it, causing local boiling",
+        "C": "There is no boiling at all",
+        "D": "The liquid is entirely vapor"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "Saturated boiling occurs when:",
+      "options": {
+        "A": "The bulk liquid temperature equals the saturation temperature corresponding to system pressure",
+        "B": "The liquid is subcooled",
+        "C": "The liquid is superheated vapor only",
+        "D": "No phase change occurs"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "In flow boiling inside a tube, which regime is typically NOT encountered?",
+      "options": {
+        "A": "Bubbly flow",
+        "B": "Slug flow",
+        "C": "Annular flow",
+        "D": "Solid flow"
+      },
+      "answer": "D",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "Dryout in flow boiling refers to:",
+      "options": {
+        "A": "Complete filling of the tube with liquid",
+        "B": "The liquid film on the tube wall evaporating completely, leaving a dry wall with vapor flow",
+        "C": "Condensation of vapor",
+        "D": "Blockage of the tube"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "The onset of nucleate boiling (ONB) refers to:",
+      "options": {
+        "A": "The point where surface temperature is enough to initiate bubble formation",
+        "B": "The maximum heat flux point",
+        "C": "The minimum heat flux point in film boiling",
+        "D": "The saturation point"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "The heat transfer coefficient in nucleate boiling generally depends on:",
+      "options": {
+        "A": "Surface roughness, liquid properties, and heat flux/excess temperature",
+        "B": "Only ambient air temperature",
+        "C": "Only gravity",
+        "D": "Only tube diameter"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "In pool boiling, increasing surface roughness generally:",
+      "options": {
+        "A": "Decreases the number of nucleation sites",
+        "B": "Increases nucleation sites, enhancing nucleate boiling heat transfer",
+        "C": "Has no effect",
+        "D": "Stops boiling"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "Which of these factors influences critical heat flux in pool boiling?",
+      "options": {
+        "A": "Surface tension, latent heat of vaporization, and density difference between liquid and vapor",
+        "B": "Only ambient pressure",
+        "C": "Only tube material color",
+        "D": "Only gravity direction"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "Transition boiling is characterized by:",
+      "options": {
+        "A": "A stable, continuous vapor film",
+        "B": "Unstable alternation between nucleate and film boiling, with decreasing heat flux as temperature increases",
+        "C": "Pure natural convection",
+        "D": "No vapor generation"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "Latent heat of vaporization plays a role in boiling heat transfer because:",
+      "options": {
+        "A": "It is the energy absorbed per unit mass during phase change from liquid to vapor",
+        "B": "It has no role",
+        "C": "It only affects condensation",
+        "D": "It is a measure of surface tension"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "Enhancement of boiling heat transfer can be achieved by:",
+      "options": {
+        "A": "Using smooth, polished surfaces only",
+        "B": "Using surfaces with engineered nucleation sites/porous coatings to increase bubble nucleation",
+        "C": "Reducing heat flux to zero",
+        "D": "Removing all surface irregularities"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "Condensation occurs when a vapor contacts a surface at a temperature:",
+      "options": {
+        "A": "Above the saturation temperature",
+        "B": "Below the saturation temperature of the vapor",
+        "C": "Equal to the boiling point of the liquid",
+        "D": "At absolute zero"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "Film-wise condensation occurs when:",
+      "options": {
+        "A": "The condensate does not wet the surface, forming droplets",
+        "B": "The condensate wets the surface, forming a continuous liquid film",
+        "C": "No condensate forms",
+        "D": "Vapor turns directly to solid"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "Drop-wise condensation occurs when:",
+      "options": {
+        "A": "Condensate forms a continuous film",
+        "B": "The condensate forms discrete droplets that roll off the surface",
+        "C": "There is no vapor present",
+        "D": "Pressure is very high"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "Compared to film-wise condensation, drop-wise condensation generally gives:",
+      "options": {
+        "A": "A lower heat transfer coefficient",
+        "B": "A much higher heat transfer coefficient due to less thermal resistance",
+        "C": "The same heat transfer coefficient",
+        "D": "No heat transfer"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "Nusselt's theory of film condensation assumes:",
+      "options": {
+        "A": "Turbulent condensate film flow with significant inertia effects",
+        "B": "Laminar condensate film flow, heat transfer by conduction through the film, negligible inertia/convection effects",
+        "C": "No condensate film at all",
+        "D": "Condensate film at the vapor temperature throughout"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "In Nusselt's theory for condensation on a vertical plate, the condensate film thickness:",
+      "options": {
+        "A": "Decreases with distance from the top",
+        "B": "Increases with distance from the top due to continuous condensation",
+        "C": "Remains constant throughout",
+        "D": "Is independent of position"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "The average heat transfer coefficient for laminar film condensation on a vertical plate (Nusselt's theory) is proportional to:",
+      "options": {
+        "A": "L (plate length) to a positive power",
+        "B": "L^(−1/4) — inversely related to the fourth root of plate length",
+        "C": "Independent of plate length",
+        "D": "L²"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "In Nusselt's theory, the driving temperature difference for condensation is:",
+      "options": {
+        "A": "Tsat − Ts (saturation temperature minus surface temperature)",
+        "B": "Ts − T∞ only",
+        "C": "Difference between two surface temperatures",
+        "D": "Ambient temperature difference"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "For condensation on a horizontal tube versus a vertical tube of similar height, generally:",
+      "options": {
+        "A": "The horizontal tube gives a higher average heat transfer coefficient",
+        "B": "The vertical tube always gives a higher coefficient",
+        "C": "No difference exists",
+        "D": "The horizontal tube gives zero heat transfer"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "Film condensation correlations typically incorporate:",
+      "options": {
+        "A": "Only the Reynolds number",
+        "B": "Latent heat, film thickness/geometry, and fluid properties like density, viscosity, thermal conductivity",
+        "C": "Only surface roughness",
+        "D": "Only ambient humidity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "In condensation over a bank of horizontal tubes, the heat transfer coefficient of the lower tubes is generally:",
+      "options": {
+        "A": "Higher than the top tube due to drainage from above",
+        "B": "Lower than the top tube because of extra condensate film thickness from drainage",
+        "C": "The same as the top tube",
+        "D": "Independent of condensate drainage"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "The condensate Reynolds number is used to determine:",
+      "options": {
+        "A": "Whether the condensate film flow is laminar, wavy-laminar, or turbulent",
+        "B": "Pressure drop in pipes only",
+        "C": "Boiling regime",
+        "D": "Fin efficiency"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "For laminar film condensation, the condensate Reynolds number is typically:",
+      "options": {
+        "A": "Less than about 30 (laminar, wave-free)",
+        "B": "Greater than 10,000",
+        "C": "Always infinite",
+        "D": "Negative"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "As the condensate Reynolds number increases beyond the laminar range, the flow becomes:",
+      "options": {
+        "A": "Wavy-laminar and then turbulent, which can enhance heat transfer",
+        "B": "Stopped entirely",
+        "C": "Converted to a solid",
+        "D": "Converted to boiling"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "In practical condenser design, assuming pure vapor (no non-condensable gases) is important because:",
+      "options": {
+        "A": "Non-condensable gases accumulate at the surface and can drastically reduce heat transfer",
+        "B": "They have no effect",
+        "C": "They enhance condensation",
+        "D": "They are always naturally absent"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "Dropwise condensation is promoted industrially by:",
+      "options": {
+        "A": "Roughening the surface",
+        "B": "Applying coatings that reduce wettability (promoters)",
+        "C": "Increasing surface area indefinitely",
+        "D": "Reducing vapor pressure to zero"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "For film condensation on an inclined plate, the heat transfer coefficient compared to a vertical plate of the same length is generally:",
+      "options": {
+        "A": "The same",
+        "B": "Modified by the angle of inclination (typically lower as incline decreases from vertical)",
+        "C": "Always higher",
+        "D": "Independent of inclination"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "Nusselt's theory assumes the vapor is:",
+      "options": {
+        "A": "Highly turbulent, interacting significantly with the condensate film",
+        "B": "Stationary/saturated with negligible shear and drag on the condensate film",
+        "C": "Always supercooled",
+        "D": "Always in solid form"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "In film condensation analysis, the latent heat of vaporization is often corrected to:",
+      "options": {
+        "A": "Account for sensible subcooling of the condensate below saturation temperature (modified latent heat, h'fg)",
+        "B": "Zero, since latent heat has no role",
+        "C": "Double its value always",
+        "D": "The boiling latent heat value"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "For condensation on a vertical tube, the local heat transfer coefficient generally:",
+      "options": {
+        "A": "Increases with distance from the top",
+        "B": "Decreases with distance from the top due to increasing film thickness",
+        "C": "Remains constant",
+        "D": "Is unrelated to film thickness"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "Filmwise condensation is the more common mode in industrial condensers because:",
+      "options": {
+        "A": "It is always thermally superior",
+        "B": "Most surfaces are wetted by the condensing liquid and drop-wise condensation is hard to sustain",
+        "C": "It never occurs in practice",
+        "D": "Dropwise condensation is cheaper"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "The condensation heat transfer coefficient generally depends on:",
+      "options": {
+        "A": "Fluid properties (k, μ, ρ, hfg), surface orientation, temperature difference, and geometry",
+        "B": "Only the color of the surface",
+        "C": "Only ambient pressure",
+        "D": "Only the tube material's electrical conductivity"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "For N horizontal tubes stacked vertically, the overall average condensation coefficient is related to the single-tube value by a factor involving:",
+      "options": {
+        "A": "N^(−1/4)",
+        "B": "N²",
+        "C": "No relation to N",
+        "D": "N^(1/2), always increasing"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "Which of these is a direct output of Nusselt's film condensation analysis?",
+      "options": {
+        "A": "Local condensate film thickness δ(x)",
+        "B": "Pressure drop across a pump",
+        "C": "Combustion efficiency",
+        "D": "Radiative emissivity"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "In condensation over a vertical plate, the total condensation rate relates to:",
+      "options": {
+        "A": "Total heat transferred divided by the modified latent heat of vaporization",
+        "B": "Surface temperature only",
+        "C": "Plate color",
+        "D": "Vapor pressure only, with no energy relation"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "A heat exchanger is a device used to:",
+      "options": {
+        "A": "Generate electricity",
+        "B": "Transfer heat between two or more fluids at different temperatures, typically without mixing them",
+        "C": "Store thermal energy only",
+        "D": "Convert heat into mechanical work"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "Based on flow arrangement, heat exchangers are classified as:",
+      "options": {
+        "A": "Parallel flow, counterflow, and cross flow",
+        "B": "Only parallel flow",
+        "C": "Only counterflow",
+        "D": "Only radial flow"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "In a parallel flow heat exchanger, the hot and cold fluids:",
+      "options": {
+        "A": "Flow in opposite directions",
+        "B": "Flow in the same direction",
+        "C": "Flow perpendicular to each other",
+        "D": "Do not flow at all"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "In a counterflow heat exchanger, the hot and cold fluids:",
+      "options": {
+        "A": "Flow in the same direction",
+        "B": "Flow in opposite directions",
+        "C": "Flow perpendicular to each other",
+        "D": "Mix together"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "In a cross-flow heat exchanger, the fluids:",
+      "options": {
+        "A": "Flow parallel to each other",
+        "B": "Flow perpendicular to each other",
+        "C": "Flow in opposite directions",
+        "D": "Do not exchange heat"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "Based on construction, a common heat exchanger type is:",
+      "options": {
+        "A": "Shell and tube heat exchanger",
+        "B": "Only plate type",
+        "C": "Only double pipe",
+        "D": "Only spiral"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "A double-pipe heat exchanger consists of:",
+      "options": {
+        "A": "Multiple shells with no tubes",
+        "B": "One pipe inside another (concentric tubes), with one fluid in the inner pipe and the other in the annulus",
+        "C": "Plates stacked together only",
+        "D": "A rotating drum"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "In a shell-and-tube heat exchanger, baffles are provided to:",
+      "options": {
+        "A": "Reduce heat transfer",
+        "B": "Increase shell-side turbulence and support the tubes, enhancing heat transfer",
+        "C": "Block flow completely",
+        "D": "Reduce tube length"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "Compact heat exchangers are characterized by:",
+      "options": {
+        "A": "Very low surface area to volume ratio",
+        "B": "Very high surface area to volume ratio, suitable for e.g. automobile radiators",
+        "C": "Large physical size with low efficiency",
+        "D": "No fluid flow"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "Regenerative heat exchangers operate by:",
+      "options": {
+        "A": "Continuous flow of both fluids through separate channels only",
+        "B": "Alternately exposing a storage matrix to hot and cold fluid streams, storing and releasing heat",
+        "C": "Direct mixing of fluids",
+        "D": "Converting heat to electricity"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 61,
+      "question": "Recuperative heat exchangers are characterized by:",
+      "options": {
+        "A": "Fluids flowing through separate passages separated by a wall, exchanging heat continuously",
+        "B": "Fluids mixing completely",
+        "C": "No wall ever separating the fluids",
+        "D": "Being used only for gases"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 62,
+      "question": "In a direct contact (open) heat exchanger:",
+      "options": {
+        "A": "The two fluids are physically separated by a wall at all times",
+        "B": "The two fluids mix directly with each other to exchange heat",
+        "C": "No heat transfer occurs",
+        "D": "Only solids are involved"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 63,
+      "question": "The overall heat transfer coefficient U in a heat exchanger accounts for:",
+      "options": {
+        "A": "Only convection on the hot side",
+        "B": "Convective resistances on both sides, wall conduction resistance, and fouling resistances",
+        "C": "Only the wall material's resistance",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 64,
+      "question": "Fouling factor (fouling resistance) is added to overall heat transfer coefficient calculations to account for:",
+      "options": {
+        "A": "Deposits/scaling on heat exchanger surfaces over time, reducing heat transfer",
+        "B": "Fluid velocity only",
+        "C": "Fluid color",
+        "D": "None of these"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 65,
+      "question": "Overall heat transfer coefficient 1/U for a tube with convection on both sides, wall conduction and fouling is calculated by:",
+      "options": {
+        "A": "Summing all individual thermal resistances per unit area, analogous to resistances in series",
+        "B": "Simply adding h_inner and h_outer",
+        "C": "Taking only the smaller h value",
+        "D": "Ignoring wall thickness"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 66,
+      "question": "Fouling in heat exchangers generally leads to:",
+      "options": {
+        "A": "Decreased overall heat transfer coefficient and increased pressure drop",
+        "B": "Increased overall heat transfer coefficient",
+        "C": "No change in performance",
+        "D": "Decreased pressure drop"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 67,
+      "question": "In a shell-and-tube exchanger, 'tube passes' refer to:",
+      "options": {
+        "A": "The number of times the tube-side fluid traverses the length of the exchanger",
+        "B": "The number of shells only",
+        "C": "The number of baffles",
+        "D": "The diameter of tubes"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 68,
+      "question": "Plate heat exchangers are often preferred over shell-and-tube types because they offer:",
+      "options": {
+        "A": "Lower heat transfer area for a given volume",
+        "B": "Compact size, high heat transfer coefficients, and easy cleaning/maintenance",
+        "C": "No ability to handle high pressures ever",
+        "D": "Only single-pass flow, with no flexibility"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 69,
+      "question": "Selecting corrosion- and fouling-resistant materials for heat exchangers is important because it:",
+      "options": {
+        "A": "Has no effect on performance",
+        "B": "Maintains heat transfer efficiency and extends equipment life",
+        "C": "Only affects cost, not performance",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 70,
+      "question": "A condenser used in a power plant is a heat exchanger where:",
+      "options": {
+        "A": "Both fluids remain single phase, with no phase change",
+        "B": "Steam undergoes condensation (phase change) while cooling water remains single phase",
+        "C": "Both fluids undergo boiling",
+        "D": "No heat transfer occurs"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 71,
+      "question": "An evaporator in a refrigeration system is a heat exchanger where:",
+      "options": {
+        "A": "The refrigerant absorbs heat and evaporates, while the other fluid is cooled",
+        "B": "No phase change occurs",
+        "C": "Both fluids condense",
+        "D": "Heat is generated internally"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 72,
+      "question": "In heat exchanger terminology, 'single pass' and 'multi-pass' usually refer to:",
+      "options": {
+        "A": "The number of times a fluid flows through the exchanger's tube or shell side",
+        "B": "The type of fluid used",
+        "C": "The exchanger's color",
+        "D": "The ambient temperature"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 73,
+      "question": "A primary advantage of using multiple tube passes in a shell-and-tube exchanger is:",
+      "options": {
+        "A": "Increased fluid velocity and heat transfer coefficient for a given tube-side flow rate",
+        "B": "Decreased heat transfer area",
+        "C": "Reduced fluid velocity",
+        "D": "No advantage"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 74,
+      "question": "A plate-fin heat exchanger is commonly used in applications requiring:",
+      "options": {
+        "A": "Large, bulky equipment with low heat transfer per unit volume",
+        "B": "Compact, lightweight design with high heat transfer efficiency, e.g. aerospace and cryogenics",
+        "C": "Only liquid-liquid heat transfer at low temperatures",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 75,
+      "question": "Thermal resistance due to the tube wall in overall heat transfer coefficient calculations is generally significant when:",
+      "options": {
+        "A": "The wall is very thin and made of a highly conductive material",
+        "B": "The wall material has low thermal conductivity or is relatively thick",
+        "C": "It is never significant",
+        "D": "Only fouling matters; wall resistance is always negligible"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 76,
+      "question": "LMTD stands for:",
+      "options": {
+        "A": "Linear Mean Temperature Difference",
+        "B": "Logarithmic Mean Temperature Difference",
+        "C": "Lowest Mean Temperature Drop",
+        "D": "Local Mean Temperature Deviation"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 77,
+      "question": "LMTD is used primarily to calculate:",
+      "options": {
+        "A": "The pressure drop in heat exchangers",
+        "B": "The effective average temperature difference driving heat transfer in a heat exchanger",
+        "C": "The fluid velocity",
+        "D": "The fouling factor"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 78,
+      "question": "The formula for LMTD is:",
+      "options": {
+        "A": "(ΔT1 − ΔT2) / ln(ΔT1/ΔT2)",
+        "B": "(ΔT1 + ΔT2) / 2",
+        "C": "ΔT1 × ΔT2",
+        "D": "ΔT1 − ΔT2"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 79,
+      "question": "For the same inlet and outlet temperatures, counterflow heat exchangers generally have:",
+      "options": {
+        "A": "A lower LMTD than parallel flow",
+        "B": "A higher LMTD than parallel flow, making them more effective",
+        "C": "The same LMTD as parallel flow always",
+        "D": "No defined LMTD"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 80,
+      "question": "In a parallel flow heat exchanger, the outlet temperature of the cold fluid can never:",
+      "options": {
+        "A": "Be lower than the inlet temperature of the hot fluid",
+        "B": "Exceed the outlet temperature of the hot fluid",
+        "C": "Equal the inlet temperature of the cold fluid",
+        "D": "Be positive"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 81,
+      "question": "In a counterflow heat exchanger, the outlet temperature of the cold fluid CAN:",
+      "options": {
+        "A": "Never exceed the inlet temperature of the hot fluid",
+        "B": "Exceed the outlet temperature of the hot fluid (but not the hot fluid's inlet)",
+        "C": "Never be defined",
+        "D": "Always equal the hot fluid's inlet temperature"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 82,
+      "question": "The correction factor F is applied to LMTD for:",
+      "options": {
+        "A": "Simple double-pipe counterflow only",
+        "B": "Complex flow arrangements like shell-and-tube with multiple passes or cross-flow",
+        "C": "It is never needed",
+        "D": "Only parallel flow exchangers"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 83,
+      "question": "The correction factor F for LMTD is always:",
+      "options": {
+        "A": "Greater than 1",
+        "B": "Less than or equal to 1",
+        "C": "Negative",
+        "D": "Equal to zero"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 84,
+      "question": "When one fluid undergoes phase change (condensation or evaporation) at constant temperature, the LMTD calculation:",
+      "options": {
+        "A": "Cannot be used at all",
+        "B": "Still applies, treating that fluid's temperature as constant throughout",
+        "C": "Requires an infinite temperature difference",
+        "D": "Is irrelevant"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 85,
+      "question": "The LMTD method is best suited for problems where:",
+      "options": {
+        "A": "Inlet and outlet temperatures of both fluids are known, and the heat exchanger size is to be determined",
+        "B": "Fluid properties are unknown",
+        "C": "Exit temperatures and flow rates are both unknown",
+        "D": "Pressure drop is being studied, not temperature"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 86,
+      "question": "The effectiveness-NTU (ε-NTU) method is particularly useful when:",
+      "options": {
+        "A": "All four terminal temperatures are known (the easy case for LMTD)",
+        "B": "One or more exit temperatures are unknown, which would otherwise need iterative LMTD solutions",
+        "C": "There is no need to evaluate heat exchanger performance",
+        "D": "The heat exchanger is a direct contact type only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 87,
+      "question": "Effectiveness (ε) of a heat exchanger is defined as:",
+      "options": {
+        "A": "The ratio of actual heat transfer rate to the maximum possible heat transfer rate",
+        "B": "The ratio of hot fluid flow rate to cold fluid flow rate",
+        "C": "The LMTD value",
+        "D": "The fouling factor"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 88,
+      "question": "NTU stands for:",
+      "options": {
+        "A": "Number of Transfer Units",
+        "B": "Net Thermal Utilization",
+        "C": "Normalized Temperature Units",
+        "D": "Nominal Transfer Unit"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 89,
+      "question": "NTU is defined as:",
+      "options": {
+        "A": "UA / C_min (overall conductance divided by minimum heat capacity rate)",
+        "B": "U / A only",
+        "C": "C_max / C_min",
+        "D": "ΔT / LMTD"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 90,
+      "question": "The heat capacity rate ratio 'Cr' used in effectiveness-NTU relations is defined as:",
+      "options": {
+        "A": "C_min / C_max",
+        "B": "C_max / C_min",
+        "C": "C_min × C_max",
+        "D": "C_min + C_max"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 91,
+      "question": "The maximum possible heat transfer rate (Q_max) in a heat exchanger is given by:",
+      "options": {
+        "A": "C_min × (T_hot,in − T_cold,in)",
+        "B": "C_max × (T_hot,in − T_cold,in)",
+        "C": "UA × LMTD",
+        "D": "C_min × C_max"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 92,
+      "question": "For a counterflow heat exchanger with Cr = 1 (equal heat capacity rates), the effectiveness is given by:",
+      "options": {
+        "A": "ε = NTU/(1+NTU)",
+        "B": "ε = 1 − e^(−NTU)",
+        "C": "ε = NTU",
+        "D": "ε = 0 always"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 93,
+      "question": "For a condenser or evaporator where one fluid undergoes phase change, Cr (C_min/C_max) approaches:",
+      "options": {
+        "A": "1",
+        "B": "Infinity",
+        "C": "0, since the phase-changing fluid has effectively infinite heat capacity rate",
+        "D": "It is undefined"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 94,
+      "question": "For the Cr = 0 case, the effectiveness relation for any flow arrangement simplifies to:",
+      "options": {
+        "A": "ε = 1 − e^(−NTU)",
+        "B": "ε = NTU/(1+NTU)",
+        "C": "ε = 0 always",
+        "D": "ε = 1 always, regardless of NTU"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 95,
+      "question": "Increasing the NTU of a heat exchanger (e.g. by increasing area) generally:",
+      "options": {
+        "A": "Decreases effectiveness",
+        "B": "Increases effectiveness up to an asymptotic maximum",
+        "C": "Has no effect on effectiveness",
+        "D": "Makes effectiveness negative"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 96,
+      "question": "The effectiveness-NTU method is advantageous for performance/rating problems because it:",
+      "options": {
+        "A": "Requires iterative trial and error always, like LMTD",
+        "B": "Allows direct calculation of effectiveness and heat transfer without iteration when NTU and Cr are known",
+        "C": "Cannot be used for design purposes",
+        "D": "Ignores fluid properties completely"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 97,
+      "question": "In the LMTD method, when both exit temperatures are unknown, the typical solution approach is:",
+      "options": {
+        "A": "A direct single-step calculation",
+        "B": "An iterative (trial and error) procedure assuming exit temperatures, computing LMTD, and refining",
+        "C": "It is impossible to solve",
+        "D": "Use of the Nusselt number directly"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 98,
+      "question": "The relationship connecting LMTD, overall heat transfer coefficient, and heat transfer area to total heat transfer rate is:",
+      "options": {
+        "A": "Q = U·A·LMTD",
+        "B": "Q = U/A·LMTD",
+        "C": "Q = U·A/LMTD",
+        "D": "Q = A/(U·LMTD)"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 99,
+      "question": "For a given heat exchanger with fixed NTU and flow arrangement, a counterflow configuration generally provides:",
+      "options": {
+        "A": "Lower effectiveness than parallel flow",
+        "B": "Higher (or equal) effectiveness compared to parallel flow for the same NTU and Cr",
+        "C": "The same performance as an adiabatic system",
+        "D": "Zero effectiveness"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 100,
+      "question": "Both the LMTD and ε-NTU methods are ultimately based on:",
+      "options": {
+        "A": "Completely different, unrelated fundamental principles",
+        "B": "The same fundamental energy balance and rate equations for heat exchangers, approached differently",
+        "C": "Only empirical correlations with no theoretical basis",
+        "D": "Boiling heat transfer correlations"
+      },
+      "answer": "B",
+      "marks": 1
+    }
+  ]
+}
