@@ -92,6 +92,15 @@ def is_sheets_configured():
     return spreadsheet is not None
 
 
+# Lateral-entry students (not yet on the nominal rolls) log in with usernames 1..10 in
+# each department and a shared password. Real roll entries with the same username win.
+LATERAL_ENTRY_PASSWORD = "123456"
+LATERAL_ENTRY_ACCOUNTS = {
+    str(n): {"name": f"Lateral Entry {n}", "password": LATERAL_ENTRY_PASSWORD}
+    for n in range(1, 11)
+}
+
+
 def get_credentials(department):
     """Returns {reg_no: {"name":..., "password":...}} for the given department."""
     _, spreadsheet = _get_gspread_client()
@@ -99,13 +108,13 @@ def get_credentials(department):
         try:
             ws = spreadsheet.worksheet(f"{department}_credentials")
             rows = ws.get_all_records()
-            return {
+            return {**LATERAL_ENTRY_ACCOUNTS, **{
                 str(r["reg_no"]): {"name": r["name"], "password": str(r["password"])}
                 for r in rows
-            }
+            }}
         except Exception:
             pass
-    return _load_local_credentials().get(department, {})
+    return {**LATERAL_ENTRY_ACCOUNTS, **_load_local_credentials().get(department, {})}
 
 
 def _ensure_local_results_file():

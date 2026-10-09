@@ -55,6 +55,13 @@ flow immediately.
 Login with any student from `credentials_output/credentials_cse.csv` or
 `credentials_output/credentials_mechanical.csv` (generated below).
 
+## Lateral-entry logins
+
+Lateral-entry students who aren't on the nominal rolls yet can log in to **either
+department** with username `1` to `10` and password `123456` (shown as "Lateral Entry
+N" in results). These are defined in `utils/storage.py` (`LATERAL_ENTRY_ACCOUNTS`) and
+are added on top of the Google Sheet / local credentials, so no Sheet edit is needed.
+
 ## Generating student credentials
 
 Student data comes from `data/roll_cse.csv` and `data/roll_me.csv` (from the nominal
@@ -115,6 +122,8 @@ via `random.sample` in `app.py`.
   browser tab and counts how many times the student switches away.
 - On the **3rd** switch (more than 2), the attempt is auto-submitted, graded on
   whatever was answered so far, and stored with `flagged = true`.
+- The switch counter is per attempt (it starts at 0 every time "Start Quiz" is
+  pressed), so a flagged attempt never carries over into the next one.
 - Students can always start a new attempt afterward — there's no attempt limit, but
   every attempt (including flagged ones) is recorded and visible in their attempt
   history on the subject page.

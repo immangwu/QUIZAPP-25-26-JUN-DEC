@@ -45,6 +45,7 @@ DEFAULTS = {
     "quiz_deadline": None,
     "flagged": False,
     "tab_switch_count": 0,
+    "proctor_key": None,
     "submitted_result": None,
 }
 for k, v in DEFAULTS.items():
@@ -159,6 +160,10 @@ def screen_subject():
         st.session_state.answers = {}
         st.session_state.flagged = False
         st.session_state.tab_switch_count = 0
+        # Fresh tab-switch counter per attempt: the counter lives in the browser's
+        # sessionStorage, so keying it only by subject made a new attempt inherit the
+        # previous attempt's count and get auto-flagged instantly.
+        st.session_state.proctor_key = f"{chosen['key']}_q{quiz_no}_{int(time.time() * 1000)}"
         st.session_state.quiz_deadline = time.time() + QUIZ_DURATION_SECONDS
         goto("quiz")
         st.rerun()
@@ -294,7 +299,7 @@ def screen_quiz():
     st_autorefresh(interval=10000, limit=None, key="quiz_ticker")
 
     remaining = st.session_state.quiz_deadline - time.time()
-    switch_count = read_tab_switch_count(streamlit_js_eval, st.session_state.subject_key)
+    switch_count = read_tab_switch_count(streamlit_js_eval, st.session_state.proctor_key)
     st.session_state.tab_switch_count = switch_count
 
     if switch_count > MAX_ALLOWED_SWITCHES:
@@ -322,7 +327,8 @@ def screen_quiz():
 
     st.warning(
         f"Switching tabs/windows more than {MAX_ALLOWED_SWITCHES} times will stop and flag this attempt. "
-        "Stay on this tab until you submit."
+        "Stay on this tab until you submit. (A flagged attempt doesn't block you — you can "
+        "always start a fresh attempt afterwards.)"
     )
 
     st.caption(
