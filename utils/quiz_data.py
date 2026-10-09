@@ -37,6 +37,8 @@ SUBJECTS = {
             "quizzes": [
                 {"quiz_no": 1, "file": "toc_q1"},
                 {"quiz_no": 2, "file": "toc_q2"},
+                {"quiz_no": 3, "file": "toc_q3"},
+                {"quiz_no": 4, "file": "toc_q4"},
             ],
         },
     ],

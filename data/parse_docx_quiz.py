@@ -22,7 +22,17 @@ Two source layouts are supported, auto-detected per file:
    Answer: (X) <text>
    ... answer is inline, right after the four options, no table.
 
-Usage: edit SOURCES below, then `python parse_docx_quiz.py`.
+3. "Qn." + "A)" layout (used by the TOC Quiz 3/4 answer-key docs):
+   Qn. <question text>
+   A) <option>
+   B) <option>
+   C) <option>
+   D) <option>
+   Answer: X) <text>  [— optional explanation]
+   ... answer is inline; header/"SET n" lines between questions are ignored.
+
+Usage: edit SOURCES below, then `python parse_docx_quiz.py` (optionally followed by
+one or more output filenames, e.g. `toc_q3.json`, to re-parse only those).
 """
 import json
 import os
@@ -67,6 +77,22 @@ SOURCES = [
         "quiz_title": "Quiz 2: Regular Expressions & Regular Languages",
         "department": "cse",
     },
+    {
+        "docx": "quiz 3 anserkey.docx",
+        "out": "toc_q3.json",
+        "code": "20CS006",
+        "title": "Theory of Computation (R2020)",
+        "quiz_title": "Quiz 3: Context-Free Grammars & Normal Forms",
+        "department": "cse",
+    },
+    {
+        "docx": "quiz 4 anserkey.docx",
+        "out": "toc_q4.json",
+        "code": "20CS006",
+        "title": "Theory of Computation (R2020)",
+        "quiz_title": "Quiz 4: Pushdown Automata",
+        "department": "cse",
+    },
 ]
 
 Q_TAGGED_RE = re.compile(r"^Q(\d+)\.\s*(.+)$")
@@ -75,6 +101,9 @@ OPT_TAGGED_RE = re.compile(r"^\(([a-d])\)\s*(.*)$")
 Q_PLAIN_RE = re.compile(r"^(\d+)\.\s*(.+)$")
 OPT_PLAIN_RE = re.compile(r"^\(([A-D])\)\s*(.*)$")
 ANSWER_INLINE_RE = re.compile(r"^Answer:\s*\(([A-D])\)")
+
+OPT_PAREN_RE = re.compile(r"^([A-D])\)\s*(.*)$")
+ANSWER_PAREN_RE = re.compile(r"^Answer:\s*([A-D])\)")
 
 
 def _paras(path):
@@ -155,12 +184,49 @@ def parse_plain_with_inline_answer(path):
     return [questions[k] for k in sorted(questions)]
 
 
-def main():
+def parse_qtagged_with_inline_answer(path):
+    """Layout 3: 'Qn.' + uppercase A)-D) options + inline 'Answer: X)' line."""
+    paras, _tables = _paras(path)
+    questions = {}
+    i = 0
+    while i < len(paras):
+        m = Q_TAGGED_RE.match(paras[i])
+        if m:
+            qid, qtext = int(m.group(1)), m.group(2)
+            if qid in questions:
+                raise ValueError(f"{path}: duplicate question id Q{qid}")
+            opts = {}
+            for j, letter in enumerate(["A", "B", "C", "D"]):
+                om = OPT_PAREN_RE.match(paras[i + 1 + j])
+                if not om or om.group(1) != letter:
+                    raise ValueError(f"{path}: expected option {letter} after Q{qid}, got {paras[i + 1 + j]!r}")
+                opts[letter] = om.group(2).strip()
+            am = ANSWER_PAREN_RE.match(paras[i + 5])
+            if not am:
+                raise ValueError(f"{path}: expected inline answer after Q{qid}, got {paras[i + 5]!r}")
+            questions[qid] = {
+                "id": qid,
+                "question": qtext.strip(),
+                "options": opts,
+                "answer": am.group(1),
+                "marks": 1,
+            }
+            i += 6
+        else:
+            i += 1
+    return [questions[k] for k in sorted(questions)]
+
+
+def main(only=None):
     for src in SOURCES:
+        if only and src["out"] not in only:
+            continue
         docx_path = os.path.join(ROOT, src["docx"])
-        _paras_cache, tables = _paras(docx_path)
+        paras, tables = _paras(docx_path)
         if tables:
             questions = parse_qtagged_with_table(docx_path)
+        elif any(OPT_PAREN_RE.match(p) for p in paras):
+            questions = parse_qtagged_with_inline_answer(docx_path)
         else:
             questions = parse_plain_with_inline_answer(docx_path)
 
@@ -178,4 +244,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(set(sys.argv[1:]) or None)

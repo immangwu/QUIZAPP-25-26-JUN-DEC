@@ -1,0 +1,1448 @@
+{
+  "code": "20CS006",
+  "title": "Theory of Computation (R2020)",
+  "quiz_title": "Quiz 4: Pushdown Automata",
+  "department": "cse",
+  "questions": [
+    {
+      "id": 1,
+      "question": "A Pushdown Automaton (PDA) is formally defined as a tuple with how many components?",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "4"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "question": "In the PDA tuple (Q, Σ, Γ, δ, q0, Z0, F), Γ represents:",
+      "options": {
+        "A": "The set of input symbols",
+        "B": "The set of stack symbols",
+        "C": "The set of final states",
+        "D": "The transition function"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "question": "In the PDA tuple, Z0 represents:",
+      "options": {
+        "A": "The initial state",
+        "B": "The final state",
+        "C": "The initial stack symbol",
+        "D": "The blank symbol"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "question": "What is the key extra memory component that distinguishes a PDA from a finite automaton?",
+      "options": {
+        "A": "A read-only input tape",
+        "B": "An auxiliary stack (LIFO memory)",
+        "C": "A second finite state set",
+        "D": "An infinite tape"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "question": "The transition function δ of a PDA has the general form:",
+      "options": {
+        "A": "δ: Q × Σ × Γ → 2^(Q × Γ*)",
+        "B": "δ: Q × Σ → Q",
+        "C": "δ: Γ → Q",
+        "D": "δ: Q × Γ → Σ"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "question": "An Instantaneous Description (ID) of a PDA is typically written as:",
+      "options": {
+        "A": "(q, w, γ) — current state, remaining input, stack contents",
+        "B": "(q, w) only",
+        "C": "(w, γ) only",
+        "D": "(q, F) — state and final states"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 7,
+      "question": "The 'turnstile' notation ⊢ in PDA IDs represents:",
+      "options": {
+        "A": "Equality of two IDs",
+        "B": "A single move (one transition) from one ID to another",
+        "C": "The final accepting state",
+        "D": "The empty stack"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 8,
+      "question": "Acceptance of a string 'by final state' means:",
+      "options": {
+        "A": "The PDA reaches a state in F with the stack necessarily empty",
+        "B": "The PDA reaches a state in F after consuming the entire input, regardless of remaining stack content",
+        "C": "The stack must contain only Z0",
+        "D": "The PDA halts with no moves left, regardless of state"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "question": "Acceptance of a string 'by empty stack' means:",
+      "options": {
+        "A": "The PDA's stack becomes completely empty after reading the entire input, regardless of the current state",
+        "B": "The PDA must be in a final state with an empty stack",
+        "C": "The stack must contain exactly Z0",
+        "D": "The input must be empty"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 10,
+      "question": "For acceptance by final state, the language is defined as:",
+      "options": {
+        "A": "N(M) = { w | (q0, w, Z0) ⊢* (q, ε, ε), q ∈ F }",
+        "B": "L(M) = { w | (q0, w, Z0) ⊢* (q, ε, γ), q ∈ F }",
+        "C": "L(M) = { w | (q0, w, Z0) ⊢* (q0, w, γ) }",
+        "D": "L(M) = { w | stack is empty at the end }"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 11,
+      "question": "For acceptance by empty stack, the language is defined as:",
+      "options": {
+        "A": "N(M) = { w | (q0, w, Z0) ⊢* (q, ε, ε), for any state q }",
+        "B": "N(M) = { w | (q0, w, Z0) ⊢* (q, ε, γ), q ∈ F }",
+        "C": "N(M) requires q ∈ F strictly",
+        "D": "N(M) is always equal to L(M)"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 12,
+      "question": "A PDA is called deterministic (DPDA) if:",
+      "options": {
+        "A": "It has more than one start state",
+        "B": "For every (state, input symbol or ε, stack top), δ gives at most one possible move, with restrictions on ε-moves",
+        "C": "It never uses a stack",
+        "D": "Every string is accepted"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "question": "Which class of languages do deterministic PDAs accept (by final state)?",
+      "options": {
+        "A": "All context-free languages",
+        "B": "Deterministic Context-Free Languages (DCFLs), a proper subset of CFLs",
+        "C": "Only regular languages",
+        "D": "Only context-sensitive languages"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 14,
+      "question": "Is the language {aⁿbⁿ | n ≥ 1} deterministic context-free?",
+      "options": {
+        "A": "No, it requires nondeterminism",
+        "B": "Yes, it can be accepted by a DPDA",
+        "C": "It is not context-free at all",
+        "D": "It is regular, not context-free"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 15,
+      "question": "Is the language of palindromes over {a,b} (odd or even length) deterministic context-free?",
+      "options": {
+        "A": "Yes, always deterministic",
+        "B": "No, it generally requires a nondeterministic PDA (the 'middle' of the string can't be detected deterministically without a center marker)",
+        "C": "It is regular",
+        "D": "It cannot be accepted by any PDA"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 16,
+      "question": "Every language accepted by a PDA using acceptance-by-empty-stack:",
+      "options": {
+        "A": "Is always regular",
+        "B": "Is also acceptable by some PDA using acceptance-by-final-state, and vice versa",
+        "C": "Can never be accepted by final state",
+        "D": "Is never context-free"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 17,
+      "question": "To convert a PDA accepting by empty stack (N(M)) into one accepting by final state (L(M')), the standard construction:",
+      "options": {
+        "A": "Removes the stack entirely",
+        "B": "Adds a new initial state and a new final state, with an ε-transition on seeing the original start symbol under the new bottom marker",
+        "C": "Simply relabels all states as final",
+        "D": "Requires no change at all"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 18,
+      "question": "To convert a PDA accepting by final state (L(M)) into one accepting by empty stack (N(M')), the standard construction:",
+      "options": {
+        "A": "Adds a new state that, upon reaching any final state of M, pops all remaining stack symbols via ε-moves",
+        "B": "Deletes all final states",
+        "C": "Requires the original stack alphabet to be regular",
+        "D": "Cannot be done in general"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 19,
+      "question": "In a PDA, an ε-move refers to a transition where:",
+      "options": {
+        "A": "The input symbol is ignored (no input is consumed)",
+        "B": "The stack is always popped",
+        "C": "The state never changes",
+        "D": "The input must be exactly ε"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 20,
+      "question": "A PDA can be thought of as an NFA equipped with:",
+      "options": {
+        "A": "A second input tape",
+        "B": "An additional stack for auxiliary storage",
+        "C": "Two-way input head movement",
+        "D": "A read/write tape like a Turing Machine"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 21,
+      "question": "The class of languages accepted by PDAs is exactly:",
+      "options": {
+        "A": "Regular languages",
+        "B": "Context-Free Languages (CFLs)",
+        "C": "Context-Sensitive Languages",
+        "D": "Recursively Enumerable Languages"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 22,
+      "question": "Given an ID (q, aw, Zγ) and a transition δ(q,a,Z) = {(p, βγ')}, what happens after the move?",
+      "options": {
+        "A": "The new ID is (p, w, βγ'γ)",
+        "B": "The new ID is (q, w, Zγ)",
+        "C": "The new ID is (p, aw, βγ')",
+        "D": "Nothing changes"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 23,
+      "question": "In PDA notation, if δ(q, ε, Z) is defined, this move:",
+      "options": {
+        "A": "Requires an input symbol to be present",
+        "B": "Can be taken without consuming any input symbol",
+        "C": "Always leads to rejection",
+        "D": "Only applies at the start state"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 24,
+      "question": "A PDA that accepts by final state may have a non-empty stack at acceptance because:",
+      "options": {
+        "A": "Final-state acceptance ignores the stack content once a final state is reached after consuming input",
+        "B": "The stack must always be empty by definition",
+        "C": "This situation never occurs",
+        "D": "Final state and empty stack are always synonymous"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 25,
+      "question": "For empty-stack acceptance N(M), the set of final states F is:",
+      "options": {
+        "A": "Required to be all states of Q",
+        "B": "Irrelevant / typically not needed at all (can be defined as F = ∅)",
+        "C": "Always a singleton set",
+        "D": "Must equal Q − {q0}"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 26,
+      "question": "For a DPDA, which condition is required regarding ε-moves and regular moves from the same configuration?",
+      "options": {
+        "A": "Both an ε-move and an a-move can be enabled simultaneously",
+        "B": "If an ε-move is defined for (q, ε, Z), no a-move (a ∈ Σ) can also be defined for (q, a, Z)",
+        "C": "ε-moves are forbidden entirely in a DPDA",
+        "D": "There is no restriction"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 27,
+      "question": "Which of the following languages is NOT deterministic context-free (though it is context-free)?",
+      "options": {
+        "A": "{aⁿbⁿ | n ≥ 1}",
+        "B": "{ w wᴿ | w ∈ {a,b}* } (even-length palindromes without a center marker)",
+        "C": "{aⁿbᵐ | n,m ≥ 0}",
+        "D": "{ a* }"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 28,
+      "question": "The class DCFL (deterministic context-free languages) is:",
+      "options": {
+        "A": "Exactly equal to the class of CFLs",
+        "B": "A strict (proper) subset of CFLs",
+        "C": "A superset of CFLs",
+        "D": "Equal to the regular languages"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 29,
+      "question": "Which closure property is generally FALSE for deterministic context-free languages?",
+      "options": {
+        "A": "DCFLs are closed under complement",
+        "B": "DCFLs are closed under union",
+        "C": "DCFLs are closed under intersection with regular languages",
+        "D": "DCFLs are closed under reversal"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 30,
+      "question": "The equivalence proof that acceptance by empty stack and acceptance by final state accept the same class of languages shows:",
+      "options": {
+        "A": "Only that final-state PDAs are strictly more powerful",
+        "B": "That for every empty-stack PDA there is an equivalent final-state PDA and vice versa, so both define exactly the CFLs",
+        "C": "That empty-stack PDAs cannot accept any language",
+        "D": "That the two modes are unrelated"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 31,
+      "question": "When converting N(M) to L(M′), why is a NEW start state (rather than reusing q0) needed?",
+      "options": {
+        "A": "To avoid popping below the original bottom marker Z0 prematurely, ensuring correct detection of an empty original stack",
+        "B": "Because q0 cannot be reused in any PDA",
+        "C": "To increase the input alphabet size",
+        "D": "There is no real reason; it's optional"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 32,
+      "question": "When converting L(M) to N(M′), why is a new bottom-of-stack symbol typically introduced?",
+      "options": {
+        "A": "To prevent the new 'stack emptying' state from being triggered while symbols under the original Z0 still remain, avoiding accidental premature acceptance",
+        "B": "Because the original Z0 is deleted",
+        "C": "It is never needed",
+        "D": "To make M′ nondeterministic"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 33,
+      "question": "A PDA can be used to construct a CFG such that both generate/accept exactly the same language. This shows:",
+      "options": {
+        "A": "PDAs are strictly weaker than CFGs",
+        "B": "PDAs and CFGs are equivalent in expressive power",
+        "C": "CFGs cannot express what PDAs accept",
+        "D": "PDAs can accept regular languages only"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 34,
+      "question": "In the standard CFG-to-PDA construction (via GNF), the PDA typically has:",
+      "options": {
+        "A": "Many states, one per non-terminal",
+        "B": "Just a single state, with transitions derived directly from each GNF production",
+        "C": "No stack at all",
+        "D": "Two states, one accepting and one rejecting"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 35,
+      "question": "In the CFG-to-PDA construction, the stack of the PDA is used to simulate:",
+      "options": {
+        "A": "The remaining unread input",
+        "B": "The current sentential form (specifically, the leftmost pending non-terminals)",
+        "C": "The set of final states",
+        "D": "Nothing; the stack remains empty"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 36,
+      "question": "In the PDA-to-CFG construction, non-terminals of the resulting grammar are typically of the form:",
+      "options": {
+        "A": "Single letters only, unrelated to PDA states",
+        "B": "[q, A, p] representing 'starting in state q with A on top of stack, we can empty A and reach state p'",
+        "C": "Only the PDA's input alphabet symbols",
+        "D": "Randomly assigned symbols with no PDA meaning"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 37,
+      "question": "Why must a PDA (for the CFG-to-PDA construction via GNF) have its source grammar converted to GNF first?",
+      "options": {
+        "A": "GNF is not actually required",
+        "B": "Because GNF guarantees each production starts with exactly one terminal, matching the PDA's need to consume one input symbol per stack-based move",
+        "C": "Because GNF makes the grammar regular",
+        "D": "Because CNF is easier to use instead"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 38,
+      "question": "Which of the following is a valid application of PDAs?",
+      "options": {
+        "A": "Matching balanced parentheses in expressions",
+        "B": "Recognizing arbitrary context-sensitive constraints requiring more than a stack",
+        "C": "Performing arithmetic multiplication directly",
+        "D": "Sorting an array of numbers"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 39,
+      "question": "Which statement about the power of PDAs versus Turing Machines is correct?",
+      "options": {
+        "A": "PDAs are strictly more powerful than Turing Machines",
+        "B": "PDAs are strictly less powerful than Turing Machines (PDAs cannot recognize all recursively enumerable/context-sensitive languages)",
+        "C": "They have exactly equal power",
+        "D": "PDAs can simulate any Turing Machine directly"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 40,
+      "question": "Can every NFA be converted into an equivalent PDA?",
+      "options": {
+        "A": "No, NFAs are more powerful than PDAs",
+        "B": "Yes — trivially, by having the PDA ignore its stack (never pushing/popping meaningfully) and simulate the NFA's transitions",
+        "C": "Only if the NFA has no ε-moves",
+        "D": "Only for finite languages"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 41,
+      "question": "Which of the following best describes a PDA's overall computation?",
+      "options": {
+        "A": "It reads input left to right, using a stack as auxiliary memory to decide acceptance",
+        "B": "It reads input right to left only",
+        "C": "It never uses states, only a stack",
+        "D": "It processes input using two separate tapes"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 42,
+      "question": "The initial ID of a PDA processing input w is typically:",
+      "options": {
+        "A": "(q0, w, Z0)",
+        "B": "(q0, ε, Z0)",
+        "C": "(qf, w, ε)",
+        "D": "(q0, w, ε)"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 43,
+      "question": "If a PDA reaches an ID (q, ε, γ) with q ∈ F, and it uses final-state acceptance, the string is:",
+      "options": {
+        "A": "Rejected, since the stack isn't empty",
+        "B": "Accepted, since all input is consumed and the state is final",
+        "C": "Undefined behavior",
+        "D": "Only accepted if γ = ε as well"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 44,
+      "question": "If the same PDA in the previous question uses empty-stack acceptance instead, and γ ≠ ε, the string is:",
+      "options": {
+        "A": "Accepted regardless",
+        "B": "Not accepted by empty-stack criteria, since the stack is not empty",
+        "C": "Automatically rejected under all criteria",
+        "D": "Accepted only if q ∈ F"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 45,
+      "question": "Construct (conceptually) a PDA for L = {aⁿbⁿ | n ≥ 1} by empty stack. What does the PDA do on seeing 'a's?",
+      "options": {
+        "A": "Pops one symbol per 'a'",
+        "B": "Pushes one symbol (e.g., X) onto the stack for each 'a' read",
+        "C": "Ignores 'a' entirely",
+        "D": "Transitions to a final state immediately"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 46,
+      "question": "In the aⁿbⁿ PDA (by empty stack) above, what happens when a 'b' is read?",
+      "options": {
+        "A": "Push another X",
+        "B": "Pop one X from the stack (matching the count of a's)",
+        "C": "Push Z0 again",
+        "D": "Halt immediately without consuming input"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 47,
+      "question": "For the aⁿbⁿ PDA, when does the stack empty (assuming it started with just Z0, then X's pushed for each a)?",
+      "options": {
+        "A": "Only after Z0 is also popped, typically via a final ε-move once all X's are consumed",
+        "B": "Immediately after the first 'b'",
+        "C": "Never; the PDA cannot empty its stack",
+        "D": "As soon as the input starts"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 48,
+      "question": "For L = {wwᴿ | w ∈ {a,b}*} (even-length palindromes) using a PDA, what must the PDA nondeterministically guess?",
+      "options": {
+        "A": "The total input length only",
+        "B": "The midpoint of the string, where it switches from pushing to popping/matching",
+        "C": "The starting symbol of the string",
+        "D": "The final state to enter"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 49,
+      "question": "Why can't a DPDA in general recognize {wwᴿ | w ∈ {a,b}*} without a center marker?",
+      "options": {
+        "A": "Because it is not context-free",
+        "B": "Because deterministically detecting the exact midpoint of an arbitrary string is not possible without nondeterminism or a marker",
+        "C": "Because DPDAs cannot use a stack",
+        "D": "Because the language is actually regular"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 50,
+      "question": "If a center marker (like #) is added, giving L = {w#wᴿ}, is this language deterministic context-free?",
+      "options": {
+        "A": "No, it remains nondeterministic",
+        "B": "Yes — the marker # tells the DPDA exactly when to switch from pushing to popping/comparing",
+        "C": "It becomes regular instead",
+        "D": "It is no longer context-free"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 51,
+      "question": "The 'equivalence of empty-stack and final-state acceptance' theorem is significant because:",
+      "options": {
+        "A": "It shows PDAs are strictly weaker than NFAs",
+        "B": "It confirms that the choice of acceptance convention doesn't change the class of languages a PDA can define (both give exactly the CFLs)",
+        "C": "It proves all CFLs are regular",
+        "D": "It disproves the existence of nondeterministic PDAs"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 52,
+      "question": "In the construction converting N(M) to an equivalent L(M′), what role does the new final state play?",
+      "options": {
+        "A": "It is entered via an ε-move triggered upon seeing the new bottom marker exposed (i.e., M's stack has emptied)",
+        "B": "It is entered on every input symbol",
+        "C": "It replaces the original start state",
+        "D": "It has no special role"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 53,
+      "question": "In the construction converting L(M) to N(M′), from which states can the stack-clearing ε-moves originate?",
+      "options": {
+        "A": "Only from the start state",
+        "B": "From every final state of the original PDA M",
+        "C": "From no state at all",
+        "D": "Only from states with no outgoing transitions"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 54,
+      "question": "Which of the following is a correct informal statement of the CFG ⇔ PDA equivalence theorem?",
+      "options": {
+        "A": "A language is context-free if and only if some PDA accepts it (by either acceptance mode)",
+        "B": "A language is context-free if and only if it is regular",
+        "C": "A language is context-free if and only if no PDA can accept it",
+        "D": "PDAs can only accept finite languages"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 55,
+      "question": "When constructing a PDA from a CFG in GNF, how many stack symbols are typically pushed per production A → aα?",
+      "options": {
+        "A": "Always zero",
+        "B": "The string α (the non-terminals following the terminal) is pushed onto the stack, replacing A",
+        "C": "Only one symbol, regardless of α's length",
+        "D": "The entire input string is pushed"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 56,
+      "question": "In the CFG-to-PDA construction, the PDA's stack alphabet essentially corresponds to:",
+      "options": {
+        "A": "The terminal alphabet of the grammar",
+        "B": "The non-terminal alphabet of the grammar (plus a bottom marker)",
+        "C": "The set of all final states",
+        "D": "The transition function itself"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 57,
+      "question": "What is the acceptance condition typically used for a PDA built from a CFG (via the standard construction)?",
+      "options": {
+        "A": "Acceptance by final state only",
+        "B": "Acceptance by empty stack, once the entire input is consumed and the stack (simulating the sentential form) is emptied",
+        "C": "No acceptance condition is needed",
+        "D": "Acceptance based on the number of states visited"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 58,
+      "question": "In the PDA-to-CFG construction, a production of the resulting grammar corresponding to a PDA move δ(q,a,A) ∋ (p, BC) would generally look like:",
+      "options": {
+        "A": "[q,A,r] → a [p,B,s][s,C,r] for all valid intermediate states s, r",
+        "B": "[q,A,r] → a only, ignoring B and C",
+        "C": "A single production with no terminals",
+        "D": "[q,A,r] → [p,A,q]"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 59,
+      "question": "Why is the PDA-to-CFG construction considered more complex than the CFG-to-PDA direction?",
+      "options": {
+        "A": "It is actually simpler",
+        "B": "It must enumerate all possible combinations of intermediate states to correctly capture how the stack symbol gets fully popped, leading to potentially many productions",
+        "C": "It doesn't require any non-terminals",
+        "D": "PDA-to-CFG conversion is impossible in general"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 60,
+      "question": "What key theoretical result do the CFG↔PDA constructions collectively establish?",
+      "options": {
+        "A": "That context-free grammars and pushdown automata are equally powerful — they characterize exactly the same class of languages (CFLs)",
+        "B": "That PDAs can recognize context-sensitive languages",
+        "C": "That CFGs cannot be simulated by any automaton",
+        "D": "That PDAs are equivalent to Turing Machines"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 61,
+      "question": "Which of these is NOT a standard component of a PDA's formal 7-tuple?",
+      "options": {
+        "A": "Q (states)",
+        "B": "Γ (stack alphabet)",
+        "C": "A tape alphabet distinct from the stack alphabet",
+        "D": "δ (transition function)"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 62,
+      "question": "What does F represent in the PDA tuple (Q, Σ, Γ, δ, q0, Z0, F)?",
+      "options": {
+        "A": "The set of final (accepting) states",
+        "B": "The set of forbidden symbols",
+        "C": "The stack alphabet",
+        "D": "The initial state"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 63,
+      "question": "Which notation represents zero or more moves of a PDA (as opposed to exactly one move)?",
+      "options": {
+        "A": "⊢",
+        "B": "⊢*",
+        "C": "⇒",
+        "D": "→"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 64,
+      "question": "For an ID (q, w, γ), what does 'w' represent?",
+      "options": {
+        "A": "The stack content",
+        "B": "The current state",
+        "C": "The remaining (unread) portion of the input string",
+        "D": "The set of final states"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 65,
+      "question": "If δ(q, a, X) = {(p, Y1Y2)}, after this move, Y1 and Y2 are placed on the stack such that:",
+      "options": {
+        "A": "Y2 is on top, Y1 below it (Y1 is pushed first, then Y2)",
+        "B": "The order doesn't matter",
+        "C": "Y1 is on top, Y2 below it (rightmost symbol goes on top... convention varies by textbook, but typically the leftmost symbol of the replacement ends up deepest)",
+        "D": "Only Y1 is used; Y2 is discarded"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 66,
+      "question": "A PDA is 'nondeterministic' when:",
+      "options": {
+        "A": "δ(q,a,X) or δ(q,ε,X) can yield more than one possible (state, stack-string) pair, or both an ε-move and input-move are available simultaneously from the same configuration",
+        "B": "It only has one state",
+        "C": "The stack is never used",
+        "D": "It always rejects every input"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 67,
+      "question": "Which is generally true about the relationship between NPDA (nondeterministic PDA) and DPDA power?",
+      "options": {
+        "A": "NPDA and DPDA accept exactly the same class of languages",
+        "B": "NPDA is strictly more powerful than DPDA — NPDAs accept all CFLs, DPDAs accept only DCFLs (a proper subset)",
+        "C": "DPDA is strictly more powerful than NPDA",
+        "D": "Neither can accept any language"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 68,
+      "question": "Consider the language L = {aⁱbʲcᵏ | i=j or j=k}. Is this generally a DCFL?",
+      "options": {
+        "A": "Yes, easily accepted deterministically",
+        "B": "No — it requires nondeterminism to correctly 'guess' which equality condition (i=j or j=k) applies while scanning",
+        "C": "It is not context-free at all",
+        "D": "It is a regular language"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 69,
+      "question": "Which closure property DOES hold for context-free languages (accepted by general PDAs) in general?",
+      "options": {
+        "A": "Closure under complement",
+        "B": "Closure under intersection with another CFL",
+        "C": "Closure under union, concatenation, and Kleene star",
+        "D": "Closure under intersection of two arbitrary CFLs"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 70,
+      "question": "CFLs ARE closed under intersection with which specific class of languages?",
+      "options": {
+        "A": "Any other CFL",
+        "B": "Regular languages",
+        "C": "Context-sensitive languages only",
+        "D": "No class at all"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 71,
+      "question": "The proof that CFL ∩ Regular = CFL typically uses:",
+      "options": {
+        "A": "A product construction combining a PDA (for the CFL) and a DFA (for the regular language) into a single new PDA",
+        "B": "Direct grammar manipulation only, without automata",
+        "C": "Turing machine simulation",
+        "D": "It cannot be proven constructively"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 72,
+      "question": "In the empty-stack-to-final-state PDA conversion, the newly introduced start state q0′ has what special transition?",
+      "options": {
+        "A": "An ε-move that pushes the new bottom symbol X0 and Z0, then transitions into the original PDA's start state q0",
+        "B": "A transition consuming the entire input at once",
+        "C": "No transitions at all",
+        "D": "A move that pops X0 immediately"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 73,
+      "question": "In the final-state-to-empty-stack PDA conversion, the additional bottom marker X0 helps to:",
+      "options": {
+        "A": "Prevent the new stack-emptying state from firing prematurely if the original stack (below which X0 sits) still isn't truly finished",
+        "B": "Increase the number of final states",
+        "C": "Replace the input alphabet",
+        "D": "Simplify the input reading process"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 74,
+      "question": "Which of the following correctly relates PDA acceptance modes to CFLs?",
+      "options": {
+        "A": "Only PDAs using final-state acceptance can represent CFLs; empty-stack PDAs represent a different, smaller class",
+        "B": "Both empty-stack and final-state PDA acceptance modes exactly characterize the class of context-free languages",
+        "C": "Neither acceptance mode can represent all CFLs",
+        "D": "Empty-stack acceptance represents only regular languages"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 75,
+      "question": "A PDA constructed from a CFG in GNF form will have how many states typically (in the standard simplest construction)?",
+      "options": {
+        "A": "One state for every non-terminal in the grammar",
+        "B": "Just a single state (all the 'work' is encoded in the stack, not the states)",
+        "C": "Two states: start and accept",
+        "D": "As many states as there are terminals"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 76,
+      "question": "Suppose a CFG has the production S → aA. In the corresponding PDA (via GNF-based construction), this becomes roughly:",
+      "options": {
+        "A": "A move that reads 'a', pops S from the stack top, and pushes A",
+        "B": "A move that ignores the terminal entirely",
+        "C": "A move that pushes both a and A onto the stack",
+        "D": "A move requiring two separate input symbols"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 77,
+      "question": "Which is the correct interpretation of the non-terminal [q, A, p] in the PDA-to-CFG construction?",
+      "options": {
+        "A": "Starting in state q with A on top of the stack, the PDA can pop A completely (consuming some input) and end up in state p",
+        "B": "A is a terminal symbol equal to q",
+        "C": "It denotes that q and p are the same state",
+        "D": "It has no relation to the PDA's stack behavior"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 78,
+      "question": "The start symbol of the CFG derived from a PDA (via the standard construction) is typically defined as:",
+      "options": {
+        "A": "[q0, Z0, qf] for every accepting state qf ∈ F (or a combined form), representing the whole computation from start to acceptance",
+        "B": "Any arbitrary non-terminal, chosen at random",
+        "C": "The PDA's original start state q0 alone",
+        "D": "There is no meaningful start symbol"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 79,
+      "question": "Which best explains why the PDA-to-CFG construction can generate a large number of productions?",
+      "options": {
+        "A": "It must consider every possible combination of intermediate states when a stack symbol's replacement contains multiple symbols",
+        "B": "The construction never needs more than one production per PDA state",
+        "C": "It only works for PDAs with a single state",
+        "D": "There is no relationship between the number of states and grammar size"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 80,
+      "question": "The equivalence 'CFG generates L if and only if a PDA accepts L' is significant for compiler design because:",
+      "options": {
+        "A": "It justifies using pushdown-automaton-based parsing techniques (e.g., LL/LR parsers) to recognize languages defined by context-free grammars",
+        "B": "It shows compilers do not need parsers at all",
+        "C": "It proves all programming languages are regular",
+        "D": "It replaces the need for lexical analysis"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 81,
+      "question": "Which of the following correctly lists the sequence of an ID transition for input symbol 'a', current state q, and stack top X, given δ(q,a,X) = {(p, YZ)}?",
+      "options": {
+        "A": "(q, aw, Xβ) ⊢ (p, w, YZβ)",
+        "B": "(q, aw, Xβ) ⊢ (q, w, Xβ)",
+        "C": "(p, aw, Xβ) ⊢ (q, w, YZβ)",
+        "D": "(q, aw, Xβ) ⊢ (p, aw, YZβ)"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 82,
+      "question": "A PDA accepting balanced parentheses '(' and ')' would typically:",
+      "options": {
+        "A": "Push a symbol for '(' and pop a symbol for ')', accepting (by empty stack) if the stack empties exactly when input ends",
+        "B": "Ignore both symbols",
+        "C": "Push for ')' and pop for '('",
+        "D": "Reject all strings containing parentheses"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 83,
+      "question": "If a PDA for balanced parentheses reads a ')' when the stack (aside from Z0) is already empty, what should happen?",
+      "options": {
+        "A": "The move should fail/reject, since there's no matching '(' to pop",
+        "B": "It should push another symbol",
+        "C": "It should always accept immediately",
+        "D": "It should ignore the ')' and continue"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 84,
+      "question": "The language {aⁿbᵐ | n ≠ m} is context-free. Which PDA strategy handles this?",
+      "options": {
+        "A": "Nondeterministically guess whether n<m or n>m, and verify accordingly using the stack",
+        "B": "Use a DFA since it's actually regular",
+        "C": "Reject all strings unconditionally",
+        "D": "It cannot be handled by any PDA"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 85,
+      "question": "What acceptance condition would MOST naturally suit a PDA designed directly from a CFG derivation process (top-down simulation)?",
+      "options": {
+        "A": "Acceptance by empty stack, since an empty stack corresponds to having derived the entire sentential form down to the input string",
+        "B": "Acceptance requiring the stack to always contain Z0 only at the end",
+        "C": "No acceptance condition needed",
+        "D": "Acceptance based solely on state, ignoring the stack"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 86,
+      "question": "For a DPDA, can there be more than one applicable transition for a given (state, input symbol, stack top) combination?",
+      "options": {
+        "A": "Yes, always",
+        "B": "No — determinism requires at most one applicable transition per configuration (with the added ε-move restriction)",
+        "C": "Only for accepting states",
+        "D": "Only if the input is empty"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 87,
+      "question": "Which is true regarding the complement of a DCFL?",
+      "options": {
+        "A": "It is not necessarily context-free",
+        "B": "It is always also a DCFL, because DPDAs (unlike NPDAs) can be complemented via swapping accept/non-accept states after ensuring the DPDA reads all input",
+        "C": "It is always regular",
+        "D": "DCFLs have no complement"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 88,
+      "question": "Why are general CFLs (via NPDA) NOT closed under complementation in general?",
+      "options": {
+        "A": "Because nondeterministic acceptance (existential: 'some path accepts') doesn't complement simply into 'no path accepts leads to rejection of complement'; the standard swap-accept trick used for DFAs doesn't directly work for NPDAs",
+        "B": "Because CFLs are always finite",
+        "C": "Because NPDAs cannot read all their input",
+        "D": "There is no known reason; it's actually always closed"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 89,
+      "question": "Which best explains the practical importance of DCFLs (as opposed to general CFLs) in compiler construction?",
+      "options": {
+        "A": "DCFLs correspond to languages parsable efficiently and deterministically (e.g., LR-parsable languages), which is crucial for real compilers",
+        "B": "DCFLs have no practical relevance",
+        "C": "DCFLs are only a theoretical curiosity with no applications",
+        "D": "DCFLs are exactly the regular languages"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 90,
+      "question": "Which statement about PDA equivalence to CFGs is FALSE?",
+      "options": {
+        "A": "Every CFG has an equivalent PDA that accepts the same language",
+        "B": "Every PDA has an equivalent CFG that generates the same language",
+        "C": "PDAs can only simulate regular grammars, not full CFGs",
+        "D": "Both directions of conversion (CFG→PDA and PDA→CFG) are constructive/algorithmic"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 91,
+      "question": "A PDA is used to accept L(G) for some CFG G. What determines when the PDA finishes successfully (informally)?",
+      "options": {
+        "A": "When all input is read and the simulated derivation (stack) has been fully resolved into the input string (commonly represented by an empty stack)",
+        "B": "When the PDA reads exactly one symbol",
+        "C": "When the stack reaches its maximum possible size",
+        "D": "PDAs cannot represent CFG derivations at all"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 92,
+      "question": "Which of these grammars would generally require a PDA with more elaborate stack manipulation to accept its language?",
+      "options": {
+        "A": "A regular grammar (already acceptable via FA-style logic with a trivial stack)",
+        "B": "A deeply nested, recursive CFG such as one for balanced/matched bracket structures at arbitrary depth",
+        "C": "A grammar with no productions at all",
+        "D": "A grammar generating only the empty string"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 93,
+      "question": "For the PDA-to-CFG construction, why is the resulting grammar guaranteed to be context-free?",
+      "options": {
+        "A": "Because each derived production has exactly one non-terminal on the left (the triple [q,A,p]) by construction",
+        "B": "Because all PDAs are regular by definition",
+        "C": "Because the PDA's stack alphabet is always empty",
+        "D": "It is not guaranteed; the resulting grammar could be context-sensitive"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 94,
+      "question": "Which of the following is an accurate way to think about a PDA versus an NFA in terms of raw computational model?",
+      "options": {
+        "A": "A PDA = NFA + an unbounded stack",
+        "B": "A PDA = DFA + a second finite-state control",
+        "C": "A PDA = NFA − states",
+        "D": "A PDA = Turing Machine − stack"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 95,
+      "question": "Which languages can be recognized by a PDA that never actually uses (pushes/pops meaningfully onto) its stack?",
+      "options": {
+        "A": "Only context-sensitive languages",
+        "B": "Exactly the regular languages (since ignoring the stack reduces the PDA to behaving like an NFA)",
+        "C": "No languages at all",
+        "D": "Only languages with a single string"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 96,
+      "question": "Why does a PDA's stack need to be, in principle, of unbounded size (not fixed)?",
+      "options": {
+        "A": "Because CFLs like aⁿbⁿ require counting an arbitrarily large, unbounded n, which a fixed-size memory cannot track",
+        "B": "Because the input alphabet is always infinite",
+        "C": "Because states must be counted somewhere",
+        "D": "A bounded stack would work fine for all CFLs"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 97,
+      "question": "Which of these is a correct general statement about equivalence of PDA acceptance criteria and grammar ambiguity?",
+      "options": {
+        "A": "An ambiguous CFG always leads to a PDA that rejects all strings",
+        "B": "PDA acceptance (empty-stack or final-state) doesn't directly resolve grammar ambiguity — a PDA built from an ambiguous CFG may still have multiple accepting computation paths for the same string",
+        "C": "PDAs automatically disambiguate any CFG",
+        "D": "Ambiguity is irrelevant to any PDA construction"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 98,
+      "question": "Which best describes why the study of PDAs is placed right after the study of CFGs in a Theory of Computation course?",
+      "options": {
+        "A": "Because PDAs and CFGs are unrelated and studied independently",
+        "B": "Because PDAs provide the automaton-theoretic (recognition) counterpart to CFGs' generative definition of context-free languages",
+        "C": "Because PDAs are a simplification of finite automata only",
+        "D": "Because PDAs replace the need to study CFGs at all"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 99,
+      "question": "Which of the following would be the most direct real-world use of PDA theory in software engineering?",
+      "options": {
+        "A": "Implementing syntax checking/parsing for nested structures like XML tags, JSON braces, or programming-language blocks",
+        "B": "Sorting large datasets efficiently",
+        "C": "Performing floating-point arithmetic",
+        "D": "Managing network routing tables"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 100,
+      "question": "Which statement correctly relates PDAs to the pumping lemma for context-free languages?",
+      "options": {
+        "A": "PDAs are unrelated to any pumping-style argument",
+        "B": "Since a PDA's stack has a bound tied to the number of states/stack symbols for 'short' computations, sufficiently long accepted strings force a stack-height repetition, which underlies the CFL pumping lemma",
+        "C": "The pumping lemma only applies to regular languages recognized by PDAs",
+        "D": "PDAs disprove the pumping lemma for CFLs"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 101,
+      "question": "In the formal PDA tuple, Σ represents:",
+      "options": {
+        "A": "The stack alphabet",
+        "B": "The finite set of input symbols",
+        "C": "The set of final states",
+        "D": "The transition function"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 102,
+      "question": "Which of the following is true about the initial stack symbol Z0?",
+      "options": {
+        "A": "Z0 must always be a member of the input alphabet Σ",
+        "B": "Z0 ∈ Γ, and the stack initially contains only Z0 before any input is processed",
+        "C": "Z0 is always equal to the start state q0",
+        "D": "Z0 is optional and can be omitted from the PDA definition"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 103,
+      "question": "Which best defines the term 'Instantaneous Description' (ID) for a PDA?",
+      "options": {
+        "A": "A snapshot capturing the current state, remaining input, and current stack content at some point during computation",
+        "B": "Only the current state of the PDA",
+        "C": "A description of the PDA's transition function in full",
+        "D": "The final accepted string only"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 104,
+      "question": "Which move type in a PDA does NOT consume any input symbol?",
+      "options": {
+        "A": "A move using δ(q,a,X) for a ∈ Σ",
+        "B": "A move using δ(q,ε,X)",
+        "C": "Both types always consume input",
+        "D": "Neither type is valid in a PDA"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 105,
+      "question": "For acceptance 'by final state', is it required that the stack be empty when the input is fully consumed?",
+      "options": {
+        "A": "Yes, strictly required",
+        "B": "No — only reaching a state in F after consuming all input matters; the stack can be non-empty",
+        "C": "Only if F contains exactly one state",
+        "D": "Only for deterministic PDAs"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 106,
+      "question": "For acceptance 'by empty stack', is it required that the ending state be in F?",
+      "options": {
+        "A": "Yes, always",
+        "B": "No — the state at the end is irrelevant; only the stack being empty matters",
+        "C": "Only for deterministic PDAs",
+        "D": "Only if the input string has even length"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 107,
+      "question": "A DPDA differs from an NPDA primarily in that:",
+      "options": {
+        "A": "A DPDA can have multiple valid transitions per configuration, while NPDA cannot",
+        "B": "A DPDA has at most one valid transition per configuration (with ε-move restrictions), while an NPDA may have several",
+        "C": "DPDAs never use a stack",
+        "D": "NPDAs cannot accept any language a DPDA accepts"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 108,
+      "question": "Is {aⁿbⁿ | n ≥ 1} a Deterministic Context-Free Language (DCFL)?",
+      "options": {
+        "A": "No, it requires nondeterminism",
+        "B": "Yes; a simple deterministic PDA (push on a, pop on b) suffices",
+        "C": "It's not even context-free",
+        "D": "It's regular, so the question doesn't apply"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 109,
+      "question": "Which of the following best distinguishes CFL from DCFL?",
+      "options": {
+        "A": "CFL is a strict superset of DCFL — every DCFL is context-free, but some CFLs (needing guesswork/nondeterminism) are not deterministic",
+        "B": "DCFL is a strict superset of CFL",
+        "C": "CFL and DCFL are always identical",
+        "D": "Neither class contains the other"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 110,
+      "question": "The theorem proving that empty-stack acceptance and final-state acceptance define the same class of languages requires:",
+      "options": {
+        "A": "Only one direction of construction (empty-stack to final-state)",
+        "B": "Two separate constructions: one converting empty-stack PDAs to final-state PDAs, and one converting final-state PDAs to empty-stack PDAs",
+        "C": "No construction; it's assumed without proof",
+        "D": "Rewriting the PDA as a CFG first"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 111,
+      "question": "In the empty-stack-to-final-state conversion, once the simulated original PDA's stack is 'emptied' (exposing the new bottom marker), the new machine:",
+      "options": {
+        "A": "Rejects immediately",
+        "B": "Takes an ε-move into a new, dedicated final state to signal acceptance",
+        "C": "Restarts the computation from q0",
+        "D": "Ignores this event entirely"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 112,
+      "question": "In the final-state-to-empty-stack conversion, what happens to the original stack alphabet symbols once a final state of M is reached?",
+      "options": {
+        "A": "They remain forever on the stack, and the string is rejected",
+        "B": "They are systematically popped via added ε-transitions in the new machine, until the stack is empty",
+        "C": "They are converted into input symbols",
+        "D": "Nothing changes; only the state matters"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 113,
+      "question": "Which of the following correctly restates the CFG-PDA equivalence theorem?",
+      "options": {
+        "A": "A language L is context-free if and only if there exists some PDA M such that L = L(M) (or equivalently N(M))",
+        "B": "A language L is context-free if and only if it is accepted by some DFA",
+        "C": "A language L is regular if and only if some PDA accepts it",
+        "D": "PDAs can only accept finite languages, unlike CFGs"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 114,
+      "question": "When building a PDA from a CFG via the GNF-based method, what happens if the grammar contains a production A → a (no non-terminals following)?",
+      "options": {
+        "A": "The PDA reads a, pops A, and pushes nothing (an empty string) back onto the stack",
+        "B": "The PDA cannot handle this case at all",
+        "C": "The PDA pushes A back onto the stack unchanged",
+        "D": "This production is simply ignored"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 115,
+      "question": "In the PDA-to-CFG construction, why must every PDA move be systematically translated into one or more grammar productions?",
+      "options": {
+        "A": "To ensure the resulting grammar's derivations exactly correspond to the PDA's accepting computations",
+        "B": "Because grammars have no relation to PDA moves",
+        "C": "To make the grammar regular",
+        "D": "Because otherwise the PDA cannot be simulated by any grammar"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 116,
+      "question": "Which best describes an intuitive real-world analogy for a PDA's stack?",
+      "options": {
+        "A": "A queue of tasks processed first-in-first-out",
+        "B": "A stack of plates, where only the top plate can be added or removed (last-in-first-out)",
+        "C": "A random-access array with direct indexing",
+        "D": "A circular buffer with fixed size"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 117,
+      "question": "Which of these correctly completes: 'A PDA accepts by empty stack if, after reading the entire input, ___ .'",
+      "options": {
+        "A": "it is in a final state, regardless of stack content",
+        "B": "the stack contains only Z0",
+        "C": "the stack contains no symbols at all",
+        "D": "the input pointer resets to the beginning"
+      },
+      "answer": "C",
+      "marks": 1
+    },
+    {
+      "id": 118,
+      "question": "Which best explains why real compilers rarely use raw nondeterministic PDAs directly for parsing?",
+      "options": {
+        "A": "Nondeterministic simulation can be computationally expensive; deterministic (or near-deterministic) parsing techniques (like LL/LR, based on DPDA-like behavior) are preferred for efficiency",
+        "B": "PDAs cannot represent programming language syntax at all",
+        "C": "Compilers never use any automaton-based theory",
+        "D": "NPDAs always reject valid programs"
+      },
+      "answer": "A",
+      "marks": 1
+    },
+    {
+      "id": 119,
+      "question": "Which of the following is an example of a context-free (but not regular) language recognizable by a PDA?",
+      "options": {
+        "A": "{ w ∈ {a,b}* | w contains an even number of a's }",
+        "B": "{ aⁿbⁿ | n ≥ 0 }",
+        "C": "{ a* }",
+        "D": "{ w | w starts with a }"
+      },
+      "answer": "B",
+      "marks": 1
+    },
+    {
+      "id": 120,
+      "question": "Overall, what is the central theoretical contribution of Unit 4 (Pushdown Automata) in a Theory of Computation course?",
+      "options": {
+        "A": "Establishing the automaton model (PDA) that exactly recognizes context-free languages, complementing the generative model (CFG) studied earlier, and covering both acceptance modes, determinism, and CFG-PDA equivalence",
+        "B": "Proving that all languages are regular",
+        "C": "Introducing Turing Machines for the first time",
+        "D": "Showing that context-free languages don't exist"
+      },
+      "answer": "A",
+      "marks": 1
+    }
+  ]
+}
