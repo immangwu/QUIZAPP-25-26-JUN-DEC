@@ -5,7 +5,12 @@ import streamlit as st
 from streamlit_autorefresh import st_autorefresh
 from streamlit_js_eval import streamlit_js_eval
 
+import importlib
 from utils import storage, quiz_data
+
+# Streamlit Cloud re-runs app.py after a git pull but keeps already-imported utils
+# modules cached, so reload storage to pick up changes without an app reboot.
+storage = importlib.reload(storage)
 from utils.theme import inject_theme, THEMES
 from utils.proctor import read_tab_switch_count, MAX_ALLOWED_SWITCHES
 from utils.pdf_report import generate_student_answer_script, generate_faculty_report
