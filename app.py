@@ -106,7 +106,7 @@ def screen_login():
     if submitted:
         username = username.strip()
         record = creds.get(username)
-        if record and password == record["password"]:
+        if record and storage.check_password(record, password):
             st.session_state.reg_no = username
             st.session_state.name = record["name"]
             goto("subject")

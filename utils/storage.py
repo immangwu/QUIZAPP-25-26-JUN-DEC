@@ -20,6 +20,7 @@ import json
 import os
 import csv
 import datetime
+import hashlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "..", "data")
@@ -101,8 +102,29 @@ LATERAL_ENTRY_ACCOUNTS = {
 }
 
 
+# Per-student password resets. Only the SHA-256 hash is stored (this repo is public);
+# an entry here replaces the password from the sheet / local credentials.
+PASSWORD_RESETS = {
+    "mechanical": {
+        "2403713811421311": {
+            "name": "SIVABALAN J",
+            "password_sha256": "799ea4fa9fe7435198f4f1165fd25983e9fafcbc0446e2afb196be56f4e28847",
+        },
+    },
+}
+
+
+def check_password(record, password):
+    """Validates a login password against a record from get_credentials()."""
+    if "password_sha256" in record:
+        return hashlib.sha256(password.encode("utf-8")).hexdigest() == record["password_sha256"]
+    return password == record.get("password")
+
+
 def get_credentials(department):
-    """Returns {reg_no: {"name":..., "password":...}} for the given department."""
+    """Returns {reg_no: {"name":..., "password":...}} for the given department.
+    Reset accounts carry "password_sha256" instead of "password"."""
+    resets = PASSWORD_RESETS.get(department, {})
     _, spreadsheet = _get_gspread_client()
     if spreadsheet is not None:
         try:
@@ -111,10 +133,10 @@ def get_credentials(department):
             return {**LATERAL_ENTRY_ACCOUNTS, **{
                 str(r["reg_no"]): {"name": r["name"], "password": str(r["password"])}
                 for r in rows
-            }}
+            }, **resets}
         except Exception:
             pass
-    return {**LATERAL_ENTRY_ACCOUNTS, **_load_local_credentials().get(department, {})}
+    return {**LATERAL_ENTRY_ACCOUNTS, **_load_local_credentials().get(department, {}), **resets}
 
 
 def _ensure_local_results_file():
